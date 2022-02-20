@@ -9,14 +9,14 @@ const ParticlesBg = () => {
                 particles: {
                     number: {
                         number: {
-                            value: 50
+                            value: 100
                         },
                         size: {
-                            value: 3
+                            value: 4
                         }
                     },
                     color: {
-                        value: ["#764B92", "#f8c210", "#004E4D", "#018C99"]
+                        value: ["#f8c210", "#004E4D", "#018C99"]
                     },
                     shape: {
                         type: "circle",
@@ -29,17 +29,17 @@ const ParticlesBg = () => {
                         }
                     },
                     opacity: {
-                        value: 0.5,
-                        random: false,
+                        value: 0.6,
+                        random: true,
                         anim: {
-                            enable: false,
-                            speed: 1.5,
+                            enable: true,
+                            speed: 0.5,
                             opacity_min: 0.15,
                             sync: false
                         }
                     },
                     size: {
-                        // value: 2.5,
+                        value: 7,
                         random: true,
                         anim: {
                             enable: true,
@@ -50,9 +50,9 @@ const ParticlesBg = () => {
                     },
                     line_linked: {
                         enable: true,
-                        distance: 110,
-                        color: "#33b1f8",
-                        opacity: 0.25,
+                        distance: 90,
+                        color: "#787878",
+                        opacity: 0.1,
                         width: 1
                     },
                     move: {
