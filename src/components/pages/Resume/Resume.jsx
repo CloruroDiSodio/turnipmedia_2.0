@@ -14,7 +14,7 @@ const Resume = () => {
                 </div>
             </p>
             <p>
-                <BiAtom /> <b>Studies</b><br />
+                <BiAtom /> <b className="text-purple">Studies</b><br />
                 <div className="resume__indent" >
                     <i>2016-2019</i><br />
                     <span>Scuola Internazionale di Comics (Padova, Italy)</span><br />

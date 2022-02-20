@@ -1,0 +1,26 @@
+.contacts {
+  margin-left: 20%;
+  margin-top: 150px;
+
+  &__name {
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  &__social {
+    a {
+      margin-right: 16px;
+      color: var(--purple);
+      transition: all 0.3s;
+
+      &:hover {
+        color: var(--light-purple);
+      }
+
+      svg {
+        width: 25px;
+        height: 25px;
+      }
+    }
+  }
+}

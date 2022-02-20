@@ -4,7 +4,6 @@ import Home from "./components/pages/Home/Home";
 import Resume from "./components/pages/Resume/Resume";
 import Contacts from "./components/pages/Contacts/Contacts";
 import HeaderMenu from "./components/molecules/HeaderMenu/HeaderMenu";
-import Particles from "react-tsparticles"
 import ParticlesBg from "./components/atoms/ParticlesBg/Particles";
 
 function App() {
