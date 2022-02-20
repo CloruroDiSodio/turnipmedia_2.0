@@ -5,15 +5,14 @@ const ParticlesBg = () => {
     return (
         <Particles
             id="tsparticles"
-            init={() => {}}
-            loaded={() => {}}
             options={{
                 particles: {
                     number: {
-                        value: 88,
-                        density: {
-                            enable: true,
-                            value_area: 700
+                        number: {
+                            value: 50
+                        },
+                        size: {
+                            value: 3
                         }
                     },
                     color: {
@@ -40,8 +39,8 @@ const ParticlesBg = () => {
                         }
                     },
                     size: {
-                        value: 2.5,
-                        random: false,
+                        // value: 2.5,
+                        random: true,
                         anim: {
                             enable: true,
                             speed: 2,
@@ -72,41 +71,10 @@ const ParticlesBg = () => {
                     }
                 },
                 interactivity: {
-                    detect_on: "canvas",
                     events: {
                         onhover: {
-                            enable: false,
+                            enable: true,
                             mode: "repulse"
-                        },
-                        onclick: {
-                            enable: false,
-                            mode: "push"
-                        },
-                        resize: true
-                    },
-                    modes: {
-                        grab: {
-                            distance: 400,
-                            line_linked: {
-                                opacity: 1
-                            }
-                        },
-                        bubble: {
-                            distance: 400,
-                            size: 40,
-                            duration: 2,
-                            opacity: 8,
-                            speed: 3
-                        },
-                        repulse: {
-                            distance: 200,
-                            duration: 0.4
-                        },
-                        push: {
-                            particles_nb: 4
-                        },
-                        remove: {
-                            particles_nb: 2
                         }
                     }
                 },
