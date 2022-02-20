@@ -1,23 +1,22 @@
-import './App.css';
-import { Routes, Route } from "react-router-dom";
-import Home from "./components/pages/Home/Home";
-import Resume from "./components/pages/Resume/Resume";
-import Contacts from "./components/pages/Contacts/Contacts";
+import {useLocation} from "react-router-dom";
 import HeaderMenu from "./components/molecules/HeaderMenu/HeaderMenu";
 import ParticlesBg from "./components/atoms/ParticlesBg/Particles";
+import Navigator from "./navigation";
+import './App.css';
 
 function App() {
-  return (
-    <div className="App">
-        <ParticlesBg />
-        <HeaderMenu />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="resume" element={<Resume />} />
-          <Route path="contacts" element={<Contacts />} />
-        </Routes>
-    </div>
-  );
+    const {pathname} = useLocation();
+    return (
+        <div className="App">
+            {pathname !== '/appetta' ?
+                (<>
+                    <ParticlesBg />
+                    <HeaderMenu />
+                </>) :
+                <></>}
+            <Navigator />
+        </div>
+);
 }
 
 export default App;

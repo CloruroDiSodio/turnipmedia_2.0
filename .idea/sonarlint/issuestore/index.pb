@@ -3,10 +3,6 @@
 	README.md,8/e/8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
 <
 src/logo.svg,6/d/6d3a8cd532ece5b4ddbd4b3b6a678ba686d300bc
-<
-package.json,7/0/7030d0b2f71b999ff89a343de08c414af32fc93a
-<
-src/index.js,f/9/f900edc44cb929c2267a16100a32851f6d5b477d
 R
 "src/components/pages/Home/Home.jsx,4/d/4d3f1e95f2baddb28d35a6e1b989534f83f0cdf5
 c
