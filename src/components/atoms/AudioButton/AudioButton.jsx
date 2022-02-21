@@ -1,13 +1,16 @@
 import React from "react";
 import {Button} from "react-bootstrap";
+import {useSearchParams} from "react-router-dom";
 
 const AudioButton = ({item}) => {
     const {index, url, title} = item;
+    let [searchParams, setSearchParams] = useSearchParams();
 
     let audio = new Audio(url)
 
     const start = () => {
         audio.play()
+        setSearchParams({sound: title.toLowerCase()});
     }
 
     return (

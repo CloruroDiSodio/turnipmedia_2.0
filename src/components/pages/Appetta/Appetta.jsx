@@ -1,11 +1,29 @@
-import React from "react";
-import {Col, Container, Row} from "react-bootstrap";
+import React, {useEffect, useState} from "react";
+import {Col, Container, Row, Button, Toast, ToastContainer} from "react-bootstrap";
 import { GiWinterHat } from "react-icons/gi";
+import {useSearchParams} from "react-router-dom";
 import AudioButton from "../../atoms/AudioButton/AudioButton";
 import {sounds, specials} from "./sounds";
 import './appetta.scss'
 
 const Appetta = () => {
+    let [searchParams] = useSearchParams();
+    const [show, setShow] = useState(false);
+
+    useEffect(() => {
+        let paramSound = searchParams.get('sound');
+        let sound = sounds.find(item => paramSound === item.title.toLowerCase());
+        let special = specials.find(item => paramSound === item.title.toLowerCase());
+        if (sound || special) {
+            window.open(sound ? sound.url : special.url)
+        }
+    }, [])
+
+    const onCopy = () => {
+        navigator.clipboard.writeText(window.location);
+        setShow(true);
+    };
+
     return (
         <Container fluid className="h-100 appetta__container">
             <Row>
@@ -17,7 +35,7 @@ const Appetta = () => {
             </Row>
             <Row className="mt-3">
                 <Col>
-                    {sounds.map((item, index) => <AudioButton item={{...item, index}}/>)}
+                    {sounds.map((item, index) => <AudioButton key={item.title} item={{...item, index}}/>)}
                 </Col>
             </Row>
             <Row className="mt-5">
@@ -25,9 +43,18 @@ const Appetta = () => {
             </Row>
             <Row className="mt-1">
                 <Col>
-                    {specials.map((item, index) => <AudioButton item={{...item, index}}/>)}
+                    {specials.map((item, index) => <AudioButton key={item.title} item={{...item, index}}/>)}
                 </Col>
             </Row>
+
+            <Button onClick={onCopy}>
+                Copy url
+            </Button>
+
+            <Toast onClose={() => setShow(false)} show={show} delay={3000} autohide>
+                Link copiato correttamente! Vai condividilo!< br/>
+                (Please, Sergio, don't)
+            </Toast>
         </Container>
     )
 }
