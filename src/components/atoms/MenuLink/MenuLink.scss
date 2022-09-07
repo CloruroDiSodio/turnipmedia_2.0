@@ -18,6 +18,7 @@
 
   &:hover {
     color: var(--gray);
+    text-decoration: none;
     &:after {
       content: '';
       position: absolute;
