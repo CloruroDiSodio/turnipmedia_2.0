@@ -1,0 +1,9002 @@
+[
+  {
+    "Titolo": "A proposito di libri",
+    "Autore": "AAVV",
+    "Casa editrice": "Iperborea",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "Cose spiegate bene 1",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "E giustizia per tutti",
+    "Autore": "AAVV",
+    "Casa editrice": "Iperborea",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "Cose spiegate bene 4",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Il libro della filosofia",
+    "Autore": "AAVV",
+    "Casa editrice": "Gribaudo",
+    "Lingua": "Italiano",
+    "Genere": "Saggistica",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Islanda",
+    "Autore": "AAVV",
+    "Casa editrice": "Iperborea",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "The passenger",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "La costituzione italiana",
+    "Autore": "AAVV",
+    "Casa editrice": "Garzanti",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Le droghe, in sostanza",
+    "Autore": "AAVV",
+    "Casa editrice": "Iperborea",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "Cose spiegate bene 3",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Le mille e una notte",
+    "Autore": "AAVV",
+    "Casa editrice": "Newton Compton",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Questioni di un certo genere",
+    "Autore": "AAVV",
+    "Casa editrice": "Iperborea",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "Cose spiegate bene 2",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Spazio",
+    "Autore": "AAVV",
+    "Casa editrice": "Iperborea",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "The passenger",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Il signor mani",
+    "Autore": "Abraham B. Yehoshua",
+    "Casa editrice": "Einaudi",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Trilogia della città di K.",
+    "Autore": "Agotha Kristof",
+    "Casa editrice": "Einaudi",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Lanark vol. 1",
+    "Autore": "Alasdair Gray",
+    "Casa editrice": "Safarà",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "La peste",
+    "Autore": "Albert Camus",
+    "Casa editrice": "Bompiani",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "Due edizioni",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "La caduta",
+    "Autore": "Albert Camus",
+    "Casa editrice": "Bompiani",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Lo straniero",
+    "Autore": "Albert Camus",
+    "Casa editrice": "Bompiani",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Il mondo nuovo - Ritorno al mondo nuovo",
+    "Autore": "Aldous Huxley",
+    "Casa editrice": "Mondadori",
+    "Lingua": "Italiano",
+    "Genere": "Distopia",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Barnum 2",
+    "Autore": "Alessandro Baricco",
+    "Casa editrice": "Feltrinelli",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Oceano Mare",
+    "Autore": "Alessandro Baricco",
+    "Casa editrice": "Rizzoli",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Omero, Iliade",
+    "Autore": "Alessandro Baricco",
+    "Casa editrice": "Feltrinelli",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Questa storia",
+    "Autore": "Alessandro Baricco",
+    "Casa editrice": "Fandango Libri",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Seta",
+    "Autore": "Alessandro Baricco",
+    "Casa editrice": "Rizzoli",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "I promessi sposi",
+    "Autore": "Alessandro Manzoni",
+    "Casa editrice": "Garzanti",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Cosmic Bandidos",
+    "Autore": "Allan C. Weisebecker",
+    "Casa editrice": "Marcos Y Marcos",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Jukebox all'idrogeno",
+    "Autore": "Allen Ginsberg",
+    "Casa editrice": "Corriere della sera",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "La grande poesia 9/32",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Così si perde la guerra del tempo",
+    "Autore": "Amal El-Mohtar, Max Gladstone",
+    "Casa editrice": "Oscar Vault Mondadori",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Gemina",
+    "Autore": "Amie Kaufman, Jay Kristoff",
+    "Casa editrice": "Oscar Vault Mondadori",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Illuminae",
+    "Autore": "Amie Kaufman, Jay Kristoff",
+    "Casa editrice": "Oscar Vault Mondadori",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Jimi Hendrix a Leopoli",
+    "Autore": "Andrei Kurkov",
+    "Casa editrice": "Keller",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Il tempo e l'acqua",
+    "Autore": "Andri Snaer Magnason",
+    "Casa editrice": "Iperborea",
+    "Lingua": "Italiano",
+    "Genere": "Saggistica",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Milkman",
+    "Autore": "Anna Burns",
+    "Casa editrice": "Keller",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "La parola immaginata",
+    "Autore": "Annamaria Testa",
+    "Casa editrice": "Il Saggiatore",
+    "Lingua": "Italiano",
+    "Genere": "Saggistica, pubblicità",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Agnes Grey",
+    "Autore": "Anne Brontë",
+    "Casa editrice": "Cranford collection",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "La signora di Wildfell Hall",
+    "Autore": "Anne Brontë",
+    "Casa editrice": "Cranford collection",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Intervista col vampiro",
+    "Autore": "Anne Rice",
+    "Casa editrice": "Tea",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Distanza ravvicinata",
+    "Autore": "Annie Proulx",
+    "Casa editrice": "Minimum fax",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "Storie del Wyoming 1",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Il piccolo principe",
+    "Autore": "Antoine de Saint-Exupery",
+    "Casa editrice": "Bompiani",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Le petit Prince",
+    "Autore": "Antoine de Saint-Exupery",
+    "Casa editrice": "Folio",
+    "Lingua": "Français",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "I diritti umani oggi",
+    "Autore": "Antonio Cassere",
+    "Casa editrice": "Editori Laterza",
+    "Lingua": "Italiano",
+    "Genere": "Saggistica",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Lettere dal carcere",
+    "Autore": "Antonio Gramsci",
+    "Casa editrice": "Einaudi",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Il tempo invecchia in fretta",
+    "Autore": "Antonio Tabucchi",
+    "Casa editrice": "Feltrinelli",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Arancia meccanica",
+    "Autore": "Antony Burgess",
+    "Casa editrice": "Einaudi",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Konfidenz",
+    "Autore": "Ariel Dorfman",
+    "Casa editrice": "Edizioni Clichy",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "2001 Odissea nello spazio",
+    "Autore": "Arthur C. Clarke",
+    "Casa editrice": "Sansoni",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Memorie di una Geisha",
+    "Autore": "Arthur Golden",
+    "Casa editrice": "Longanesi",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Poesie",
+    "Autore": "Arthur Rimbaud",
+    "Casa editrice": "Corriere della sera",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "La grande poesia 4/32",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Black Blues",
+    "Autore": "Attica Locke",
+    "Casa editrice": "Bompiani",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Texas Blues",
+    "Autore": "Attica Locke",
+    "Casa editrice": "Bompiani",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Correndo con le forbici in mano",
+    "Autore": "Augusten Burroughs",
+    "Casa editrice": "Minimum fax",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Sonno Profondo",
+    "Autore": "Banana Yoshimoto",
+    "Casa editrice": "Feltrinelli",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Il genio non esiste",
+    "Autore": "Barbascura X",
+    "Casa editrice": "Edizioni Tlon",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Saggio erotico sulla fine del mondo",
+    "Autore": "Barbascura X",
+    "Casa editrice": "Mondadori",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Una questione privata, i ventitré giorni della città di Alba",
+    "Autore": "Beppe Fenoglio",
+    "Casa editrice": "Einaudi",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "L'eccellente avventura di Marta e Jason",
+    "Autore": "Beppe Tosco, Armando Quazzo",
+    "Casa editrice": "Bompiani",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Il pirata Barbagrossa e il calzino puzzolente",
+    "Autore": "Bernard Lassahn",
+    "Casa editrice": "Piemme",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "I miei stupidi intenti",
+    "Autore": "Bernardo Zannoni",
+    "Casa editrice": "Sellerio",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Vita di Galileo",
+    "Autore": "Bertold Brecht",
+    "Casa editrice": "Einaudi",
+    "Lingua": "Italiano",
+    "Genere": "Teatro",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Poesie",
+    "Autore": "Bertolt Brecht",
+    "Casa editrice": "Corriere della sera",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "La grande poesia 27/32",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Breve storia di (quasi) tutto",
+    "Autore": "Bill Bryson",
+    "Casa editrice": "Tea",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Il dottor Zivago",
+    "Autore": "Boris Pasternak",
+    "Casa editrice": "Feltrinelli",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "La schiuma dei giorni",
+    "Autore": "Boris Vian",
+    "Casa editrice": "Marcos Y Marcos",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Meno di zero",
+    "Autore": "Bret Easton Ellis",
+    "Casa editrice": "Einaudi",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Gli ancestrali",
+    "Autore": "Brian Catling",
+    "Casa editrice": "Safarà",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "Vorrh 2",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Vorrh",
+    "Autore": "Brian Catling",
+    "Casa editrice": "Safarà",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "Vorrh 1",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "L'universo elegante",
+    "Autore": "Brian Greene",
+    "Casa editrice": "Einaudi",
+    "Lingua": "Italiano",
+    "Genere": "Saggistica",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Bull Mountain",
+    "Autore": "Brian Panowich",
+    "Casa editrice": "NN Editore",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "La straordinaria invenzione di Hugo Cabret",
+    "Autore": "Brian Selznick",
+    "Casa editrice": "Mondadori",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Da cosa nasce cosa",
+    "Autore": "Bruno Munari",
+    "Casa editrice": "Editori Laterza",
+    "Lingua": "Italiano",
+    "Genere": "Saggistica",
+    "Note": "In prestito a Carolina",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Design e comunicazione visiva",
+    "Autore": "Bruno Munari",
+    "Casa editrice": "Editori Laterza",
+    "Lingua": "Italiano",
+    "Genere": "Saggistica",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Fantasia",
+    "Autore": "Bruno Munari",
+    "Casa editrice": "Editori Laterza",
+    "Lingua": "Italiano",
+    "Genere": "Saggistica",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Le cronache di Narnia",
+    "Autore": "C.S. Lewis",
+    "Casa editrice": "Mondadori",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Il segreto degli angeli",
+    "Autore": "Camilla Läckberg",
+    "Casa editrice": "Marsilio",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Le cronache dell'acero e del ciliegio - La maschera del nō",
+    "Autore": "Camille Monceaux",
+    "Casa editrice": "L'ippocampo",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "La famiglia di Pascual Duarte",
+    "Autore": "Camilo Josè Cela",
+    "Casa editrice": "Utopia",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Marina",
+    "Autore": "Carlos Ruis Zafon",
+    "Casa editrice": "Mondadori",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Thrice told tales",
+    "Autore": "Catherine Lewis",
+    "Casa editrice": "Atheneum",
+    "Lingua": "English",
+    "Genere": "Saggistica, scrittura",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Dialoghi con Leucò",
+    "Autore": "Cesare Pavese",
+    "Casa editrice": "Einaudi",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Il mestiere di vivere",
+    "Autore": "Cesare Pavese",
+    "Casa editrice": "Einaudi",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "La bella estate",
+    "Autore": "Cesare Pavese",
+    "Casa editrice": "Einaudi",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "La luna e i falò",
+    "Autore": "Cesare Pavese",
+    "Casa editrice": "Einaudi",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Le poesie",
+    "Autore": "Cesare Pavese",
+    "Casa editrice": "Einaudi",
+    "Lingua": "Italiano",
+    "Genere": "Poesia",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Prima che il gallo canti",
+    "Autore": "Cesare Pavese",
+    "Casa editrice": "Einaudi",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Racconti 1",
+    "Autore": "Cesare Pavese",
+    "Casa editrice": "Einaudi",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Diari intimi",
+    "Autore": "Charles Baudelaire",
+    "Casa editrice": "Mondadori",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "I fiori del male",
+    "Autore": "Charles Baudelaire",
+    "Casa editrice": "Corriere della sera",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "La grande poesia 13/32",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "I fiori del male",
+    "Autore": "Charles Baudelaire",
+    "Casa editrice": "Newton Compton",
+    "Lingua": "Italiano",
+    "Genere": "Poesia",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "David Copperfield",
+    "Autore": "Charles Dickens",
+    "Casa editrice": "Mondadori",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Le due città",
+    "Autore": "Charles Dickens",
+    "Casa editrice": "Newton Compton",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Jane Eyre",
+    "Autore": "Charlotte Brontë",
+    "Casa editrice": "Longmans' simplified English series",
+    "Lingua": "English",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Jane Eyre",
+    "Autore": "Charlotte Brontë",
+    "Casa editrice": "Newton Compton",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Jane Eyre",
+    "Autore": "Charlotte Brontë",
+    "Casa editrice": "Cranford collection",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "La città delle navi",
+    "Autore": "China Mieville",
+    "Casa editrice": "Fanucci Editore",
+    "Lingua": "Italiano",
+    "Genere": "New weird",
+    "Note": "Bas Lag 2",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Perdido street station",
+    "Autore": "China Mieville",
+    "Casa editrice": "Fanucci Editore",
+    "Lingua": "Italiano",
+    "Genere": "New weird",
+    "Note": "Bas Lag 1",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Il treno degli dei",
+    "Autore": "China Mieville",
+    "Casa editrice": "Fanucci Editore",
+    "Lingua": "Italiano",
+    "Genere": "New weird",
+    "Note": "Bas Lag 3",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Nelle terre di nessuno",
+    "Autore": "Chris Offutt",
+    "Casa editrice": "Minimum fax",
+    "Lingua": "Italiano",
+    "Genere": "Racconti",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Echi in tempesta",
+    "Autore": "Christelle Dabos",
+    "Casa editrice": "Edizioni E/O",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "L'attraversaspecchi 4/4",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Fidanzati dell'inverno",
+    "Autore": "Christelle Dabos",
+    "Casa editrice": "Edizioni E/O",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "L'attraversaspecchi 1/4",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Gli scomparsi di Chiardiluna",
+    "Autore": "Christelle Dabos",
+    "Casa editrice": "Edizioni E/O",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "L'attraversaspecchi 2/4",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "L'attraversaspecchi - dietro le quinte",
+    "Autore": "Christelle Dabos",
+    "Casa editrice": "Edizioni E/O",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "L'attraversaspecchi - extra",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Le memorie di Babel",
+    "Autore": "Christelle Dabos",
+    "Casa editrice": "Edizioni E/O",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "L'attraversaspecchi 3/4",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "La vita automatica",
+    "Autore": "Christian Oster",
+    "Casa editrice": "Edizioni Clichy",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Eragon",
+    "Autore": "Christopher Paolini",
+    "Casa editrice": "Bur",
+    "Lingua": "Italiano",
+    "Genere": "Fantasy",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Soffocare",
+    "Autore": "Chuck Palahniuk",
+    "Casa editrice": "Mondadori",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Tu l'hai detto",
+    "Autore": "Connie Palmen",
+    "Casa editrice": "Iperborea",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "La strada",
+    "Autore": "Cormac McCarthy",
+    "Casa editrice": "Einaudi",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Poesie",
+    "Autore": "Costantino Kavafis",
+    "Casa editrice": "Corriere della sera",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "La grande poesia 8/32",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Colorama",
+    "Autore": "Cruschiform",
+    "Casa editrice": "L'ippocampo",
+    "Lingua": "Italiano",
+    "Genere": "Ragazzi",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Timidezza e dignità",
+    "Autore": "Dag Solstad",
+    "Casa editrice": "Iperborea",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Nel profondo",
+    "Autore": "Daisy Johnson",
+    "Casa editrice": "Fazi Editore",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Sociologia del mutamento",
+    "Autore": "Daniel Chirot",
+    "Casa editrice": "Il mulino",
+    "Lingua": "Italiano",
+    "Genere": "Saggistica, sociologia",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Divina commedia - inferno",
+    "Autore": "Dante Alighieri",
+    "Casa editrice": "Corriere della sera",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "La grande poesia 30/32",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Divina commedia - paradiso",
+    "Autore": "Dante Alighieri",
+    "Casa editrice": "Corriere della sera",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "La grande poesia 32/32",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Divina commedia - purgatotrio",
+    "Autore": "Dante Alighieri",
+    "Casa editrice": "Corriere della sera",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "La grande poesia 31/32",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Sociologia generale",
+    "Autore": "David Croteau, William Hoynes",
+    "Casa editrice": "McGraw Hill",
+    "Lingua": "Italiano",
+    "Genere": "Saggistica, Scienze sociali",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Cloud Atlas",
+    "Autore": "David Mitchell",
+    "Casa editrice": "Pickwick",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Demon dentist",
+    "Autore": "David Walliams",
+    "Casa editrice": "Harper Collins",
+    "Lingua": "English",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Gangsta Granny",
+    "Autore": "David Walliams",
+    "Casa editrice": "Harper Collins",
+    "Lingua": "English",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Il rinomato catalogo Walker&Dawn",
+    "Autore": "Davide Morosinotto",
+    "Casa editrice": "Mondadori",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Strega di classe",
+    "Autore": "Diana Wynne Jones",
+    "Casa editrice": "Salani Editore",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "La famosa invasione degli orsi in Sicilia",
+    "Autore": "Dino Buzzati",
+    "Casa editrice": "Mondadori",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Canti Orfini",
+    "Autore": "Dino Campana",
+    "Casa editrice": "Corriere della sera",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "La grande poesia 26/32",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Andrea & Andrea",
+    "Autore": "Domenica Luciani, Roberto Luciani",
+    "Casa editrice": "Giunti",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "La caffettiera del masochista",
+    "Autore": "Donald Norman",
+    "Casa editrice": "Giunti",
+    "Lingua": "Italiano",
+    "Genere": "Saggistica, design",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Dirk Gently - Agenzia investigativa olistica",
+    "Autore": "Douglas Adams",
+    "Casa editrice": "Oscar Vault Mondadori",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Guida galattica per gli autostoppisti - il ciclo completo",
+    "Autore": "Douglas Adams",
+    "Casa editrice": "Oscar Mondadori",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Il salmone del dubbio",
+    "Autore": "Douglas Adams",
+    "Casa editrice": "Mondadori strade blu",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Poesie",
+    "Autore": "Dylan Thomas",
+    "Casa editrice": "Corriere della sera",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "La grande poesia 23/32",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Poesie",
+    "Autore": "Dylan Thomas",
+    "Casa editrice": "Mondadori",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Le avventure di Arthur Gordon Pym",
+    "Autore": "E. A. Poe",
+    "Casa editrice": "Acquerelli",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Racconti del mistero",
+    "Autore": "E. A. Poe",
+    "Casa editrice": "Barbera Editore",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Racconti dell'impossibile",
+    "Autore": "E. A. Poe",
+    "Casa editrice": "Newton Compton",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Il gatto Murr",
+    "Autore": "E. T. A. Hoffmann",
+    "Casa editrice": "L'orma",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Il corvo e tutte le poesie",
+    "Autore": "E.A. Poe",
+    "Casa editrice": "Newton Compton",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Lo scarabeo d'oro e altri racconti",
+    "Autore": "E.A. Poe",
+    "Casa editrice": "Mondadori",
+    "Lingua": "Italiano",
+    "Genere": "Racconti",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Tales of mystery and immagination",
+    "Autore": "Edgar Allan Poe",
+    "Casa editrice": "Collins classics",
+    "Lingua": "English",
+    "Genere": "",
+    "Note": "Letto parzialmente",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Antologia di Spoon River",
+    "Autore": "Edgar Lee Masters",
+    "Casa editrice": "Corriere della sera",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "La grande poesia 7/32",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "L'età dell'innocenza",
+    "Autore": "Edith Wharton",
+    "Casa editrice": "Cranford collection",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "La casa della gioia",
+    "Autore": "Edith Wharton",
+    "Casa editrice": "Cranford collection",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Storie della buonanotte per bambine ribelli",
+    "Autore": "Elena Favilli, Francesca Cavallo",
+    "Casa editrice": "Oscar Mondadori",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Thinking with type 2th edition",
+    "Autore": "Ellen Lupton",
+    "Casa editrice": "Princeton architectural press",
+    "Lingua": "English",
+    "Genere": "Saggistica, design, tipografia",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "L'isola di Arturo",
+    "Autore": "Elsa Morante",
+    "Casa editrice": "Einaudi",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "La storia",
+    "Autore": "Elsa Morante",
+    "Casa editrice": "Einaudi",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Cime Tempestose",
+    "Autore": "Emily Brontë",
+    "Casa editrice": "Bompiani",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Cime tempestose",
+    "Autore": "Emily Brontë",
+    "Casa editrice": "Cranford collection",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Poesie",
+    "Autore": "Emily Dickinson",
+    "Casa editrice": "Corriere della sera",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "La grande poesia 3/32",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Poesie",
+    "Autore": "Emily Dickinson",
+    "Casa editrice": "Arsenale editore",
+    "Lingua": "Italiano",
+    "Genere": "Poesia",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "I am alive and you are dead",
+    "Autore": "Emmanuel Carrere",
+    "Casa editrice": "Picador",
+    "Lingua": "English",
+    "Genere": "Biografia",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Elogio della follia",
+    "Autore": "Erasmo da Rotterdam",
+    "Casa editrice": "Giunti",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Il vecchio e il mare",
+    "Autore": "Ernest Hemingway",
+    "Casa editrice": "Mondadori",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Il torto del soldato",
+    "Autore": "Erri de Luca",
+    "Casa editrice": "Feltrinelli",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Tu, mio",
+    "Autore": "Erri de Luca",
+    "Casa editrice": "Feltrinelli",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Montedidio",
+    "Autore": "Erri de Luca",
+    "Casa editrice": "Feltrinelli",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Spizzichi e bocconi",
+    "Autore": "Erri de Luca",
+    "Casa editrice": "Feltrinelli",
+    "Lingua": "Italiano",
+    "Genere": "Racconti",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Asylum",
+    "Autore": "Erving Goffman",
+    "Casa editrice": "Einaudi",
+    "Lingua": "Italiano",
+    "Genere": "Saggistica, sociologia",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "La vita quotidiana come rappresentazione",
+    "Autore": "Erving Goffman",
+    "Casa editrice": "Il mulino",
+    "Lingua": "Italiano",
+    "Genere": "Saggistica, sociologia",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Prometeo incatenato",
+    "Autore": "Eschilo",
+    "Casa editrice": "Bur",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Ossi di seppia",
+    "Autore": "Eugenio Montale",
+    "Casa editrice": "Mondadori",
+    "Lingua": "Italiano",
+    "Genere": "Poesia",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Poesie",
+    "Autore": "Eugenio Montale",
+    "Casa editrice": "Corriere della sera",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "La grande poesia 1/32",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Ossi di Seppia",
+    "Autore": "Eugenio Montale",
+    "Casa editrice": "Mondadori",
+    "Lingua": "Italiano",
+    "Genere": "Poesia",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Canti pisani",
+    "Autore": "Ezra Pound",
+    "Casa editrice": "Corriere della sera",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "La grande poesia 29/32",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Holden, Lolita, Zivago e gli altri",
+    "Autore": "Fabio Stassi",
+    "Casa editrice": "Minimum fax",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Sociologia della comunicazione interpersonale",
+    "Autore": "Federico Boni",
+    "Casa editrice": "Editori Laterza",
+    "Lingua": "Italiano",
+    "Genere": "Saggistica",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Poesie",
+    "Autore": "Federico Garcia Lorca",
+    "Casa editrice": "Corriere della sera",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "La grande poesia 5/32",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Delitto e castigo",
+    "Autore": "Fëdor Dostoevskij",
+    "Casa editrice": "Einaudi",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Il libro dell'inquietudine",
+    "Autore": "Fernando Pessoa",
+    "Casa editrice": "Feltrinelli",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Poesie",
+    "Autore": "Fernando Pessoa",
+    "Casa editrice": "Corriere della sera",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "La grande poesia 14/32",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "La voce dentro",
+    "Autore": "Frances Leviston",
+    "Casa editrice": "NN Editore",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Differenze e disuguaglianze di genere",
+    "Autore": "Francesca Sartori",
+    "Casa editrice": "Il mulino",
+    "Lingua": "Italiano",
+    "Genere": "Saggistica, sociologia",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Canzoniere",
+    "Autore": "Francesco Petrarca",
+    "Casa editrice": "Corriere della sera",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "La grande poesia 17/32",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Il sogno",
+    "Autore": "Franck Thilliez",
+    "Casa editrice": "Fazi Editore",
+    "Lingua": "Italiano",
+    "Genere": "Noir",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Il patchwork mediale",
+    "Autore": "Franco Angeli",
+    "Casa editrice": "Media Cultura",
+    "Lingua": "Italiano",
+    "Genere": "Saggistica",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Dune",
+    "Autore": "Frank Herbert",
+    "Casa editrice": "Penguin Books",
+    "Lingua": "English",
+    "Genere": "Fantascienza",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Heretics of Dune",
+    "Autore": "Frank Herbert",
+    "Casa editrice": "Penguin Books",
+    "Lingua": "English",
+    "Genere": "Fantascienza",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Il silenzio delle sirene",
+    "Autore": "Franz Kafka",
+    "Casa editrice": "Feltrinelli",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Lettera al padre",
+    "Autore": "Franz Kafka",
+    "Casa editrice": "Feltrinelli",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "L'amico ritrovato",
+    "Autore": "Fred Uhlman",
+    "Casa editrice": "Feltrinelli",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Cent'anni di solitudine",
+    "Autore": "Gabriel Garcia Marquez",
+    "Casa editrice": "Mondadori",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Memoria delle mie puttane tristi",
+    "Autore": "Gabriel Garcia Marquez",
+    "Casa editrice": "Mondadori",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Alcyone",
+    "Autore": "Gabriele D'Annunzio",
+    "Casa editrice": "Corriere della sera",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "La grande poesia 28/32",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Trionfo della morte",
+    "Autore": "Gabriele D'Annunzio",
+    "Casa editrice": "Mondadori",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Alcyone",
+    "Autore": "Gabriele D'Annunzio",
+    "Casa editrice": "Mondadori",
+    "Lingua": "Italiano",
+    "Genere": "Poesia",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Introduzione all'economia",
+    "Autore": "Gaffeo, Mittone, Tamborini",
+    "Casa editrice": "Zanichelli",
+    "Lingua": "Italiano",
+    "Genere": "Saggistica",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Sabriel",
+    "Autore": "Garth Nix",
+    "Casa editrice": "Lainya",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": 1984,
+    "Autore": "George Orwell",
+    "Casa editrice": "Penguin Books",
+    "Lingua": "English",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "La fattoria degli animali",
+    "Autore": "George Orwell",
+    "Casa editrice": "Mondadori",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Viaggio nel tempo",
+    "Autore": "Geronimo Stilton",
+    "Casa editrice": "Piemme",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Dormono sulla collina",
+    "Autore": "Giacomo di Girolamo",
+    "Casa editrice": "Il Saggiatore",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Pirati!",
+    "Autore": "Gideon Defoe",
+    "Casa editrice": "Newton Compton",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Canti di castelvecchio",
+    "Autore": "Giovanni Pascoli",
+    "Casa editrice": "Corriere della sera",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "La grande poesia 20/32",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Poesie",
+    "Autore": "Giovanni Pascoli",
+    "Casa editrice": "Mondadori",
+    "Lingua": "Italiano",
+    "Genere": "Poesia",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Canti di Castelvecchio",
+    "Autore": "Giovanni Pascoli",
+    "Casa editrice": "Fabbri Editore",
+    "Lingua": "Italiano",
+    "Genere": "Poesia",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Myricae",
+    "Autore": "Giovanni Pascoli",
+    "Casa editrice": "Bur",
+    "Lingua": "Italiano",
+    "Genere": "Poesia",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Poesie",
+    "Autore": "Giuseppe Ungaretti",
+    "Casa editrice": "Corriere della sera",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "La grande poesia 12/32",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Parole e canzoni",
+    "Autore": "Guccini",
+    "Casa editrice": "Einaudi",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Comunicazione, cultura, società",
+    "Autore": "Guido Gili, Fausto Colombo",
+    "Casa editrice": "La Scuola",
+    "Lingua": "Italiano",
+    "Genere": "Saggistica, sociologia, comunicazione",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Poesie",
+    "Autore": "Guillame Apollinaire",
+    "Casa editrice": "Corriere della sera",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "La grande poesia 10/32",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Alcool - Calligrammi",
+    "Autore": "Guillaume Apollinaire",
+    "Casa editrice": "Mondadori",
+    "Lingua": "Italiano",
+    "Genere": "Poesia",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Madame Bovary",
+    "Autore": "Gustave Flaubert",
+    "Casa editrice": "Cranford collection",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Madame Bovary",
+    "Autore": "Gustave Flaubert",
+    "Casa editrice": "Garzanti",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "L'uomo invisibile",
+    "Autore": "H.G. Wells",
+    "Casa editrice": "Newton Compton",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "The war of the worlds",
+    "Autore": "H.G. Wells",
+    "Casa editrice": "Collins classics",
+    "Lingua": "English",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Doppio vetro",
+    "Autore": "Halldora Thoroddsen",
+    "Casa editrice": "Iperborea",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Una vita come tante",
+    "Autore": "Hanya Yanagihara",
+    "Casa editrice": "Sellerio",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Il buio oltre la siepe",
+    "Autore": "Harper Lee",
+    "Casa editrice": "Feltrinelli",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "1Q84 Libro 3",
+    "Autore": "Haruki Murakami",
+    "Casa editrice": "Corriere della sera",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "1Q84 Libro1 e 2",
+    "Autore": "Haruki Murakami",
+    "Casa editrice": "Corriere della sera",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "A sud del confine ad ovest del sole",
+    "Autore": "Haruki Murakami",
+    "Casa editrice": "Corriere della sera",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "After dark",
+    "Autore": "Haruki Murakami",
+    "Casa editrice": "Corriere della sera",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Dance dance dance",
+    "Autore": "Haruki Murakami",
+    "Casa editrice": "Corriere della sera",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Gli assalti alle panetterie",
+    "Autore": "Haruki Murakami",
+    "Casa editrice": "Corriere della sera",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "I salici ciechi e la donna addormentata",
+    "Autore": "Haruki Murakami",
+    "Casa editrice": "Corriere della sera",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Il mestiere dello scrittore",
+    "Autore": "Haruki Murakami",
+    "Casa editrice": "Corriere della sera",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Kafka sulla spiaggia",
+    "Autore": "Haruki Murakami",
+    "Casa editrice": "Corriere della sera",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "L'arte di correre",
+    "Autore": "Haruki Murakami",
+    "Casa editrice": "Corriere della sera",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "L'elegante scomparso e altri racconti",
+    "Autore": "Haruki Murakami",
+    "Casa editrice": "Corriere della sera",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "L'incolore tazaki tsukuru e i suoi anni di pellegrinaggio",
+    "Autore": "Haruki Murakami",
+    "Casa editrice": "Corriere della sera",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "L'uccello che girava le viti del mondo",
+    "Autore": "Haruki Murakami",
+    "Casa editrice": "Corriere della sera",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "La fine del mondo e il paese delle meraviglie",
+    "Autore": "Haruki Murakami",
+    "Casa editrice": "Corriere della sera",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "La ragazza dello sputnik",
+    "Autore": "Haruki Murakami",
+    "Casa editrice": "Corriere della sera",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "La strana biblioteca",
+    "Autore": "Haruki Murakami",
+    "Casa editrice": "Corriere della sera",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Nel segno della pecora",
+    "Autore": "Haruki Murakami",
+    "Casa editrice": "Corriere della sera",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Norvegian wood",
+    "Autore": "Haruki Murakami",
+    "Casa editrice": "Corriere della sera",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Ranocchio salva Tokyo",
+    "Autore": "Haruki Murakami",
+    "Casa editrice": "Corriere della sera",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Ritratti in jazz",
+    "Autore": "Haruki Murakami",
+    "Casa editrice": "Corriere della sera",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Sonno",
+    "Autore": "Haruki Murakami",
+    "Casa editrice": "Corriere della sera",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Tutti i figli di dio danzano",
+    "Autore": "Haruki Murakami",
+    "Casa editrice": "Corriere della sera",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Underground",
+    "Autore": "Haruki Murakami",
+    "Casa editrice": "Corriere della sera",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Uomini senza donne",
+    "Autore": "Haruki Murakami",
+    "Casa editrice": "Corriere della sera",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Vento & flipper",
+    "Autore": "Haruki Murakami",
+    "Casa editrice": "Corriere della sera",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Il paese delle prugne verdi",
+    "Autore": "Helga Müller",
+    "Casa editrice": "Keller",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Dov'eri, Adamo?",
+    "Autore": "Henrich Böll",
+    "Casa editrice": "Bompiani",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "La panchina della desolazione e altri racconti",
+    "Autore": "Henry James",
+    "Casa editrice": "Bompiani",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Bartelby lo scrivano e altri racconti",
+    "Autore": "Herman Melville",
+    "Casa editrice": "Bompiani",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Moby Dick",
+    "Autore": "Herman Melville",
+    "Casa editrice": "Adelphi",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Oregon Hill",
+    "Autore": "Howard Owen",
+    "Casa editrice": "NN Editore",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "L'uomo difficile",
+    "Autore": "Hugo von Hofmannsthal",
+    "Casa editrice": "Adelphi",
+    "Lingua": "Italiano",
+    "Genere": "Teatro, commedia",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Hitler e l'enigma del consenso",
+    "Autore": "Ian Kershaw",
+    "Casa editrice": "Editori Laterza",
+    "Lingua": "Italiano",
+    "Genere": "Saggistica",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Casa di bambola",
+    "Autore": "Ibsen",
+    "Casa editrice": "Newton Compton",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Fontamara",
+    "Autore": "Ignazio Silone",
+    "Casa editrice": "Mondadori",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Il segreto di Luca",
+    "Autore": "Ignazio Silone",
+    "Casa editrice": "Mondadori",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Il seme sotto la neve",
+    "Autore": "Ignazio Silone",
+    "Casa editrice": "Mondadori",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "La volpe e le camelie",
+    "Autore": "Ignazio Silone",
+    "Casa editrice": "Mondadori",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Vino e pane",
+    "Autore": "Ignazio Silone",
+    "Casa editrice": "Mondadori",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "La preda",
+    "Autore": "Irene Nemirovsky",
+    "Casa editrice": "Adelphi",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Il signore delle anime",
+    "Autore": "Irene Nemirovsky",
+    "Casa editrice": "Adelphi",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Jezabel",
+    "Autore": "Irene Nemirovsky",
+    "Casa editrice": "Adelphi",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Fondazione",
+    "Autore": "Isaac Asimov",
+    "Casa editrice": "Mondadori Urania",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Fondazione anno zero",
+    "Autore": "Isaac Asimov",
+    "Casa editrice": "Mondadori Urania",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Fondazione e impero",
+    "Autore": "Isaac Asimov",
+    "Casa editrice": "Mondadori Urania",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Fondazione e terra",
+    "Autore": "Isaac Asimov",
+    "Casa editrice": "Oscar Mondadori",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "L'orlo della fondazione",
+    "Autore": "Isaac Asimov",
+    "Casa editrice": "Oscar Mondadori",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Neanche gli dei",
+    "Autore": "Isaac Asimov",
+    "Casa editrice": "Mondadori Urania",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Seconda fondazione",
+    "Autore": "Isaac Asimov",
+    "Casa editrice": "Mondadori Urania",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Il gioco di Ripper",
+    "Autore": "Isabel Allende",
+    "Casa editrice": "Feltrinelli",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "L'isola sotto il mare",
+    "Autore": "Isabel Allende",
+    "Casa editrice": "Feltrinelli",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "La casa degli spiriti",
+    "Autore": "Isabel Allende",
+    "Casa editrice": "Feltrinelli",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "I nostri antenati",
+    "Autore": "Italo Calvino",
+    "Casa editrice": "Mondadori",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Marcovaldo",
+    "Autore": "Italo Calvino",
+    "Casa editrice": "Garzanti",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Marcovaldo",
+    "Autore": "Italo Calvino",
+    "Casa editrice": "Einaudi",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Il mondo sommerso",
+    "Autore": "J. G. Ballard",
+    "Casa editrice": "Feltrinelli",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Aspettando i barbari",
+    "Autore": "J. M. Coetzee",
+    "Casa editrice": "Einaudi",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "La nave di Teseo",
+    "Autore": "J.J. Abrams, Doug Dorst",
+    "Casa editrice": "Rizzoli",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Harry Potter and the chamber of secrets",
+    "Autore": "J.K. Rowling",
+    "Casa editrice": "Bloomsbury Publishing",
+    "Lingua": "English",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Harry Potter and the deadly hollows",
+    "Autore": "J.K. Rowling",
+    "Casa editrice": "Bloomsbury Publishing",
+    "Lingua": "English",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Harry Potter and the goblet of fire",
+    "Autore": "J.K. Rowling",
+    "Casa editrice": "Bloomsbury Publishing",
+    "Lingua": "English",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Harry Potter and the half-blood prince",
+    "Autore": "J.K. Rowling",
+    "Casa editrice": "Bloomsbury Publishing",
+    "Lingua": "English",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Harry Potter and the order of the phoenix",
+    "Autore": "J.K. Rowling",
+    "Casa editrice": "Bloomsbury Publishing",
+    "Lingua": "English",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Harry Potter and the philosopher's stone",
+    "Autore": "J.K. Rowling",
+    "Casa editrice": "Bloomsbury Publishing",
+    "Lingua": "English",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Harry Potter and the prisoner of Azkaban",
+    "Autore": "J.K. Rowling",
+    "Casa editrice": "Bloomsbury Publishing",
+    "Lingua": "English",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "La vita degli animali",
+    "Autore": "J.M. Coetzee",
+    "Casa editrice": "Adelphi",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Introducing quantum theory",
+    "Autore": "J.P. McEvoy, Oscar Zarate",
+    "Casa editrice": "Icon Books",
+    "Lingua": "English",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Il signore degli anelli",
+    "Autore": "J.R.R. Tolkien",
+    "Casa editrice": "Bompiani",
+    "Lingua": "Italiano",
+    "Genere": "Fantasy",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Il silmarillion",
+    "Autore": "J.R.R. Tolkien",
+    "Casa editrice": "Bompiani",
+    "Lingua": "Italiano",
+    "Genere": "Fantasy",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Lo hobbit",
+    "Autore": "J.R.R. Tolkien",
+    "Casa editrice": "Bompiani",
+    "Lingua": "Italiano",
+    "Genere": "Fantasy",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Il richiamo della foresta - Zanna bianca",
+    "Autore": "Jack London",
+    "Casa editrice": "Newton Compton",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Il vagabondo delle stelle",
+    "Autore": "Jack London",
+    "Casa editrice": "Adelphi",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "White fang",
+    "Autore": "Jack London",
+    "Casa editrice": "Collins classics",
+    "Lingua": "English",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Zanna bianca",
+    "Autore": "Jack London",
+    "Casa editrice": "Mondadori",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Fiabe",
+    "Autore": "Jacob Grimm, Wilhelm Grimm",
+    "Casa editrice": "Einaudi",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Le foglie morte",
+    "Autore": "Jacques Prevert",
+    "Casa editrice": "Guanda",
+    "Lingua": "Italiano",
+    "Genere": "Poesia",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Il diner nel deserto",
+    "Autore": "James Anderson",
+    "Casa editrice": "NN Editore",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Alla fine della notte",
+    "Autore": "Jan-Philipp Sendker",
+    "Casa editrice": "Neri Pozza",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Emma",
+    "Autore": "Jane Austen",
+    "Casa editrice": "Cranford collection",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "L'abbazia di Northanger",
+    "Autore": "Jane Austen",
+    "Casa editrice": "Cranford collection",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Mansfield park",
+    "Autore": "Jane Austen",
+    "Casa editrice": "Cranford collection",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Orgoglio e pregiudizio",
+    "Autore": "Jane Austen",
+    "Casa editrice": "Cranford collection",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Persuasione",
+    "Autore": "Jane Austen",
+    "Casa editrice": "Cranford collection",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Ragione e sentimento",
+    "Autore": "Jane Austen",
+    "Casa editrice": "Cranford collection",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "A/Metà",
+    "Autore": "Jasmin B. Frelih",
+    "Casa editrice": "Safarà",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "La nausea",
+    "Autore": "Jean-Paul Sartre",
+    "Casa editrice": "Einaudi",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Borne",
+    "Autore": "Jeff Vandermeer",
+    "Casa editrice": "Einaudi",
+    "Lingua": "Italiano",
+    "Genere": "New weird",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Trilogia dell'area X",
+    "Autore": "Jeff Vandermeer",
+    "Casa editrice": "Einaudi",
+    "Lingua": "Italiano",
+    "Genere": "New Weird",
+    "Note": "Letti 2 di 3",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "C'è un faraone nel mio bagno",
+    "Autore": "Jeremy Strong",
+    "Casa editrice": "Piemme",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Tre uomini in barca / Tre uomini a zonzo",
+    "Autore": "Jerome K. Jerome",
+    "Casa editrice": "Newton Compton",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Canta, spirito, canta",
+    "Autore": "Jesmyn Ward",
+    "Casa editrice": "NN Editore",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "La linea del sangue",
+    "Autore": "Jesmyn Ward",
+    "Casa editrice": "NN Editore",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Naviga le tue stelle",
+    "Autore": "Jesmyn Ward",
+    "Casa editrice": "NN Editore",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Salvare le ossa",
+    "Autore": "Jesmyn Ward",
+    "Casa editrice": "NN Editore",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Nomadland",
+    "Autore": "Jessica Bruder",
+    "Casa editrice": "Edizioni Clichy",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Queste verità",
+    "Autore": "Jill Lepore",
+    "Casa editrice": "Rizzoli",
+    "Lingua": "Italiano",
+    "Genere": "Saggistica, storia",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Il leopardo",
+    "Autore": "Jo Nesbø",
+    "Casa editrice": "Einaudi",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Il pettirosso",
+    "Autore": "Jo Nesbø",
+    "Casa editrice": "Einaudi",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Il pipistrello",
+    "Autore": "Jo Nesbø",
+    "Casa editrice": "Einaudi",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "La stella del diavolo",
+    "Autore": "Jo Nesbø",
+    "Casa editrice": "Einaudi",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Nemesi",
+    "Autore": "Jo Nesbø",
+    "Casa editrice": "Einaudi",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Sangue e neve",
+    "Autore": "Jo Nesbø",
+    "Casa editrice": "Einaudi",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Scarafaggi",
+    "Autore": "Jo Nesbø",
+    "Casa editrice": "Einaudi",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Sete",
+    "Autore": "Jo Nesbø",
+    "Casa editrice": "Einaudi",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Sole di mezzanotte",
+    "Autore": "Jo Nesbø",
+    "Casa editrice": "Einaudi",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Prendila così",
+    "Autore": "Joan Didion",
+    "Casa editrice": "Il Saggiatore",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Mucho Mojo",
+    "Autore": "Joe R. Lansdale",
+    "Casa editrice": "Einaudi",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Che ne è stato di te, Buzz Aldrin?",
+    "Autore": "Johan Harstad",
+    "Casa editrice": "Iperborea",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Io & Marley",
+    "Autore": "John Grogan",
+    "Casa editrice": "Sperling&Kupfer",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "The world according to Garp",
+    "Autore": "John Irving",
+    "Casa editrice": "W&N",
+    "Lingua": "English",
+    "Genere": "",
+    "Note": "Letto in italiano",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Doppia coppia",
+    "Autore": "John Irving",
+    "Casa editrice": "Bompiani",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Preghiera per un amico",
+    "Autore": "John Irving",
+    "Casa editrice": "Bur",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Poesie",
+    "Autore": "John Keats",
+    "Casa editrice": "Oscar Mondadori",
+    "Lingua": "Italiano",
+    "Genere": "Poesia",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Furore",
+    "Autore": "John Steinbeck",
+    "Casa editrice": "Bompiani",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Pian della Tortilla",
+    "Autore": "John Steinbeck",
+    "Casa editrice": "Bompiani",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Stoner",
+    "Autore": "John Williams",
+    "Casa editrice": "Fazi Editore",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Lady Chevy",
+    "Autore": "John Woods",
+    "Casa editrice": "NN Editore",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "La prima volta che il dolore mi salvò la vita",
+    "Autore": "Jòn Kalman Stefansson",
+    "Casa editrice": "Iperborea",
+    "Lingua": "Italiano",
+    "Genere": "Poesia",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Luce d'estate",
+    "Autore": "Jòn Kalman Stefansson",
+    "Casa editrice": "Iperborea",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Paradiso e inferno",
+    "Autore": "Jòn Kalman Stefansson",
+    "Casa editrice": "Iperborea",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Il centenario che saltò dalla finestra e scomparve",
+    "Autore": "Jonas Jonasson",
+    "Casa editrice": "Bompiani",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Zuppa di vetro",
+    "Autore": "Jonatham Carroll",
+    "Casa editrice": "Fazi Editore",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Viaggi di Gulliver",
+    "Autore": "Jonathan Swift",
+    "Casa editrice": "Bur",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "L'Aleph",
+    "Autore": "Jorge Luis Borges",
+    "Casa editrice": "Feltrinelli",
+    "Lingua": "Italiano",
+    "Genere": "Racconti",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Poesie",
+    "Autore": "Jorge Luis Borges",
+    "Casa editrice": "Bur",
+    "Lingua": "Italiano",
+    "Genere": "Poesia",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Cecità",
+    "Autore": "José Saramago",
+    "Casa editrice": "Feltrinelli",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "La follia di Almayer",
+    "Autore": "Joseph Conrad",
+    "Casa editrice": "Bur",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Ventimila leghe sotto i mari",
+    "Autore": "Jules Verne",
+    "Casa editrice": "Mondadori",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "La gatta",
+    "Autore": "Jun'ichirō Tanizaki",
+    "Casa editrice": "Bompiani",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Club Godo",
+    "Autore": "Jüne Plā",
+    "Casa editrice": "L'ippocampo",
+    "Lingua": "Italiano",
+    "Genere": "Saggistica, educazione sessuale",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Il faraone d'Olanda",
+    "Autore": "Kader Abdolah",
+    "Casa editrice": "Iperborea",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Un'estate con la strega dell'ovest",
+    "Autore": "Kaho Nashiki",
+    "Casa editrice": "Feltrinelli",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Se i gatti scomparissero dal mondo",
+    "Autore": "Kawamura Genki",
+    "Casa editrice": "Einaudi",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Il gigante sepolto",
+    "Autore": "Kazuo Ishiguro",
+    "Casa editrice": "Einaudi",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Il vento tra i salici",
+    "Autore": "Kenneth Grahame",
+    "Casa editrice": "Bur",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Benedizione",
+    "Autore": "Kent Haruf",
+    "Casa editrice": "NN Editore",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "La strada di casa",
+    "Autore": "Kent Haruf",
+    "Casa editrice": "NN Editore",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Le nostre anime di notte",
+    "Autore": "Kent Haruf",
+    "Casa editrice": "NN Editore",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Plainsong",
+    "Autore": "Kent Haruf",
+    "Casa editrice": "Vintage Contemporaries",
+    "Lingua": "English",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Vincoli",
+    "Autore": "Kent Haruf",
+    "Casa editrice": "NN Editore",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "L'anello di Re Salomone",
+    "Autore": "Konrad Lorenz",
+    "Casa editrice": "Adelphi",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Ghiaccio-nove",
+    "Autore": "Kurt Vonnegut",
+    "Casa editrice": "Feltrinelli",
+    "Lingua": "Italiano",
+    "Genere": "Fantascienza",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Hocus Pocus",
+    "Autore": "Kurt Vonnegut",
+    "Casa editrice": "Bompiani",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "The wonderful Wizard of Oz",
+    "Autore": "L. Frank Baum",
+    "Casa editrice": "Collins classics",
+    "Lingua": "English",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Daughter of smoke & bone",
+    "Autore": "Laini Taylor",
+    "Casa editrice": "Little, brown",
+    "Lingua": "English",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Days of blood & starlight",
+    "Autore": "Laini Taylor",
+    "Casa editrice": "Little, brown",
+    "Lingua": "English",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Dreams of gods & monsters",
+    "Autore": "Laini Taylor",
+    "Casa editrice": "Little, brown",
+    "Lingua": "English",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Strange the dreamer",
+    "Autore": "Laini Taylor",
+    "Casa editrice": "Hodder",
+    "Lingua": "English",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Gli incubi di Hazel",
+    "Autore": "Leander Deeny",
+    "Casa editrice": "Newton Compton",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Ruin and rising",
+    "Autore": "Leigh Bardugo",
+    "Casa editrice": "Square fish",
+    "Lingua": "English",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Seige and storm",
+    "Autore": "Leigh Bardugo",
+    "Casa editrice": "Square fish",
+    "Lingua": "English",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Shadow and bone",
+    "Autore": "Leigh Bardugo",
+    "Casa editrice": "Square fish",
+    "Lingua": "English",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Il libro dei vulcani d'Islanda",
+    "Autore": "Leonardo Piccione",
+    "Casa editrice": "Iperborea",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Canti",
+    "Autore": "Leopardi",
+    "Casa editrice": "Corriere della sera",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "La grande poesia 6/32",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Anna Karenina",
+    "Autore": "Lev Tolstoj",
+    "Casa editrice": "Mondadori",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "La sonata a Kreutzer",
+    "Autore": "Lev Tolstoj",
+    "Casa editrice": "Einaudi",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Alice's adventures in Wonderland",
+    "Autore": "Lewis Carroll",
+    "Casa editrice": "Collins classics",
+    "Lingua": "English",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Through the looking glass",
+    "Autore": "Lewis Carroll",
+    "Casa editrice": "Puffin",
+    "Lingua": "English",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "I Mandible. Una famiglia",
+    "Autore": "Lionel Shriver",
+    "Casa editrice": "66thand2nd",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Asimmetria",
+    "Autore": "Lisa Halliday",
+    "Casa editrice": "Feltrinelli",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Il mondo invisibile",
+    "Autore": "Liz Moore",
+    "Casa editrice": "NN Editore",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Piccole donne",
+    "Autore": "Louisa May Alcott",
+    "Casa editrice": "Cranford collection",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Piccole donne crescono",
+    "Autore": "Louisa May Alcott",
+    "Casa editrice": "Cranford collection",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Americana",
+    "Autore": "Luca Briasco",
+    "Casa editrice": "Minimum fax",
+    "Lingua": "Italiano",
+    "Genere": "Saggistica, letteratura americana",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Atlante dei batteri",
+    "Autore": "Ludger Wess",
+    "Casa editrice": "Marsilio",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Psicologia sociale cognitiva",
+    "Autore": "Luigi Castelli",
+    "Casa editrice": "Editori Laterza",
+    "Lingua": "Italiano",
+    "Genere": "Saggistica",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Il fu Mattia Pascal",
+    "Autore": "Luigi Pirandello",
+    "Casa editrice": "Mondadori",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "L'esclusa",
+    "Autore": "Luigi Pirandello",
+    "Casa editrice": "Newton Compton",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Uno, nessuno e centomila",
+    "Autore": "Luigi Pirandello",
+    "Casa editrice": "Newton Compton",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Storia di una gabbianella e del gatto che le insegnò a volare",
+    "Autore": "Luis Sepúlveda",
+    "Casa editrice": "Salani Editore",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Historian de una gaviota y del gato que le ensenõ a volar",
+    "Autore": "Luis Sepúlveda",
+    "Casa editrice": "TusQuets",
+    "Lingua": "Español",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Q",
+    "Autore": "Luther Blissett",
+    "Casa editrice": "Einaudi",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Libro",
+    "Autore": "Maccio Capatonda",
+    "Casa editrice": "Mondadori",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "La porta",
+    "Autore": "Magda Szabò",
+    "Casa editrice": "Einaudi",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Storia d'Europa dal 1945 a oggi",
+    "Autore": "Mammarella",
+    "Casa editrice": "Editori Laterza",
+    "Lingua": "Italiano",
+    "Genere": "Saggistica",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "All'ombra delle fanciulle in fiore",
+    "Autore": "Marcel Proust",
+    "Casa editrice": "Bur",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "Alla ricerca del tempo perduto 2/7",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Dalla parte di Swann",
+    "Autore": "Marcel Proust",
+    "Casa editrice": "Bur",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "Alla ricerca del tempo perduto 1/7",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "I Guermantes",
+    "Autore": "Marcel Proust",
+    "Casa editrice": "Bur",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "Alla ricerca del tempo perduto 3/7",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Il tempo ritrovato",
+    "Autore": "Marcel Proust",
+    "Casa editrice": "Bur",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "Alla ricerca del tempo perduto 7/7",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "La fuggitiva",
+    "Autore": "Marcel Proust",
+    "Casa editrice": "Bur",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "Alla ricerca del tempo perduto 6/7",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "La prigioniera",
+    "Autore": "Marcel Proust",
+    "Casa editrice": "Bur",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "Alla ricerca del tempo perduto 5/7",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Sodoma e Gomorra",
+    "Autore": "Marcel Proust",
+    "Casa editrice": "Bur",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "Alla ricerca del tempo perduto 4/7",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Latitudine 0°",
+    "Autore": "Marco Lapenna",
+    "Casa editrice": "66thand2nd",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Atti osceni in luogo privato",
+    "Autore": "Marco Missiroli",
+    "Casa editrice": "Feltrinelli",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "L'Amante",
+    "Autore": "Marguerite Duras",
+    "Casa editrice": "Feltrinelli",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Storie di amore estremo",
+    "Autore": "Marguerite duras",
+    "Casa editrice": "Mondadori",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Il rapimento di Lol V. Stein",
+    "Autore": "Marguerite Duras",
+    "Casa editrice": "Feltrinelli",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Occhi Blu Capelli Neri",
+    "Autore": "Marguerite Duras",
+    "Casa editrice": "Feltrinelli",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "L'opera al nero",
+    "Autore": "Marguerite Yourcenar",
+    "Casa editrice": "Feltrinelli",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Serie Fossile",
+    "Autore": "Maria Grazia Calandrone",
+    "Casa editrice": "Crocetti editore",
+    "Lingua": "Italiano",
+    "Genere": "Poesia",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Casa di foglie",
+    "Autore": "Mark Z. Danielewski",
+    "Casa editrice": "66thand2nd",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Only revolutions",
+    "Autore": "Mark Z. Danielewski",
+    "Casa editrice": "Pantheon books",
+    "Lingua": "English",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Il calcolatore universale",
+    "Autore": "Martin Davis",
+    "Casa editrice": "Adelphi",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Essere e tempo",
+    "Autore": "Martin Heidegger",
+    "Casa editrice": "Mondadori",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Gente nel tempo",
+    "Autore": "Massimo Bontempelli",
+    "Casa editrice": "Utopia",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Parlami di battaglie, di re e di elefanti",
+    "Autore": "Mathias Enard",
+    "Casa editrice": "Edizioni E/O",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "La biblioteca di mezzanotte",
+    "Autore": "Matt Haig",
+    "Casa editrice": "Edizioni E/O",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Liberati della brava bambina",
+    "Autore": "Maura Gancitano, Andrea Colamedici",
+    "Casa editrice": "Harper Collins",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Paradisi minori",
+    "Autore": "Megan Mayhew Bergman",
+    "Casa editrice": "NN Editore",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Seni e uova",
+    "Autore": "Meiko Kawakami",
+    "Casa editrice": "Edizioni E/O",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Psicologia sociale",
+    "Autore": "Michael A. Hogg, Graham M. Vaugham",
+    "Casa editrice": "Pearson",
+    "Lingua": "Italiano",
+    "Genere": "Saggistica",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "La storia infinita",
+    "Autore": "Michael Ende",
+    "Casa editrice": "Tea",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "La casa",
+    "Autore": "Michael McDowell",
+    "Casa editrice": "Neri Pozza",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "Blackwater 3",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "La diga",
+    "Autore": "Michael McDowell",
+    "Casa editrice": "Neri Pozza",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "Blackwater 2",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "La guerra",
+    "Autore": "Michael McDowell",
+    "Casa editrice": "Neri Pozza",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "Blackwater 4",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "La piena",
+    "Autore": "Michael McDowell",
+    "Casa editrice": "Neri Pozza",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "Blackwater 1",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Sottomissione",
+    "Autore": "Michel Houellebecq",
+    "Casa editrice": "Bompiani",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Finché non aprirai quel libro",
+    "Autore": "Michiko Aoyama",
+    "Casa editrice": "Garzanti",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "Regalo di Carol",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Don Chisciotte della Mancha",
+    "Autore": "Miguel de Cervantes",
+    "Casa editrice": "Newton Compton",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Lo scherzo",
+    "Autore": "Milan Kundera",
+    "Casa editrice": "Adelphi",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Le rane",
+    "Autore": "Mo Yan",
+    "Casa editrice": "Einaudi",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "I terrestri",
+    "Autore": "Murata Sayaka",
+    "Casa editrice": "Edizioni E/O",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "La ragazza del convenience store",
+    "Autore": "Murata Sayaka",
+    "Casa editrice": "Edizioni E/O",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "L'eleganza del riccio",
+    "Autore": "Muriel Barbery",
+    "Casa editrice": "Edizioni E/O",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "I gatti della scrittrice",
+    "Autore": "Muriel Barbery, Maria Guitart",
+    "Casa editrice": "Edizioni E/O",
+    "Lingua": "Italiano",
+    "Genere": "Illustrato",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "L'orologiaio di Filigree Street",
+    "Autore": "Natasha Pulley",
+    "Casa editrice": "Bompiani",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "La lettera scarlatta",
+    "Autore": "Nathaniel Hawthorne",
+    "Casa editrice": "Cranford collection",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Falce",
+    "Autore": "Neal Shusterman",
+    "Casa editrice": "Mondadori",
+    "Lingua": "Italiano",
+    "Genere": "Fantasy, Distopico",
+    "Note": "Trilogia della falce 1/3",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Rintocco",
+    "Autore": "Neal Shusterman",
+    "Casa editrice": "Mondadori",
+    "Lingua": "Italiano",
+    "Genere": "Fantasy, Distopico",
+    "Note": "Trilogia della falce 3/3",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Thunderhead",
+    "Autore": "Neal Shusterman",
+    "Casa editrice": "Mondadori",
+    "Lingua": "Italiano",
+    "Genere": "Fantasy, Distopico",
+    "Note": "Trilogia della falce 2/3",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "American Gods",
+    "Autore": "Neil Gaiman",
+    "Casa editrice": "Mondadori",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Coraline",
+    "Autore": "Neil Gaiman",
+    "Casa editrice": "Mondadori",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Cose fragili",
+    "Autore": "Neil Gaiman",
+    "Casa editrice": "Mondadori",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "How the marquis got his coat back",
+    "Autore": "Neil Gaiman",
+    "Casa editrice": "Headline",
+    "Lingua": "English",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "I ragazzi di Anansi",
+    "Autore": "Neil Gaiman",
+    "Casa editrice": "Mondadori",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Neverwhere",
+    "Autore": "Neil Gaiman",
+    "Casa editrice": "William Morrow",
+    "Lingua": "English",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Le mie invenzioni",
+    "Autore": "Nikola Tesla",
+    "Casa editrice": "Piano B",
+    "Lingua": "Italiano",
+    "Genere": "Autobiografia",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Racconti di Pietroburgo",
+    "Autore": "Nikolaj Gogol",
+    "Casa editrice": "Adelphi",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "L'uomo che scambiò sua moglie per un cappello",
+    "Autore": "Oliver Sacks",
+    "Casa editrice": "Adelphi",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Noi, i vivi",
+    "Autore": "Olivier Bleys",
+    "Casa editrice": "Edizioni Clichy",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Aspettando Bojangles",
+    "Autore": "Olivier Bourdeaut",
+    "Casa editrice": "Neri Pozza",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Odissea",
+    "Autore": "Omero",
+    "Casa editrice": "Garzanti",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "versione in prosa",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "La casa del silenzio",
+    "Autore": "Orhan Pamuk",
+    "Casa editrice": "Einaudi",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "L'importanza di chiamarsi Ernesto",
+    "Autore": "Oscar Wilde",
+    "Casa editrice": "Newton Compton",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "La grammatica della musica",
+    "Autore": "Ottò Karolyi",
+    "Casa editrice": "Einaudi",
+    "Lingua": "Italiano",
+    "Genere": "Saggistica, teoria musicale",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Poesie",
+    "Autore": "Pablo Neruda",
+    "Casa editrice": "Corriere della sera",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "La grande poesia 2/32",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Poesie d'amore e di vita",
+    "Autore": "Pablo Neruda",
+    "Casa editrice": "Mondolibri",
+    "Lingua": "Italiano",
+    "Genere": "Poesia",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "La gallina volante",
+    "Autore": "Paola Mastrocola",
+    "Casa editrice": "Guanda",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "La variante di Lüneburg",
+    "Autore": "Paolo Maurensig",
+    "Casa editrice": "Adelphi",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Gli aspetti irrilevanti",
+    "Autore": "Paolo Sorrentino",
+    "Casa editrice": "Mondadori",
+    "Lingua": "Italiano",
+    "Genere": "Cinema",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Acqua e sangue",
+    "Autore": "Patrick McGrath",
+    "Casa editrice": "Bompiani",
+    "Lingua": "Italiano",
+    "Genere": "Racconti",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Il nome del vento",
+    "Autore": "Patrick Rothfuss",
+    "Casa editrice": "Fanucci",
+    "Lingua": "Italiano",
+    "Genere": "Fantasy",
+    "Note": "Cronache dell'assassino del re 1/3",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "La paura del saggio",
+    "Autore": "Patrick Rothfuss",
+    "Casa editrice": "Fanucci",
+    "Lingua": "Italiano",
+    "Genere": "Fantasy",
+    "Note": "Cronache dell'assassino del re 2/3",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Il profumo",
+    "Autore": "Patrick Süskind",
+    "Casa editrice": "Tea",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": 4321,
+    "Autore": "Paul Auster",
+    "Casa editrice": "Einaudi",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Timbuctù",
+    "Autore": "Paul Auster",
+    "Casa editrice": "Einaudi",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Satyricon",
+    "Autore": "Petronio",
+    "Casa editrice": "Bur",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Le tre stigmate di Palmer Eldritch",
+    "Autore": "Philip K. Dick",
+    "Casa editrice": "Oscar Mondadori",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Ubik",
+    "Autore": "Philip K. Dick",
+    "Casa editrice": "Oscar Mondadori",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Queste oscure materia - la trilogia completa",
+    "Autore": "Philip Pullman",
+    "Casa editrice": "Salani Editore",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "Letti 2 di 3",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Lamento di Portnoy",
+    "Autore": "Philip Roth",
+    "Casa editrice": "Einaudi",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Apologia, Simposio, Fedone",
+    "Autore": "Platone",
+    "Casa editrice": "Giunti",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Se questo è un uomo",
+    "Autore": "Primo Levi",
+    "Casa editrice": "Einaudi",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Opere",
+    "Autore": "Puskin",
+    "Casa editrice": "Mondadori",
+    "Lingua": "Italiano",
+    "Genere": "Poesia",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Poesie",
+    "Autore": "Rabindranath Tagore",
+    "Casa editrice": "Corriere della sera",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "La grande poesia 19/32",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Poesie",
+    "Autore": "Rainer Maria Rilke",
+    "Casa editrice": "Corriere della sera",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "La grande poesia 22/32",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Chiaroscuro",
+    "Autore": "Raven Leilani",
+    "Casa editrice": "Feltrinelli",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Il mestiere di scrivere",
+    "Autore": "Raymond Carver",
+    "Casa editrice": "Einaudi",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "I fiori blu",
+    "Autore": "Raymond Queneau",
+    "Casa editrice": "Einaudi",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "La casa dei gunner",
+    "Autore": "Rebecca Kauffmann",
+    "Casa editrice": "BigSur",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Cromorama",
+    "Autore": "Riccardo Falcinelli",
+    "Casa editrice": "Einaudi",
+    "Lingua": "Italiano",
+    "Genere": "Saggistica",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Fare i libri",
+    "Autore": "Riccardo Falcinelli",
+    "Casa editrice": "Minimum fax",
+    "Lingua": "Italiano",
+    "Genere": "Saggistica, design",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "La collina dei conigli",
+    "Autore": "Richard Adams",
+    "Casa editrice": "Best Bur",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Il gelo comanda",
+    "Autore": "Richard K. Morgan",
+    "Casa editrice": "Oscar Vault Mondadori",
+    "Lingua": "Italiano",
+    "Genere": "Grimdark",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "L'acciaio sopravvive",
+    "Autore": "Richard K. Morgan",
+    "Casa editrice": "Oscar Vault Mondadori",
+    "Lingua": "Italiano",
+    "Genere": "Grimdark",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Il vento selvaggio che passa",
+    "Autore": "Richard Yates",
+    "Casa editrice": "Minimum fax",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Capolavori / Racconti",
+    "Autore": "Richard Yates",
+    "Casa editrice": "Minimum fax",
+    "Lingua": "Italiano",
+    "Genere": "Racconti",
+    "Note": "Undici solitudini, bugiardi e innamorati",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Capolavori / Romanzi",
+    "Autore": "Richard Yates",
+    "Casa editrice": "Minimum fax",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "Revolutionary road, Easter parade",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Boy",
+    "Autore": "Roald Dhal",
+    "Casa editrice": "Salani Editore",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Danny il campione del mondo",
+    "Autore": "Roald Dhal",
+    "Casa editrice": "Salani Editore",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Il GGG",
+    "Autore": "Roald Dhal",
+    "Casa editrice": "Salani Editore",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "3 copie in totale",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Le streghe",
+    "Autore": "Roald Dhal",
+    "Casa editrice": "Salani Editore",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Matilde",
+    "Autore": "Roald Dhal",
+    "Casa editrice": "Salani Editore",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "The BFG",
+    "Autore": "Roald Dhal",
+    "Casa editrice": "Puffin",
+    "Lingua": "English",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "I miti greci",
+    "Autore": "Robert Graves",
+    "Casa editrice": "Editrice CDE",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "L'isola del tesoro",
+    "Autore": "Robert Louis Stevenson",
+    "Casa editrice": "La Sorgente",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Gomorra",
+    "Autore": "Roberto Saviano",
+    "Casa editrice": "Mondadori",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "L'inquilino del terzo piano",
+    "Autore": "Roland Topor",
+    "Casa editrice": "Bompiani",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Ebano",
+    "Autore": "Ryszard Kapuscinski",
+    "Casa editrice": "Feltrinelli",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "The city of brass",
+    "Autore": "S.A. Chakraborty",
+    "Casa editrice": "Harper Collins",
+    "Lingua": "English",
+    "Genere": "Epic fantasy",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Red girls",
+    "Autore": "Sakuraba Kazuki",
+    "Casa editrice": "Edizioni E/O",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Ed è subito sera",
+    "Autore": "Salvatore Quasimodo",
+    "Casa editrice": "Mondadori",
+    "Lingua": "Italiano",
+    "Genere": "Poesia",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Lirici greci",
+    "Autore": "Salvatore Quasimodo",
+    "Casa editrice": "Corriere della sera",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "La grande poesia 24/32",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Le braci",
+    "Autore": "Sandor Marai",
+    "Casa editrice": "Adelphi",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Acqua agli elefanti",
+    "Autore": "Sara Gruen",
+    "Casa editrice": "Neri Pozza",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "L'azione",
+    "Autore": "Sara Mannheimer",
+    "Casa editrice": "Safarà",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Corpi di luce",
+    "Autore": "Sarah Moss",
+    "Casa editrice": "Bompiani",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Il serpente dell'Essex",
+    "Autore": "Sarah Perry",
+    "Casa editrice": "Beat",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Che fine ha fatto Mr. Y",
+    "Autore": "Scarlett Thomas",
+    "Casa editrice": "Newton Compton",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Abbiamo sempre vissuto nel castello",
+    "Autore": "Shirley Jackson",
+    "Casa editrice": "Adelphi",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "L'incubo di Hill House",
+    "Autore": "Shirley Jackson",
+    "Casa editrice": "Adelphi",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "L'illuminazione del susino selvatico",
+    "Autore": "Shokoofeh Azar",
+    "Casa editrice": "Edizioni E/O",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Una donna",
+    "Autore": "Sibilla Aleramo",
+    "Casa editrice": "Feltrinelli",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Sei proprio il mio typo",
+    "Autore": "Simon Garifield",
+    "Casa editrice": "Tea",
+    "Lingua": "Italiano",
+    "Genere": "Design, tipografia",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Memorie di una ragazza per bene",
+    "Autore": "Simone de Beauvoir",
+    "Casa editrice": "Einaudi",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Antigone",
+    "Autore": "Sofocle",
+    "Casa editrice": "SE",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Antigone - Edipo Re",
+    "Autore": "Sofocle",
+    "Casa editrice": "Bur",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Solaris",
+    "Autore": "Stanisaw Lem",
+    "Casa editrice": "Mondadori",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "La compagnia dei celestini",
+    "Autore": "Stefano Benni",
+    "Casa editrice": "Feltrinelli",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Comici spaventati guerrieri",
+    "Autore": "Stefano Benni",
+    "Casa editrice": "Feltrinelli",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Cronache italiane",
+    "Autore": "Stendhal",
+    "Casa editrice": "Newton Compton",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "22/11/'63",
+    "Autore": "Stephen King",
+    "Casa editrice": "Sperling&Kupfer",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "A volte ritornano",
+    "Autore": "Stephen King",
+    "Casa editrice": "Bompiani",
+    "Lingua": "Italiano",
+    "Genere": "Racconti",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Blaze",
+    "Autore": "Stephen King",
+    "Casa editrice": "Sperling&Kupfer",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Carrie",
+    "Autore": "Stephen King",
+    "Casa editrice": "Bompiani",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Cell",
+    "Autore": "Stephen King",
+    "Casa editrice": "Sperling&Kupfer",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Christine - La macchina infernale",
+    "Autore": "Stephen King",
+    "Casa editrice": "Sperling&Kupfer",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Cose preziose",
+    "Autore": "Stephen King",
+    "Casa editrice": "Pickwick",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Cujo",
+    "Autore": "Stephen King",
+    "Casa editrice": "Sperling&Kupfer",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Dolores Claiborne",
+    "Autore": "Stephen King",
+    "Casa editrice": "Sperling&Kupfer",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Goes to the movies",
+    "Autore": "Stephen King",
+    "Casa editrice": "Sperling&Kupfer",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Il miglio verde",
+    "Autore": "Stephen King",
+    "Casa editrice": "Euroclub",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Incubi e deliri",
+    "Autore": "Stephen King",
+    "Casa editrice": "Sperling&Kupfer",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Insomnia",
+    "Autore": "Stephen King",
+    "Casa editrice": "Sperling&Kupfer",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "L'acchiappasogni",
+    "Autore": "Stephen King",
+    "Casa editrice": "Sperling&Kupfer",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "L'incendiaria",
+    "Autore": "Stephen King",
+    "Casa editrice": "Sperling&Kupfer",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "L'occhio del male",
+    "Autore": "Stephen King",
+    "Casa editrice": "Euroclub",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "L'ultimo cavaliere",
+    "Autore": "Stephen King",
+    "Casa editrice": "Sperling&Kupfer",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "La torre nera 1",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "L'uomo in fuga",
+    "Autore": "Stephen King",
+    "Casa editrice": "Mondadori",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "La bambina che amava Tom Gordon",
+    "Autore": "Stephen King",
+    "Casa editrice": "Sperling&Kupfer",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "La zona morta",
+    "Autore": "Stephen King",
+    "Casa editrice": "Sperling&Kupfer",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Le notti di Salem",
+    "Autore": "Stephen King",
+    "Casa editrice": "Sperling&Kupfer",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Misery",
+    "Autore": "Stephen King",
+    "Casa editrice": "Sperling&Kupfer",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Mucchio d'ossa",
+    "Autore": "Stephen King",
+    "Casa editrice": "Mondadori",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Per sematary",
+    "Autore": "Stephen King",
+    "Casa editrice": "Sperling&Kupfer",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Shining",
+    "Autore": "Stephen King",
+    "Casa editrice": "Bompiani",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Stagioni diverse",
+    "Autore": "Stephen King",
+    "Casa editrice": "Sperling&Kupfer",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "The dome",
+    "Autore": "Stephen King",
+    "Casa editrice": "Sperling&Kupfer",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "The stand - L'ombra dello scorpione",
+    "Autore": "Stephen King",
+    "Casa editrice": "Bompiani",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Torno a prenderti",
+    "Autore": "Stephen King",
+    "Casa editrice": "Sperling&Kupfer",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Uscita per l'inferno",
+    "Autore": "Stephen King",
+    "Casa editrice": "Sperling&Kupfer",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "La casa del buio",
+    "Autore": "Stephen King, Perter Straub",
+    "Casa editrice": "Modandori",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Ohio",
+    "Autore": "Stephen Markley",
+    "Casa editrice": "Einaudi",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Piranesi",
+    "Autore": "Susanna Clarke",
+    "Casa editrice": "Fazi Editore",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Diari",
+    "Autore": "Sylvia Plath",
+    "Casa editrice": "Adelphi",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Poesie",
+    "Autore": "Sylvia Plath",
+    "Casa editrice": "Corriere della sera",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "La grande poesia 11/32",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Il libro dei gatti tuttofare",
+    "Autore": "T.S. Eliot",
+    "Casa editrice": "Bompiani",
+    "Lingua": "Italiano",
+    "Genere": "Poesia",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Poesie",
+    "Autore": "T.S. Eliot",
+    "Casa editrice": "Bompiani",
+    "Lingua": "Italiano",
+    "Genere": "Poesia",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Poesie",
+    "Autore": "T.S. Eliot",
+    "Casa editrice": "Corriere della sera",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "La grande poesia 21/32",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Il danzatore dell'acqua",
+    "Autore": "Ta-Nehisi Coates",
+    "Casa editrice": "Einaudi",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "La spada di Shannara",
+    "Autore": "Terry Brooks",
+    "Casa editrice": "Mondadori",
+    "Lingua": "Italiano",
+    "Genere": "Fantasy",
+    "Note": "La spada di Shannara 1/3",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Le pietre magiche di Shannara",
+    "Autore": "Terry Brooks",
+    "Casa editrice": "Mondadori",
+    "Lingua": "Italiano",
+    "Genere": "Fantasy",
+    "Note": "La spada di Shannara 2/3",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "La canzone di Shannara",
+    "Autore": "Terry Brooks",
+    "Casa editrice": "Mondadori",
+    "Lingua": "Italiano",
+    "Genere": "Fantasy",
+    "Note": "La spada di Shannara 3/3",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Tess dei D'Uberville",
+    "Autore": "Thomas Hardy",
+    "Casa editrice": "Cranford collection",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Via dalla pazza folla",
+    "Autore": "Thomas Hardy",
+    "Casa editrice": "Cranford collection",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "The melancholy death of Oyster Boy & other stories",
+    "Autore": "Tim Burton",
+    "Casa editrice": "It books",
+    "Lingua": "English",
+    "Genere": "Poesia",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "La fine dei vandalismi",
+    "Autore": "Tom Drury",
+    "Casa editrice": "NN Editore",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "L'apprendista del mago",
+    "Autore": "Trudi Canavan",
+    "Casa editrice": "Editrice Nord",
+    "Lingua": "Italiano",
+    "Genere": "Fantasy",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "A sangue freddo",
+    "Autore": "Truman Capote",
+    "Casa editrice": "Garzanti",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Manuale di semiotica",
+    "Autore": "Ugo Volli",
+    "Casa editrice": "Editori Laterza",
+    "Lingua": "Italiano",
+    "Genere": "Saggistica",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Il cimitero di Praga",
+    "Autore": "Umberto Eco",
+    "Casa editrice": "Bompiani",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Il pendolo di Foucault",
+    "Autore": "Umberto Eco",
+    "Casa editrice": "Bompiani",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Vita Poetica, Opere scelte",
+    "Autore": "Ungaretti",
+    "Casa editrice": "Sole 24 ore",
+    "Lingua": "Italiano",
+    "Genere": "Poesia",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "La mischia",
+    "Autore": "Valentina Maini",
+    "Casa editrice": "Bollati Boringhieri",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "L'uomo che ride",
+    "Autore": "Victor Hugo",
+    "Casa editrice": "Mondadori",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Notre-Dame de Paris",
+    "Autore": "Victor Hugo",
+    "Casa editrice": "Feltrinelli",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Gita al faro",
+    "Autore": "Virginia Woolf",
+    "Casa editrice": "Mondadori",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "La signora Dalloway",
+    "Autore": "Virginia Woolf",
+    "Casa editrice": "Mondadori",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Una stanza tutta per sè",
+    "Autore": "Virginia Woolf",
+    "Casa editrice": "Newton Compton",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Poesie",
+    "Autore": "Vladimir Majakovskij",
+    "Casa editrice": "Corriere della sera",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "La grande poesia 16/32",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Lezioni di Letteratura",
+    "Autore": "Vladimir Nabokov",
+    "Casa editrice": "Adelphi",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Lolita",
+    "Autore": "Vladimir Nabokov",
+    "Casa editrice": "Mondadori",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Lolita",
+    "Autore": "Vladimir Nabokov",
+    "Casa editrice": "Bompiani",
+    "Lingua": "Italiano",
+    "Genere": "Sceneggiatura",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Decameron Project",
+    "Autore": "VVAA",
+    "Casa editrice": "NN Editore",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "The sandman book of dreams",
+    "Autore": "VVAA",
+    "Casa editrice": "Harper Collins",
+    "Lingua": "English",
+    "Genere": "",
+    "Note": "Letto parzialmente",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Anima",
+    "Autore": "Wajdi Mouawad",
+    "Casa editrice": "Fazi Editore",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Foglie d'erba",
+    "Autore": "Walt Witman",
+    "Casa editrice": "Corriere della sera",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "La grande poesia 18/32",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "La città dei libri sognanti",
+    "Autore": "Walter Moers",
+    "Casa editrice": "Salani Editore",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Il signore delle mosche",
+    "Autore": "William Golding",
+    "Casa editrice": "Mondadori",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Il gatto in noi",
+    "Autore": "William S. Burroughs",
+    "Casa editrice": "Adelphi",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Sonetti",
+    "Autore": "William Shakespeare",
+    "Casa editrice": "Corriere della sera",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "La grande poesia 25/32",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Montagne e nuvole negli occhi",
+    "Autore": "Wu Ming-Yi",
+    "Casa editrice": "Edizioni E/O",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Un altro tempo",
+    "Autore": "Wystan Hugh Auden",
+    "Casa editrice": "Corriere della sera",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "La grande poesia 15/32",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Cronache di un venditore di sangue",
+    "Autore": "Yu Hua",
+    "Casa editrice": "Feltrinelli",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Denti bianchi",
+    "Autore": "Zadie Smith",
+    "Casa editrice": "Mondadori",
+    "Lingua": "Italiano",
+    "Genere": "",
+    "Note": "",
+    "Letto": "TRUE"
+  },
+  {
+    "Titolo": "Consumo, dunque sono",
+    "Autore": "Zygmunt Bauman",
+    "Casa editrice": "Editori Laterza",
+    "Lingua": "Italiano",
+    "Genere": "Saggistica",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "Paura liquida",
+    "Autore": "Zygmunt Bauman",
+    "Casa editrice": "Editori Laterza",
+    "Lingua": "Italiano",
+    "Genere": "Saggistica",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  },
+  {
+    "Titolo": "",
+    "Autore": "",
+    "Casa editrice": "",
+    "Lingua": "",
+    "Genere": "",
+    "Note": "",
+    "Letto": "FALSE"
+  }
+]
