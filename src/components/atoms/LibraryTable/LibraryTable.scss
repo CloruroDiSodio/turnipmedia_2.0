@@ -1,0 +1,14 @@
+.libraryTable {
+  &__sorting {
+    margin-right: 3px;
+    display: inline-block;
+    position: relative;
+    top: -1px;
+  }
+
+  &__read {
+    text-align: center;
+    min-width: 60px;
+    display: block;
+  }
+}
