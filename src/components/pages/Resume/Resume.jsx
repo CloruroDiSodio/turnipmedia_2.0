@@ -3,21 +3,41 @@ import {BiPlanet, BiGame, BiRocket, BiAtom} from 'react-icons/bi';
 import './Resume.scss';
 
 const Resume = () => {
+    function calculateAge(birthDateString) {
+        const today = new Date();
+        const birthDate = new Date(birthDateString);
+
+        let age = today.getFullYear() - birthDate.getFullYear();
+        const monthDifference = today.getMonth() - birthDate.getMonth();
+
+        // If the current month is before the birth month, 
+        // or if it's the same month but the current day is before the birth day,
+        // the birthday hasn't happened yet this year.
+        if (monthDifference < 0 || (monthDifference === 0 && today.getDate() < birthDate.getDate())) {
+            age--;
+        }
+
+        return age;
+    }
+
     return (
         <div className="resume">
             <p>
                 <BiPlanet /> <b>Denise Moscon</b><br />
                 <div className="resume__indent">
-                    <span>29 yo</span><br />
+                    <span>{calculateAge("1994-06-24")} yo</span><br />
                     <span>Front-end developer</span><br />
-                    <span>Web enthusiast, pathological curious, bulimic reader, oddities lover.</span>
                 </div>
             </p>
 
             <p>
                 <BiGame /> <b>Career</b><br />
                 <div className="resume__indent">
-                    <i>03/2023 - now</i><br />
+                    <i>03/2025 - now</i><br />
+                    <span>Truelayer (Milano, Italy)</span><br />
+                    <span>Front-end development (React.js, Gatsby.js, company website)</span><br />
+                    <br />
+                    <i>03/2023 - 03/2025</i><br />
                     <span>Arduino (Torino, Italy)</span><br />
                     <span>Front-end development (React.js, Next.js, landing pages)</span><br />
                     <br />
@@ -48,8 +68,8 @@ const Resume = () => {
                 <BiRocket /> <b>Skills</b><br />
                 <div className="resume__indent">
                     <span>React.js, React Native, CRA</span><br />
-                    <span>NextJs</span><br />
-                    <span>Testing libraries (Playwright)</span><br />
+                    <span>Next.js, Gatsby.js</span><br />
+                    <span>Testing libraries (Playwright, Vitest)</span><br />
                     <span>Redux and such</span><br />
                     <span>HTML5 (Canvas, SVG), CSS3, SASS, SCSS, Javascript (ES6+)</span><br />
                     <span>Rest API</span><br />
