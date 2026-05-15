@@ -5,6 +5,7 @@ import Resume from "../components/pages/Resume/Resume";
 import Contacts from "../components/pages/Contacts/Contacts";
 import Appetta from "../components/pages/Appetta/Appetta";
 import Library from "../components/pages/Library/Library";
+import GoatPage from "../components/pages/Goat/GoatPage";
 
 const Navigator = () => {
     return (
@@ -14,6 +15,7 @@ const Navigator = () => {
             <Route path="contacts" element={<Contacts />} />
             <Route path="appetta" element={<Appetta />} />
             <Route path="library" element={<Library />} />
+            <Route path="goat" element={<GoatPage />} />
         </Routes>
     );
 }

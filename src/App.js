@@ -8,7 +8,7 @@ function App() {
     const {pathname} = useLocation();
     return (
         <div className="App">
-            {(pathname !== '/appetta' && pathname !== '/library') ?
+            {(pathname !== '/appetta' && pathname !== '/library' && pathname !== '/goat') ?
                 (<>
                     <ParticlesBg />
                     <HeaderMenu />
