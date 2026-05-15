@@ -24,7 +24,7 @@ const GoatPage = () => {
             setTimeout(() => setShowHeart(false), 800);
         }
 
-        const duration = newDir === 'sleep' ? 5000 : 500;
+        const duration = newDir === 'sleep' ? 5000 : 1500;
 
         timerRef.current = setTimeout(() => {
             setDir('down');
@@ -83,7 +83,7 @@ const GoatPage = () => {
                             <div className="keys">
                                 <kbd onClick={() => triggerAction('cuddle')}>C</kbd> / <kbd onClick={() => triggerAction('cuddle')}><MdAdsClick/></kbd>
                             </div>
-                            <span>Cuddle!</span>
+                            <span>Cuddle</span>
                         </li>
                         <li>
                             <div className="keys">
@@ -94,7 +94,7 @@ const GoatPage = () => {
                     </ul>
                     <p className="note">
                         <b>Tap the icons</b> or use your keyboard!<br />
-                        Sleep lasts 5s, others reset in 0.5s.
+                        Sleep lasts 5s, others reset in 1.5s.
                     </p>
                 </div>
             </div>
