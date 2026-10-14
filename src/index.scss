@@ -1,0 +1,16 @@
+// VT323 is loaded via <link> in src/app/layout.tsx (a plain-CSS
+// @import url() would have to precede @use, and late @imports are
+// ignored by browsers once the palette emits CSS first).
+@use "./themes/palette";
+
+body {
+  margin: 0;
+  font-family: 'VT323', monospace;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#tsparticles {
+  position: absolute;
+  z-index: -100;
+}
