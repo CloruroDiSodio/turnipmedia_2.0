@@ -1,6 +1,9 @@
+"use client";
+
 import { Container, Row, Col } from "react-bootstrap";
 import { FaBook, FaCheck, FaLayerGroup } from "react-icons/fa";
 import books from "./books.json";
+import type { Book } from "./book";
 import LibraryTable from "../../atoms/LibraryTable/LibraryTable";
 
 /* 
@@ -9,7 +12,7 @@ TODO:
     - search
 */
 const Library = () => {
-    const realBooks = books.filter(book => book.Titolo);
+    const realBooks: Book[] = books.filter(book => book.Titolo);
 
     return (
     <Container>

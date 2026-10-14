@@ -1,4 +1,9 @@
-export const sounds = [
+export interface Sound {
+    title: string;
+    url: string;
+}
+
+export const sounds: Sound[] = [
     {title: "Pausetta", url: 'sounds/pausetta.mp3'},
     {title: "Zuppetta", url: 'sounds/zuppetta.mp3'},
     {title: "Quadernetto", url: 'sounds/quadernetto.mp3'},
@@ -11,7 +16,7 @@ export const sounds = [
     {title: "Pezzetto", url: 'sounds/pezzetto.mp3'},
 ]
 
-export const specials = [
+export const specials: Sound[] = [
     {title: "Ma dove vi porto", url: 'sounds/dove_vi_porto.mp3'},
     {title: "Poi vediamo", url: 'sounds/poi_vediamo.mp3'},
     {title: "Tanto decide il frontend", url: 'sounds/decide-fe.mp3'},

@@ -1,4 +1,6 @@
-import React, { useState, useEffect, useRef } from "react";
+"use client";
+
+import { useState, useEffect, useRef } from "react";
 import { IoMdHeart } from "react-icons/io";
 import { 
     MdKeyboardArrowUp, 
@@ -8,31 +10,32 @@ import {
 } from "react-icons/md";
 import './GoatPage.scss';
 import { GoatAnimal } from "./GoatAnimal";
+import type { GoatDirection } from "./GoatAnimal";
 
 const GoatPage = () => {
-    const [dir, setDir] = useState('down');
+    const [dir, setDir] = useState<GoatDirection>('down');
     const [showHeart, setShowHeart] = useState(false);
-    const timerRef = useRef(null);
+    const timerRef = useRef<number | null>(null);
 
-    const triggerAction = (newDir) => {
-        if (timerRef.current) clearTimeout(timerRef.current);
+    const triggerAction = (newDir: GoatDirection) => {
+        if (timerRef.current) window.clearTimeout(timerRef.current);
         
         setDir(newDir);
         
         if (newDir === 'cuddle') {
             setShowHeart(true);
-            setTimeout(() => setShowHeart(false), 800);
+            window.setTimeout(() => setShowHeart(false), 800);
         }
 
         const duration = newDir === 'sleep' ? 5000 : 1500;
 
-        timerRef.current = setTimeout(() => {
+        timerRef.current = window.setTimeout(() => {
             setDir('down');
         }, duration);
     };
 
     useEffect(() => {
-        const handleKeyDown = (e) => {
+        const handleKeyDown = (e: KeyboardEvent) => {
             const key = e.key.toLowerCase();
             if (e.key === 'ArrowUp') triggerAction('up');
             if (e.key === 'ArrowDown') triggerAction('down');
@@ -44,7 +47,7 @@ const GoatPage = () => {
         window.addEventListener('keydown', handleKeyDown);
         return () => {
             window.removeEventListener('keydown', handleKeyDown);
-            if (timerRef.current) clearTimeout(timerRef.current);
+            if (timerRef.current) window.clearTimeout(timerRef.current);
         };
     }, []);
 

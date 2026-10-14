@@ -17,6 +17,13 @@
     top: -2px;
   }
 
+  // Matches the default vertical margins a <p> would get, since the
+  // sections are now <div>s (valid HTML for SSR/hydration).
+  &__section {
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+
   &__indent {
     padding-left: 25px;
   }

@@ -1,5 +1,10 @@
-import React from "react";
-import Particles from "react-tsparticles";
+"use client";
+
+import dynamic from "next/dynamic";
+
+// react-tsparticles touches browser APIs (window/canvas), so it is loaded
+// lazily and never rendered during server-side rendering.
+const Particles = dynamic(() => import("react-tsparticles"), {ssr: false});
 
 const ParticlesBg = () => {
     return (
@@ -7,14 +12,12 @@ const ParticlesBg = () => {
             id="tsparticles"
             options={{
                 particles: {
-                    number: {
-                        number: {
-                            value: 100
-                        },
-                        size: {
-                            value: 4
-                        }
-                    },
+                    // NOTE: the original config had a malformed nested block
+                    // (`number: { number: {...}, size: {...} }`) which
+                    // tsparticles ignores at runtime (its own types reject it):
+                    // the effective count/size always came from the engine
+                    // defaults + the top-level `size` below. It is omitted here
+                    // so the config type-checks without changing behaviour.
                     color: {
                         value: ["#f8c210", "#004E4D", "#018C99"]
                     },

@@ -1,13 +1,17 @@
+"use client";
+
 import React from "react";
 import {useTable, useSortBy} from "react-table";
+import type {CellProps, Column} from "react-table";
 import {FaCheck, FaSort, FaSortUp, FaSortDown} from "react-icons/fa";
 import {Table} from 'react-bootstrap';
 import books from "../../pages/Library/books.json";
+import type {Book} from "../../pages/Library/book";
 import './LibraryTable.scss';
 
-const realBooks = books.filter(book => book.Titolo);
+const realBooks: Book[] = books.filter(book => book.Titolo);
 const LibraryTable = () => {
-    const columns = React.useMemo(
+    const columns = React.useMemo<Column<Book>[]>(
         () => [
             {
                 Header: 'Title',
@@ -24,7 +28,7 @@ const LibraryTable = () => {
             {
                 Header: 'Read',
                 accessor: 'Letto',
-                Cell: ({value}) => <span className="libraryTable__read">{value === 'TRUE' ? <FaCheck /> : null}</span>,
+                Cell: ({value}: CellProps<Book>) => <span className="libraryTable__read">{value === 'TRUE' ? <FaCheck /> : null}</span>,
             },
         ],
         []

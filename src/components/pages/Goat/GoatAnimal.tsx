@@ -1,9 +1,19 @@
-import React, {useState, useEffect} from 'react';
+"use client";
 
-export const GoatAnimal = ({ direction = 'down', speed = 150 }) => {
+import React, {useState, useEffect} from 'react';
+import type {CSSProperties} from 'react';
+
+export type GoatDirection = 'down' | 'right' | 'up' | 'cuddle' | 'sleep';
+
+interface GoatAnimalProps {
+  direction?: GoatDirection;
+  speed?: number;
+}
+
+export const GoatAnimal = ({ direction = 'down', speed = 150 }: GoatAnimalProps) => {
   const [frame, setFrame] = useState(0);
 
-  const rowMap = {
+  const rowMap: Record<GoatDirection, number> = {
     down: 0,   
     right: 1,  
     up: 2,     
@@ -35,7 +45,7 @@ export const GoatAnimal = ({ direction = 'down', speed = 150 }) => {
   const posX = (frame / (totalCols - 1)) * 100;
   const posY = (rowMap[direction] / (totalRows - 1)) * 100;
 
-  const style = {
+  const style: CSSProperties = {
     width: '64px',
     aspectRatio: '1 / 1',
     backgroundImage: `url('/goat.png')`,

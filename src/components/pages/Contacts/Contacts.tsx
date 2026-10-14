@@ -1,4 +1,3 @@
-import React from "react";
 import {FiGithub, FiLinkedin, FiCodepen} from 'react-icons/fi';
 import './Contacts.scss';
 

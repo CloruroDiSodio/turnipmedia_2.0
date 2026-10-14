@@ -1,4 +1,5 @@
-import React from "react";
+"use client";
+
 import {Col, Container, Row} from "react-bootstrap";
 import { GiWinterHat } from "react-icons/gi";
 import AudioButton from "../../atoms/AudioButton/AudioButton";
@@ -17,7 +18,7 @@ const Appetta = () => {
             </Row>
             <Row className="mt-3">
                 <Col>
-                    {sounds.map((item, index) => <AudioButton item={{...item, index}}/>)}
+                    {sounds.map((item, index) => <AudioButton key={item.title} item={{...item, index}}/>)}
                 </Col>
             </Row>
             <Row className="mt-5">
@@ -25,7 +26,7 @@ const Appetta = () => {
             </Row>
             <Row className="mt-1">
                 <Col>
-                    {specials.map((item, index) => <AudioButton item={{...item, index}}/>)}
+                    {specials.map((item, index) => <AudioButton key={item.title} item={{...item, index}}/>)}
                 </Col>
             </Row>
         </Container>

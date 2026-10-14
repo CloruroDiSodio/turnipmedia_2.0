@@ -1,9 +1,8 @@
-import React from "react";
 import {BiPlanet, BiGame, BiRocket, BiAtom} from 'react-icons/bi';
 import './Resume.scss';
 
 const Resume = () => {
-    function calculateAge(birthDateString) {
+    const calculateAge = (birthDateString: string): number => {
         const today = new Date();
         const birthDate = new Date(birthDateString);
 
@@ -20,17 +19,21 @@ const Resume = () => {
         return age;
     }
 
+    // NOTE: the previous version wrapped these blocks in <p> tags containing
+    // <div>s. That is invalid HTML: the browser parser would close the <p>
+    // early during SSR and break hydration, so <div className="resume__section">
+    // (with the same 1em vertical margins a <p> gets) replaces it.
     return (
         <div className="resume">
-            <p>
+            <div className="resume__section">
                 <BiPlanet /> <b>Denise Moscon</b><br />
                 <div className="resume__indent">
                     <span>{calculateAge("1994-06-24")} yo</span><br />
                     <span>Front-end developer</span><br />
                 </div>
-            </p>
+            </div>
 
-            <p>
+            <div className="resume__section">
                 <BiGame /> <b>Career</b><br />
                 <div className="resume__indent">
                     <i>03/2025 - now</i><br />
@@ -55,16 +58,16 @@ const Resume = () => {
                     <span>Front-end development (React.js, React Native, Wordpress)</span><br />
                     <br />
                 </div>
-            </p>
-            <p>
+            </div>
+            <div className="resume__section">
                 <BiAtom /> <b className="text-purple">Studies</b><br />
                 <div className="resume__indent" >
                     <i>2016-2019</i><br />
                     <span>Scuola Internazionale di Comics (Padova, Italy)</span><br />
                     <span>Graphic and web design, web development</span><br />
                 </div>
-            </p>
-            <p>
+            </div>
+            <div className="resume__section">
                 <BiRocket /> <b>Skills</b><br />
                 <div className="resume__indent">
                     <span>React.js, React Native, CRA</span><br />
@@ -78,7 +81,7 @@ const Resume = () => {
                     <span>CI/CD</span><br />
                     <span>Suite Adobe, Sketch, Affinity Design</span>
                 </div>
-            </p>
+            </div>
         </div>
     )
 }

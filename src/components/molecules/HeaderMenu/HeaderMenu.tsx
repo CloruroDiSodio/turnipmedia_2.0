@@ -1,4 +1,3 @@
-import React from "react";
 import './HeaderMenu.scss';
 import MenuLink from "../../atoms/MenuLink/MenuLink";
 
