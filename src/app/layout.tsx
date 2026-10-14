@@ -1,4 +1,10 @@
 import type { Metadata, Viewport } from "next";
+// Global CSS — import order here IS the cascade order, mirroring the original
+// CRA page (index.html <head> Bootstrap 4 CDN link first, bundled CSS after):
+// 1. vendored Bootstrap 4 (CDN copy), 2. npm Bootstrap 5 (react-bootstrap), 3. site.
+// If these ever load out of order, Bootstrap's `:root` variables (--teal/--gray)
+// and `body` font-family override the site palette and the VT323 font.
+import "../vendor/bootstrap-4.3.1.min.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../index.scss";
 
@@ -72,19 +78,19 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <link
-          rel="stylesheet"
-          href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-          crossOrigin="anonymous"
-        />
+        {/* `precedence` makes React 19 hoist these into <head> (as CRA did
+            with its <head> links in public/index.html) instead of leaving
+            them at the end of <body>. Fonts only declare @font-face, so their
+            position in the cascade is irrelevant — only that they load. */}
         <link
           href="https://fonts.googleapis.com/css?family=Arvo:400,700&display=swap"
           rel="stylesheet"
+          precedence="cdn"
         />
         <link
           href="https://fonts.googleapis.com/css2?family=VT323&display=swap"
           rel="stylesheet"
+          precedence="cdn"
         />
         {children}
       </body>
