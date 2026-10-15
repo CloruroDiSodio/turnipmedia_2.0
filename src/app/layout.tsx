@@ -11,7 +11,7 @@ import "../index.scss";
 export const metadata: Metadata = {
   // Absolute base used to resolve relative social/OG image URLs
   // (avoids the localhost fallback in the metadataBase warning).
-  metadataBase: new URL("https://turnipmedia.it"),
+  metadataBase: new URL("https://turnipmedia.net"),
   title: "Denise Moscon | Front-end Developer",
   description:
     "Front-end developer based in Verona, React Developer, React native developer",
@@ -57,7 +57,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Denise Moscon | Front-end Developer",
     description: "Front-end Developer based in Verona",
-    url: "https://turnipmedia.it",
+    url: "https://turnipmedia.net",
     images: [{ url: "/preview.png" }],
   },
   other: {
