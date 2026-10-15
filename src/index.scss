@@ -1,11 +1,10 @@
-// VT323 is loaded via <link> in src/app/layout.tsx (a plain-CSS
-// @import url() would have to precede @use, and late @imports are
-// ignored by browsers once the palette emits CSS first).
+// VT323 is self-hosted by next/font in src/app/layout.tsx, which exposes
+// it as the --font-vt323 custom property on <html>.
 @use "./themes/palette";
 
 body {
   margin: 0;
-  font-family: 'VT323', monospace;
+  font-family: var(--font-vt323), monospace;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -13,4 +12,39 @@ body {
 #tsparticles {
   position: absolute;
   z-index: -100;
+}
+
+// Hidden until focused, so keyboard users can jump past the header menu.
+.skip-link {
+  position: absolute;
+  left: 8px;
+  top: -100px;
+  z-index: 1000;
+  padding: 8px 16px;
+  background: #fff;
+  color: var(--gray);
+  border: 2px solid var(--teal);
+
+  &:focus {
+    top: 8px;
+  }
+}
+
+// The skip-link target is focused programmatically (tabIndex -1); it is not
+// interactive, so it should not show a focus ring.
+#main-content:focus {
+  outline: none;
+}
+
+// Honour the OS "reduce motion" setting for CSS transitions/animations
+// (menu underline, goat heart pop, hover scaling).
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }

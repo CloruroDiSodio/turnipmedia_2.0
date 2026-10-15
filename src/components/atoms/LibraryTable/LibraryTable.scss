@@ -1,4 +1,15 @@
 .libraryTable {
+  // Header sort toggle: looks like the plain header text it replaces.
+  &__sortButton {
+    background: none;
+    border: 0;
+    padding: 0;
+    color: inherit;
+    font: inherit;
+    text-align: inherit;
+    width: 100%;
+  }
+
   &__sorting {
     margin-right: 3px;
     display: inline-block;

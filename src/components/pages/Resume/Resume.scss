@@ -13,8 +13,14 @@
     padding: 0 20px;
   }
 
-  b {
+  // Section headings keep the look of the old inline <b> labels.
+  &__title {
+    display: inline;
+    margin: 0;
+    font-family: inherit;
     font-size: 18px;
+    font-weight: bold;
+    line-height: inherit;
   }
 
   svg {

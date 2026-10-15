@@ -19,13 +19,15 @@ const AudioButton = ({item}: AudioButtonProps) => {
     // would crash Next.js server-side prerendering (no `Audio` in Node).
     const start = () => {
         const audio = new Audio(url)
-        audio.play()
+        // play() rejects when the browser blocks playback or the file fails
+        // to load; swallow it instead of leaving an unhandled rejection.
+        audio.play().catch(() => {})
     }
 
     return (
         <Button
             variant={index%2 === 0 ? 'success' : 'danger'}
-            size="lg" onClick={start} className="me-1 mt-1"
+            size="lg" type="button" onClick={start} className="me-1 mt-1"
         >
             {title}
         </Button>

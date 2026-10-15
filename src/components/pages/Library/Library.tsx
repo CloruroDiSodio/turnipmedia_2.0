@@ -15,18 +15,18 @@ const Library = () => {
     const realBooks: Book[] = books.filter(book => book.Titolo);
 
     return (
-    <Container>
+    <Container as="main">
         <Row className="justify-content-center mt-5 mb-5">
             <Col xs="auto">
-                <h2 className="text-center"><FaBook /> My Library</h2>
+                <h1 className="text-center h2"><FaBook aria-hidden="true" /> My Library</h1>
             </Col>
         </Row>
         <Row className="justify-content-center mt-5 mb-5">
             <Col xs="auto">
-                <h4 className="text-center d-inline"><FaLayerGroup /> <b>Total: </b>{realBooks.length}</h4>
+                <p className="text-center d-inline h4"><FaLayerGroup aria-hidden="true" /> <b>Total: </b>{realBooks.length}</p>
             </Col>
             <Col xs="auto">
-                <h4 className="text-center d-inline"><FaCheck /> <b>Read: </b>{realBooks.filter(book => book.Letto === "TRUE").length}</h4>
+                <p className="text-center d-inline h4"><FaCheck aria-hidden="true" /> <b>Read: </b>{realBooks.filter(book => book.Letto === "TRUE").length}</p>
             </Col>
         </Row>
         <LibraryTable />

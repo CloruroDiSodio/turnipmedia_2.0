@@ -46,6 +46,7 @@ export const GoatAnimal = ({ direction = 'down', speed = 150 }: GoatAnimalProps)
   const posY = (rowMap[direction] / (totalRows - 1)) * 100;
 
   const style: CSSProperties = {
+    display: 'block',
     width: '64px',
     aspectRatio: '1 / 1',
     backgroundImage: `url('/goat.png')`,
@@ -55,5 +56,6 @@ export const GoatAnimal = ({ direction = 'down', speed = 150 }: GoatAnimalProps)
     backgroundRepeat: 'no-repeat',
   };
 
-  return <div style={style} />;
+  // Purely visual sprite: the surrounding button carries the accessible name.
+  return <span style={style} aria-hidden="true" />;
 };

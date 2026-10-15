@@ -12,6 +12,14 @@ import './GoatPage.scss';
 import { GoatAnimal } from "./GoatAnimal";
 import type { GoatDirection } from "./GoatAnimal";
 
+const GOAT_STATUS: Record<GoatDirection, string> = {
+    down: "The goat is facing you.",
+    right: "The goat walks right.",
+    up: "The goat walks up.",
+    cuddle: "The goat enjoys a cuddle!",
+    sleep: "The goat is taking a nap.",
+};
+
 const GoatPage = () => {
     const [dir, setDir] = useState<GoatDirection>('down');
     const [showHeart, setShowHeart] = useState(false);
@@ -52,45 +60,51 @@ const GoatPage = () => {
     }, []);
 
     return (
-        <div className="goatPage">
+        <main className="goatPage">
             <div className="game-layout">
                 {/* Goat Display Section */}
                 <div className="goat-section">
-                    <h3>GOAT COMPANION</h3>
-                    <div 
+                    <h1 className="h3">GOAT COMPANION</h1>
+                    <button
+                        type="button"
                         className="goat-container"
-                        onClick={() => triggerAction('cuddle')} 
+                        aria-label="Cuddle the goat"
+                        onClick={() => triggerAction('cuddle')}
                     >
                         {showHeart && (
-                            <div className="heart-pop">
+                            <span className="heart-pop" aria-hidden="true">
                                 <IoMdHeart color="#ff4d4d" size={32} />
-                            </div>
+                            </span>
                         )}
                         <GoatAnimal direction={dir} />
-                    </div>
+                    </button>
+                    {/* Announces what the goat is doing to screen readers. */}
+                    <p className="visually-hidden" aria-live="polite">
+                        {GOAT_STATUS[dir]}
+                    </p>
                 </div>
 
                 {/* Interactive Controls Card */}
                 <div className="instructions-card">
-                    <h4>Controls</h4>
+                    <h2 className="h4">Controls</h2>
                     <ul>
                         <li>
                             <div className="keys">
-                                <kbd onClick={() => triggerAction('up')}><MdKeyboardArrowUp /></kbd>
-                                <kbd onClick={() => triggerAction('down')}><MdKeyboardArrowDown /></kbd>
-                                <kbd onClick={() => triggerAction('right')}><MdKeyboardArrowRight /></kbd>
+                                <button type="button" className="key" aria-label="Move up" onClick={() => triggerAction('up')}><kbd><MdKeyboardArrowUp aria-hidden="true" /></kbd></button>
+                                <button type="button" className="key" aria-label="Move down" onClick={() => triggerAction('down')}><kbd><MdKeyboardArrowDown aria-hidden="true" /></kbd></button>
+                                <button type="button" className="key" aria-label="Move right" onClick={() => triggerAction('right')}><kbd><MdKeyboardArrowRight aria-hidden="true" /></kbd></button>
                             </div>
                             <span>Move around</span>
                         </li>
                         <li>
                             <div className="keys">
-                                <kbd onClick={() => triggerAction('cuddle')}>C</kbd> / <kbd onClick={() => triggerAction('cuddle')}><MdAdsClick/></kbd>
+                                <button type="button" className="key" aria-label="Cuddle (C)" onClick={() => triggerAction('cuddle')}><kbd>C</kbd></button> / <button type="button" className="key" aria-label="Cuddle" onClick={() => triggerAction('cuddle')}><kbd><MdAdsClick aria-hidden="true" /></kbd></button>
                             </div>
                             <span>Cuddle</span>
                         </li>
                         <li>
                             <div className="keys">
-                                <kbd onClick={() => triggerAction('sleep')}>S</kbd>
+                                <button type="button" className="key" aria-label="Take a nap (S)" onClick={() => triggerAction('sleep')}><kbd>S</kbd></button>
                             </div>
                             <span>Take a nap</span>
                         </li>
@@ -101,7 +115,7 @@ const GoatPage = () => {
                     </p>
                 </div>
             </div>
-        </div>
+        </main>
     );
 };
 

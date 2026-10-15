@@ -24,9 +24,12 @@ const Resume = () => {
     // early during SSR and break hydration, so <div className="resume__section">
     // (with the same 1em vertical margins a <p> gets) replaces it.
     return (
-        <div className="resume">
+        // The resume scrolls inside its own box, so it must be focusable for
+        // keyboard users to scroll it (and is labelled as a region).
+        <div className="resume" tabIndex={0} role="region" aria-labelledby="resume-title">
+            <h1 id="resume-title" className="visually-hidden">Resume</h1>
             <div className="resume__section">
-                <BiPlanet /> <b>Denise Moscon</b><br />
+                <h2 className="resume__title"><BiPlanet aria-hidden="true" /> Denise Moscon</h2><br />
                 <div className="resume__indent">
                     <span>{calculateAge("1994-06-24")} yo</span><br />
                     <span>Front-end developer</span><br />
@@ -34,7 +37,7 @@ const Resume = () => {
             </div>
 
             <div className="resume__section">
-                <BiGame /> <b>Career</b><br />
+                <h2 className="resume__title"><BiGame aria-hidden="true" /> Career</h2><br />
                 <div className="resume__indent">
                     <i>03/2025 - now</i><br />
                     <span>Truelayer (Milano, Italy)</span><br />
@@ -60,7 +63,7 @@ const Resume = () => {
                 </div>
             </div>
             <div className="resume__section">
-                <BiAtom /> <b className="text-purple">Studies</b><br />
+                <h2 className="resume__title"><BiAtom aria-hidden="true" /> Studies</h2><br />
                 <div className="resume__indent" >
                     <i>2016-2019</i><br />
                     <span>Scuola Internazionale di Comics (Padova, Italy)</span><br />
@@ -68,7 +71,7 @@ const Resume = () => {
                 </div>
             </div>
             <div className="resume__section">
-                <BiRocket /> <b>Skills</b><br />
+                <h2 className="resume__title"><BiRocket aria-hidden="true" /> Skills</h2><br />
                 <div className="resume__indent">
                     <span>React.js, React Native, CRA</span><br />
                     <span>Next.js, Gatsby.js</span><br />
