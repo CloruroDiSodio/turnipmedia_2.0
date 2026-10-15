@@ -43,3 +43,18 @@ describe("MenuLink active state", () => {
     );
   });
 });
+
+test("the active link is announced as the current page", () => {
+  mockPathname.mockReturnValue("/resume");
+  const { rerender } = render(<MenuLink link="/resume" label="Resume" />);
+  expect(screen.getByRole("link", { name: "Resume" })).toHaveAttribute(
+    "aria-current",
+    "page"
+  );
+
+  mockPathname.mockReturnValue("/contacts");
+  rerender(<MenuLink link="/resume" label="Resume" />);
+  expect(screen.getByRole("link", { name: "Resume" })).not.toHaveAttribute(
+    "aria-current"
+  );
+});

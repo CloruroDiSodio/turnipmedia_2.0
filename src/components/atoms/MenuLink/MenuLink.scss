@@ -16,7 +16,14 @@
     height: 3px;
   }
 
-  &:hover {
+  // Keyboard focus gets the same underline as hover, plus a focus ring.
+  &:focus-visible {
+    outline: 2px solid var(--teal);
+    outline-offset: 4px;
+  }
+
+  &:hover,
+  &:focus-visible {
     color: var(--gray);
     text-decoration: none;
     &:after {

@@ -23,6 +23,7 @@ const MenuLink = ({link, label}: MenuLinkProps) => {
         <Link
             className={isActive ? "menu-link menu-link--active" : "menu-link"}
             href={link}
+            aria-current={isActive ? "page" : undefined}
         >
             {label}
         </Link>
