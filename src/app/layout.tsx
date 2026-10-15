@@ -76,8 +76,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body>
+    // Browser extensions (e.g. the one injecting cz-shortcut-listen) add
+    // attributes to <html>/<body> before React hydrates, which would
+    // otherwise trigger a hydration-mismatch warning. suppressHydrationWarning
+    // only skips attribute checks on these two elements — their children are
+    // still validated.
+    <html lang="en" suppressHydrationWarning>
+      <body suppressHydrationWarning>
         {/* `precedence` makes React 19 hoist these into <head> (as CRA did
             with its <head> links in public/index.html) instead of leaving
             them at the end of <body>. Fonts only declare @font-face, so their

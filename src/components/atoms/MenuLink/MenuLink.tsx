@@ -12,10 +12,11 @@ interface MenuLinkProps {
 const MenuLink = ({link, label}: MenuLinkProps) => {
     const pathname = usePathname();
 
-    // Mirrors the previous react-router NavLink default matching (no "end"
-    // prop): the root link is active on every path, the others match by prefix.
+    // react-router v6's NavLink matches the root path exactly ("the root URL
+    // path behaves as if `end` were always `true`"), so "Me" is active only
+    // on "/", while the other links match their path or a sub-path of it.
     const isActive = link === "/"
-        ? true
+        ? pathname === "/"
         : pathname === link || pathname.startsWith(`${link}/`);
 
     return (
