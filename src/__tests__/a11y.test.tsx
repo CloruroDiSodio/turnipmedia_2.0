@@ -1,10 +1,9 @@
-import { fireEvent, render, screen } from "@testing-library/react";
+import { render, screen } from "@testing-library/react";
 import { axe } from "jest-axe";
 import MainLayout from "../app/(main)/layout";
 import Home from "../components/pages/Home/Home";
 import Resume from "../components/pages/Resume/Resume";
 import Contacts from "../components/pages/Contacts/Contacts";
-import Library from "../components/pages/Library/Library";
 import Appetta from "../components/pages/Appetta/Appetta";
 import GoatPage from "../components/pages/Goat/GoatPage";
 
@@ -25,20 +24,12 @@ jest.mock("../components/atoms/ParticlesBg/Particles", () => ({
   default: () => null,
 }));
 
-// The real library has hundreds of identical-shaped rows, which makes axe
-// very slow; a couple of rows exercise the same markup.
-jest.mock("../components/pages/Library/books.json", () => [
-  { Titolo: "Decameron Project", Autore: "AAVV", "Casa editrice": "NN Editore", Letto: "FALSE" },
-  { Titolo: "1984", Autore: "George Orwell", "Casa editrice": "Mondadori", Letto: "TRUE" },
-]);
-
 // Pages under the (main) route group render inside its layout (nav + main
 // landmark); the others provide their own <main>.
 const pages = {
   "/": <MainLayout><Home /></MainLayout>,
   "/resume": <MainLayout><Resume /></MainLayout>,
   "/contacts": <MainLayout><Contacts /></MainLayout>,
-  "/library": <Library />,
   "/appetta": <Appetta />,
   "/goat": <GoatPage />,
 };
@@ -64,13 +55,4 @@ test("social links have accessible names", () => {
       "noopener noreferrer"
     );
   }
-});
-
-test("library columns are sortable with buttons exposing aria-sort", () => {
-  render(<Library />);
-  const title = screen.getByRole("button", { name: "Title" });
-  const header = title.closest("th")!;
-  expect(header).toHaveAttribute("aria-sort", "none");
-  fireEvent.click(title);
-  expect(header).toHaveAttribute("aria-sort", "ascending");
 });
