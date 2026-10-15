@@ -26,11 +26,13 @@
     "@testing-library/jest-dom": "^6.4.2",
     "@testing-library/react": "^16.3.3",
     "@types/jest": "^30.0.0",
+    "@types/jest-axe": "^3.5.9",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "@types/react-table": "^7.7.20",
     "jest": "^30.0.0",
+    "jest-axe": "^11.0.0",
     "jest-environment-jsdom": "^30.0.0",
     "sass": "^1.48.0",
     "typescript": "^5"
