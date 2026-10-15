@@ -30,7 +30,7 @@ Serves the production build locally on [http://localhost:3000](http://localhost:
 
 - `src/app` — Next.js App Router: root `layout.tsx` (site-wide metadata, self-hosted font, global styles) and routes.
   - `(main)/` — route group for `/`, `/resume` and `/contacts`; its `layout.tsx` renders the skip link, particles background, header menu and the `<main>` landmark (replacing the old `App.js` pathname check).
-  - `appetta/`, `library/`, `goat/` — bare routes with no header/particles; each page component renders its own `<main>`.
+  - `appetta/`, `goat/` — bare routes with no header/particles; each page component renders its own `<main>`.
   - `seo.ts` — site URL/name and the `pageMetadata()` helper every route uses for its metadata.
   - `sitemap.ts`, `robots.ts` — generate `sitemap.xml` and `robots.txt` at build time.
 - `src/components/{atoms,molecules,pages}` — atomic-design components; route `page.tsx` files are thin wrappers around them that also export the route's `metadata`.
@@ -44,10 +44,10 @@ Target: WCAG 2.2 AA. What is in place, and what to keep doing when changing page
 
 - **Landmarks and headings** — every page has one `<main>` and exactly one `<h1>`, and heading levels are not skipped. When a heading needs to look smaller or bigger, keep the right level and use Bootstrap's `.h1`–`.h6` classes. The header menu is a `<nav aria-label="Main">`, preceded by a "Skip to main content" link.
 - **Names for controls** — icon-only links and buttons need an `aria-label` (see `Contacts.tsx` and the goat controls), and decorative icons get `aria-hidden="true"`. Links that open a new tab say so in their label and use `rel="noopener noreferrer"`.
-- **Keyboard** — anything clickable is a `<button>` or `<a>`, never a `<div>`/`<kbd>` with `onClick`. The library table sorts through buttons in its headers, and `aria-sort` reports the current order. The resume's scrollable box is focusable so it can be scrolled with the keyboard. Menu links show a focus ring and set `aria-current="page"` when active.
+- **Keyboard** — anything clickable is a `<button>` or `<a>`, never a `<div>`/`<kbd>` with `onClick`. The resume's scrollable box is focusable so it can be scrolled with the keyboard. Menu links show a focus ring and set `aria-current="page"` when active.
 - **Color contrast** — text needs at least 4.5:1 and icons/UI parts 3:1. `--light-purple` fails on white, so do not use it for text or icons.
 - **Motion** — under `prefers-reduced-motion: reduce` the particles stop (`motion.disable` in `Particles.tsx`) and CSS transitions and animations are cut short (`index.scss`).
-- **Language** — the document is `lang="en"`. Italian content (sound titles, book data) is marked `lang="it"`.
+- **Language** — the document is `lang="en"`. Italian content (sound titles) is marked `lang="it"`.
 
 `npm test` checks each page with axe and asserts the landmark and h1 rules. Axe catches roughly a third of WCAG issues, so also try keyboard-only navigation and a screen reader on any new interactive feature.
 
