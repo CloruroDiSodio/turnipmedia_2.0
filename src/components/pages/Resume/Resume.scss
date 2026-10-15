@@ -5,6 +5,14 @@
   margin-top: 30px;
   margin-bottom: 30px;
 
+  // Below Bootstrap's "xs" size the fixed 20% left gutter eats a fifth of a
+  // phone screen and leaves no gutter on the right, so the block spans the
+  // viewport with equal horizontal padding instead (visually centred).
+  @media (max-width: 575.98px) {
+    margin-left: 0;
+    padding: 0 20px;
+  }
+
   b {
     font-size: 18px;
   }
@@ -15,6 +23,13 @@
     height: 20px;
     position: relative;
     top: -2px;
+  }
+
+  // Matches the default vertical margins a <p> would get, since the
+  // sections are now <div>s (valid HTML for SSR/hydration).
+  &__section {
+    margin-top: 1em;
+    margin-bottom: 1em;
   }
 
   &__indent {

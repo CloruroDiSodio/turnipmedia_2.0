@@ -1,70 +1,43 @@
-# Getting Started with Create React App
+# turnipmedia_2.0
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Personal website of Denise Moscon, migrated from Create React App to **Next.js 16 (App Router) + TypeScript** and deployed on [Netlify](https://www.netlify.com/).
 
 ## Available Scripts
 
 In the project directory, you can run:
 
-### `npm start`
+### `npm run dev`
 
-Runs the app in the development mode.\
+Runs the app in development mode with Turbopack.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+The page will reload when you make changes.
 
 ### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Runs the Jest test suite (configured through `next/jest`, jsdom environment + React Testing Library).\
+See `jest.config.js` and `jest.setup.ts`.
 
 ### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Builds the app for production to the `.next` folder, type-checks the project and prerenders all routes as static pages.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### `npm start`
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Serves the production build locally on [http://localhost:3000](http://localhost:3000).
 
-### `npm run eject`
+## Project Structure
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- `src/app` — Next.js App Router: root `layout.tsx` (metadata, fonts, global styles) and routes.
+  - `(main)/` — route group for `/`, `/resume` and `/contacts`; its `layout.tsx` renders the particles background and header menu (replacing the old `App.js` pathname check).
+  - `appetta/`, `library/`, `goat/` — bare routes with no header/particles.
+- `src/components/{atoms,molecules,pages}` — existing atomic-design components, now TypeScript; route `page.tsx` files are thin wrappers around them.
+- `src/index.scss` — global styles (imported by the root layout).
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Deployment
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+The site is a fully static export (`output: "export"` in `next.config.ts`) — `next build` emits plain HTML/CSS/JS to `out/`, which Netlify serves from its CDN. No serverless functions or Next.js adapter are involved, matching the deploy model of the original CRA site. `netlify.toml` pins the build (command `npm run build`, publish directory `out`, Node 20) — the Node pin is required because the Netlify site was originally set up during the CRA era with Node 16, which Next.js 16 no longer supports (it requires Node `>=20.9`).
 
 ## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+To learn Next.js, check out the [Next.js documentation](https://nextjs.org/docs). To learn React, check out the [React documentation](https://reactjs.org/).
