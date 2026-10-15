@@ -36,7 +36,7 @@ Serves the production build locally on [http://localhost:3000](http://localhost:
 
 ## Deployment
 
-Netlify auto-detects Next.js — no build configuration beyond the defaults is required (`next build` / `next start`).
+Netlify auto-detects Next.js and applies its Next.js adapter automatically. The repository pins the build via `netlify.toml` (build command `npm run build`, publish directory `.next`, Node 20) — required because the hosted site was originally pinned to Node 16 during the CRA era, which Next.js 16 no longer supports (it requires Node `>=20.9`).
 
 ## Learn More
 
