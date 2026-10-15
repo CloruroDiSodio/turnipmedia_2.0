@@ -1,11 +1,10 @@
-// VT323 is loaded via <link> in src/app/layout.tsx (a plain-CSS
-// @import url() would have to precede @use, and late @imports are
-// ignored by browsers once the palette emits CSS first).
+// VT323 is self-hosted by next/font in src/app/layout.tsx, which exposes
+// it as the --font-vt323 custom property on <html>.
 @use "./themes/palette";
 
 body {
   margin: 0;
-  font-family: 'VT323', monospace;
+  font-family: var(--font-vt323), monospace;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

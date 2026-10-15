@@ -1,4 +1,5 @@
 import type { Metadata, Viewport } from "next";
+import { VT323 } from "next/font/google";
 import { SITE_NAME, SITE_URL, baseOpenGraph } from "./seo";
 // Global CSS — import order here IS the cascade order, mirroring the original
 // CRA page (index.html <head> Bootstrap 4 CDN link first, bundled CSS after):
@@ -8,6 +9,16 @@ import { SITE_NAME, SITE_URL, baseOpenGraph } from "./seo";
 import "../vendor/bootstrap-4.3.1.min.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../index.scss";
+
+// Self-hosted at build time by next/font: no request to Google Fonts at
+// runtime (no visitor IP sent to a third party, no external origin in the
+// CSP). index.scss applies it through the --font-vt323 variable.
+const vt323 = VT323({
+  weight: "400",
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-vt323",
+});
 
 export const metadata: Metadata = {
   // Absolute base used to resolve relative social/OG image URLs
@@ -91,22 +102,8 @@ export default function RootLayout({
     // otherwise trigger a hydration-mismatch warning. suppressHydrationWarning
     // only skips attribute checks on these two elements — their children are
     // still validated.
-    <html lang="en" suppressHydrationWarning>
+    <html lang="en" className={vt323.variable} suppressHydrationWarning>
       <body suppressHydrationWarning>
-        {/* `precedence` makes React 19 hoist these into <head> (as CRA did
-            with its <head> links in public/index.html) instead of leaving
-            them at the end of <body>. Fonts only declare @font-face, so their
-            position in the cascade is irrelevant — only that they load. */}
-        <link
-          href="https://fonts.googleapis.com/css?family=Arvo:400,700&display=swap"
-          rel="stylesheet"
-          precedence="cdn"
-        />
-        <link
-          href="https://fonts.googleapis.com/css2?family=VT323&display=swap"
-          rel="stylesheet"
-          precedence="cdn"
-        />
         {children}
       </body>
     </html>
