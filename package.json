@@ -9,7 +9,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "test": "jest"
+    "test": "jest",
+    "postbuild": "node scripts/csp-headers.mjs"
   },
   "dependencies": {
     "bootstrap": "^5.1.3",
