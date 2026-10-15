@@ -19,7 +19,7 @@
   .goat-section {
     text-align: center;
     
-    h3 {
+    h1 {
       color: #333;
       letter-spacing: 2px;
       margin-bottom: 2rem;
@@ -34,6 +34,8 @@
       align-items: center;
       justify-content: center;
       border-radius: 50%;
+      border: 0;
+      padding: 0;
       cursor: pointer;
       transition: all 0.2s ease;
 
@@ -53,7 +55,7 @@
 
   .instructions-card {
     max-width: 280px;
-    h4 {
+    h2 {
       margin: 0 0 1rem 0;
       color: #2c3e50;
       font-size: 1.2rem;
@@ -100,6 +102,14 @@
     }
   }
 
+  // <button> wrapper around each <kbd>: reset to let the key cap style show.
+  .key {
+    background: none;
+    border: 0;
+    padding: 0;
+    border-radius: 6px;
+  }
+
   .keys {
     display: flex;
     gap: 8px;
@@ -110,7 +120,7 @@
     .note {
       font-size: 0.75rem;
       font-style: italic;
-      color: #abb2b9;
+      color: #5d6d7e; // #abb2b9 failed WCAG AA contrast on #fdfdfd
       margin-top: 1.5rem;
     }
   }

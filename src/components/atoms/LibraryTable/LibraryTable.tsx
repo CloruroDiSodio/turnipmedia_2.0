@@ -28,7 +28,13 @@ const LibraryTable = () => {
             {
                 Header: 'Read',
                 accessor: 'Letto',
-                Cell: ({value}: CellProps<Book>) => <span className="libraryTable__read">{value === 'TRUE' ? <FaCheck /> : null}</span>,
+                Cell: ({value}: CellProps<Book>) => (
+                    <span className="libraryTable__read">
+                        {value === 'TRUE'
+                            ? <><FaCheck aria-hidden="true" /><span className="visually-hidden">Yes</span></>
+                            : <span className="visually-hidden">No</span>}
+                    </span>
+                ),
             },
         ],
         []
@@ -47,31 +53,45 @@ const LibraryTable = () => {
     return (
         // apply the table props
         <Table striped bordered hover className="libraryTable" {...getTableProps()}>
+            <caption className="visually-hidden">My books, sortable by column</caption>
             <thead>
             {// Loop over the header rows
                 headerGroups.map(headerGroup => (
                     // Apply the header row props
                     <tr {...headerGroup.getHeaderGroupProps()}>
                         {// Loop over the headers in each row
-                            headerGroup.headers.map(column => (
-                                // Apply the header cell props
-                                <th {...column.getHeaderProps(column.getSortByToggleProps())}>
-                                    <span className="libraryTable__sorting">
-                                        {column.isSorted
-                                            ? column.isSortedDesc
-                                                ? <FaSortDown />
-                                                : <FaSortUp />
-                                            : <FaSort />}
-                                    </span>
-                                    {// Render the header
-                                        column.render('Header')}
-                                </th>
-                            ))}
+                            headerGroup.headers.map(column => {
+                                // The sort toggle lives on a <button> (not the
+                                // <th>) so it is keyboard operable; aria-sort
+                                // exposes the current order to screen readers.
+                                // (react-table's default "Toggle SortBy" title is dropped.)
+                                const toggleProps = column.getSortByToggleProps({title: undefined})
+                                return (
+                                    // Apply the header cell props
+                                    <th
+                                        {...column.getHeaderProps()}
+                                        aria-sort={column.isSorted ? (column.isSortedDesc ? 'descending' : 'ascending') : 'none'}
+                                    >
+                                        <button type="button" className="libraryTable__sortButton" {...toggleProps}>
+                                            <span className="libraryTable__sorting" aria-hidden="true">
+                                                {column.isSorted
+                                                    ? column.isSortedDesc
+                                                        ? <FaSortDown />
+                                                        : <FaSortUp />
+                                                    : <FaSort />}
+                                            </span>
+                                            {// Render the header
+                                                column.render('Header')}
+                                        </button>
+                                    </th>
+                                )
+                            })}
                     </tr>
                 ))}
             </thead>
             {/* Apply the table body props */}
-            <tbody {...getTableBodyProps()}>
+            {/* Book data is mostly Italian. */}
+            <tbody lang="it" {...getTableBodyProps()}>
             {// Loop over the table rows
                 rows.map(row => {
                     // Prepare the row for display
