@@ -7,9 +7,15 @@ import ParticlesBg from "../../components/atoms/ParticlesBg/Particles";
 export default function MainLayout({ children }: { children: ReactNode }) {
   return (
     <>
+      {/* First focusable element: lets keyboard users bypass the nav. */}
+      <a className="skip-link" href="#main-content">
+        Skip to main content
+      </a>
       <ParticlesBg />
       <HeaderMenu />
-      {children}
+      <main id="main-content" tabIndex={-1}>
+        {children}
+      </main>
     </>
   );
 }

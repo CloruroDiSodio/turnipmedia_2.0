@@ -14,3 +14,26 @@ body {
   position: absolute;
   z-index: -100;
 }
+
+// Hidden until focused, so keyboard users can jump past the header menu.
+.skip-link {
+  position: absolute;
+  left: 8px;
+  top: -100px;
+  z-index: 1000;
+  padding: 8px 16px;
+  background: #fff;
+  color: var(--gray);
+  border: 2px solid var(--teal);
+
+  &:focus {
+    top: 8px;
+  }
+}
+
+// The skip-link target is focused programmatically (tabIndex -1); it is not
+// interactive, so it should not show a focus ring.
+#main-content:focus {
+  outline: none;
+}
+
