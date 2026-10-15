@@ -82,7 +82,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
   },
   other: {
-    "msapplication-TileColor": "#ffffff",
+    "msapplication-TileColor": "#018C99",
     "msapplication-TileImage": "/ms-icon-144x144.png",
   },
 };

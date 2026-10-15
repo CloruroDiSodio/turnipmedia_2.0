@@ -5,8 +5,8 @@ export const SITE_NAME = "Denise Moscon";
 
 const OG_IMAGE = {
   url: "/preview.png",
-  width: 1515,
-  height: 938,
+  width: 1200,
+  height: 630,
   alt: "Denise Moscon, front-end developer",
 };
 

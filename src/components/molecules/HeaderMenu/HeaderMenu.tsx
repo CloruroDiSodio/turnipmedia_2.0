@@ -6,6 +6,7 @@ const HeaderMenu = () => {
         <nav className="header-menu" aria-label="Main">
             <MenuLink link="/" label="Me"/>
             <MenuLink link="/resume" label="What have I done with my life" />
+            <MenuLink link="/showcase" label="Things I made" />
             <MenuLink link="/contacts" label="Where to find me (if you must!)" />
         </nav>
     )
