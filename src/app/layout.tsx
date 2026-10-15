@@ -1,4 +1,5 @@
 import type { Metadata, Viewport } from "next";
+import { SITE_NAME, SITE_URL, baseOpenGraph } from "./seo";
 // Global CSS — import order here IS the cascade order, mirroring the original
 // CRA page (index.html <head> Bootstrap 4 CDN link first, bundled CSS after):
 // 1. vendored Bootstrap 4 (CDN copy), 2. npm Bootstrap 5 (react-bootstrap), 3. site.
@@ -11,8 +12,12 @@ import "../index.scss";
 export const metadata: Metadata = {
   // Absolute base used to resolve relative social/OG image URLs
   // (avoids the localhost fallback in the metadataBase warning).
-  metadataBase: new URL("https://turnipmedia.net"),
-  title: "Denise Moscon | Front-end Developer",
+  metadataBase: new URL(SITE_URL),
+  // Pages set a short title; the template appends the site name.
+  title: {
+    default: "Denise Moscon | Front-end Developer",
+    template: `%s | ${SITE_NAME}`,
+  },
   description:
     "Front-end developer based in Verona, React Developer, React native developer",
   keywords: [
@@ -54,11 +59,16 @@ export const metadata: Metadata = {
       { url: "/apple-icon-180x180.png", sizes: "180x180", type: "image/png" },
     ],
   },
+  authors: [{ name: SITE_NAME, url: SITE_URL }],
+  creator: SITE_NAME,
   openGraph: {
+    ...baseOpenGraph,
     title: "Denise Moscon | Front-end Developer",
     description: "Front-end Developer based in Verona",
-    url: "https://turnipmedia.net",
-    images: [{ url: "/preview.png" }],
+    url: "/",
+  },
+  twitter: {
+    card: "summary_large_image",
   },
   other: {
     "msapplication-TileColor": "#ffffff",
