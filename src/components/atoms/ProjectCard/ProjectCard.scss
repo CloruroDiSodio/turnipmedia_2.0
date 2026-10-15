@@ -1,0 +1,95 @@
+.project-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
+  background: #fff;
+  border: 2px solid var(--gray);
+  border-radius: 8px;
+  transition: transform 0.3s, box-shadow 0.3s;
+
+  &:hover,
+  &:focus-within {
+    transform: translateY(-4px);
+    box-shadow: 6px 6px 0 var(--teal);
+  }
+
+  // Keyboard focus is shown on the whole card, not just the title.
+  &:has(.project-card__link:focus-visible) {
+    outline: 2px solid var(--teal);
+    outline-offset: 4px;
+  }
+
+  &__preview {
+    display: block;
+    aspect-ratio: 16 / 10;
+    border-bottom: 2px solid var(--gray);
+    background: #f0f4f0;
+
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    // Keeps pixel art crisp when scaled.
+    &--pixel-art img {
+      image-rendering: pixelated;
+    }
+  }
+
+  &__body {
+    padding: 12px 16px 16px;
+  }
+
+  &__title {
+    margin: 0 0 8px;
+    font-family: inherit;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1.1;
+  }
+
+  &__link {
+    color: var(--gray);
+    text-decoration: none;
+
+    // Stretches the link over the whole card.
+    &::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+    }
+
+    &:hover,
+    &:focus-visible {
+      color: var(--purple);
+    }
+
+    &:focus-visible {
+      outline: none;
+    }
+  }
+
+  &__description {
+    margin: 0;
+    font-size: 18px;
+    line-height: 1.2;
+  }
+
+  &__tech {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin: 0 0 10px;
+  }
+
+  &__badge {
+    top: 0;
+    font-size: 16px;
+    font-weight: normal;
+    background-color: var(--purple);
+  }
+}

@@ -1,0 +1,25 @@
+.showcase {
+  margin: 30px 10% 30px 20%;
+
+  // Same small-screen layout as the resume: no fixed 20% gutter on phones.
+  @media (max-width: 575.98px) {
+    margin: 30px 0;
+    padding: 0 20px;
+  }
+
+  &__title {
+    margin-bottom: 24px;
+    font-family: inherit;
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 24px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+}
