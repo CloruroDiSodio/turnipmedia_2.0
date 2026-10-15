@@ -36,7 +36,7 @@ Serves the production build locally on [http://localhost:3000](http://localhost:
 
 ## Deployment
 
-Netlify auto-detects Next.js and applies its Next.js adapter automatically. The repository pins the build via `netlify.toml` (build command `npm run build`, publish directory `.next`, Node 20) — required because the hosted site was originally pinned to Node 16 during the CRA era, which Next.js 16 no longer supports (it requires Node `>=20.9`).
+The site is a fully static export (`output: "export"` in `next.config.ts`) — `next build` emits plain HTML/CSS/JS to `out/`, which Netlify serves from its CDN. No serverless functions or Next.js adapter are involved, matching the deploy model of the original CRA site. `netlify.toml` pins the build (command `npm run build`, publish directory `out`, Node 20) — the Node pin is required because the Netlify site was originally set up during the CRA era with Node 16, which Next.js 16 no longer supports (it requires Node `>=20.9`).
 
 ## Learn More
 
