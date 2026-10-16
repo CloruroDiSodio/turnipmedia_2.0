@@ -4,15 +4,15 @@ import "./ProjectCard.scss";
 
 // The title link is stretched over the whole card (see ProjectCard.scss), so
 // the card is clickable anywhere while the link's accessible name stays just
-// the title instead of the card's entire content. Every project opens in a
-// new tab, including the ones on this site (like the goat), so the showcase
-// stays open behind it.
+// the title instead of the card's entire content. Projects open in a new tab,
+// including the ones on this site (like the goat), so the showcase stays open
+// behind them; `sameTab` ones (pages about this site itself) don't.
 interface ProjectCardProps extends Project {
     // Cards nested under a section heading use h3 to keep the outline valid.
     headingLevel?: 2 | 3;
 }
 
-const ProjectCard = ({ title, description, href, preview, previewStill, previewAlt, pixelArt, tech, role, headingLevel = 2 }: ProjectCardProps) => {
+const ProjectCard = ({ title, description, href, preview, previewStill, previewAlt, pixelArt, tech, role, sameTab, headingLevel = 2 }: ProjectCardProps) => {
     const Heading = headingLevel === 3 ? "h3" : "h2";
 
     return (
@@ -27,10 +27,14 @@ const ProjectCard = ({ title, description, href, preview, previewStill, previewA
             </picture>
             <div className="project-card__body">
                 <Heading className="project-card__title">
-                    <a className="project-card__link" href={href} target="_blank" rel="noopener noreferrer">
-                        {title}
-                        <span className="visually-hidden"> (opens in a new tab)</span>
-                    </a>
+                    {sameTab ? (
+                        <a className="project-card__link" href={href}>{title}</a>
+                    ) : (
+                        <a className="project-card__link" href={href} target="_blank" rel="noopener noreferrer">
+                            {title}
+                            <span className="visually-hidden"> (opens in a new tab)</span>
+                        </a>
+                    )}
                 </Heading>
                 {role && <p className="project-card__role">{role}</p>}
                 <p className="project-card__tech">

@@ -1,0 +1,325 @@
+// Same page frame as the contacts page, a little wider for the swatch grid.
+.brand {
+  max-width: 960px;
+  margin: 80px 10% 60px;
+  font-size: 18px;
+  line-height: 1.25;
+
+  @media (min-width: 1200px) {
+    margin-left: 15%;
+  }
+
+  // Same small-screen layout as the showcase: no percentage gutter on phones.
+  @media (max-width: 575.98px) {
+    margin: 40px 0;
+    padding: 0 20px;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  &__header {
+    margin-bottom: 48px;
+  }
+
+  &__title {
+    margin-bottom: 8px;
+    font-family: inherit;
+    font-size: 60px;
+    line-height: 1;
+  }
+
+  &__intro {
+    max-width: 640px;
+    margin: 0;
+    font-size: 22px;
+    line-height: 1.2;
+  }
+
+  &__section {
+    margin-bottom: 56px;
+  }
+
+  &__subtitle {
+    margin-bottom: 16px;
+    font-family: inherit;
+    font-size: 32px;
+    font-weight: bold;
+  }
+
+  &__text {
+    max-width: 640px;
+    margin-bottom: 20px;
+
+    p {
+      margin-bottom: 12px;
+    }
+  }
+
+  ul.brand__rules {
+    display: grid;
+    gap: 6px;
+
+    li {
+      position: relative;
+      padding-left: 22px;
+
+      // A square pixel bullet.
+      &::before {
+        content: '';
+        position: absolute;
+        top: 0.45em;
+        left: 2px;
+        width: 8px;
+        height: 8px;
+        background: var(--teal);
+      }
+    }
+  }
+
+  // The turnip
+
+  &__mascot {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 32px;
+    margin-bottom: 28px;
+  }
+
+  // The turnip at 8x on its own pixel grid: one cell per pixel.
+  &__turnip-grid {
+    flex-shrink: 0;
+    padding: 16px;
+    background:
+      linear-gradient(90deg, rgba(31, 31, 31, 0.08) 1px, transparent 0) 16px 16px / 8px 8px,
+      linear-gradient(rgba(31, 31, 31, 0.08) 1px, transparent 0) 16px 16px / 8px 8px,
+      #fff;
+    border: 2px solid var(--gray);
+    border-radius: 8px;
+    box-shadow: 6px 6px 0 var(--purple);
+  }
+
+  &__turnip-hero {
+    display: block;
+    width: 128px;
+    height: 168px;
+  }
+
+  &__mascot &__text {
+    flex: 1 1 280px;
+    margin: 0;
+  }
+
+  &__sizes {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    gap: 32px;
+  }
+
+  &__size {
+    display: flex;
+    align-items: flex-end;
+    gap: 12px;
+
+    // Each item's art is scaled by its position: 1x, 2x, 4x.
+    &:nth-child(1) .brand__size-art { width: 16px; height: 21px; }
+    &:nth-child(2) .brand__size-art { width: 32px; height: 42px; }
+    &:nth-child(3) .brand__size-art { width: 64px; height: 84px; }
+  }
+
+  &__size-art {
+    display: block;
+  }
+
+  &__size-label {
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    line-height: 1.1;
+  }
+
+  // Colours
+
+  &__swatches {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 20px;
+  }
+
+  &__swatch {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    background: #fff;
+    border: 2px solid var(--gray);
+    border-radius: 8px;
+  }
+
+  &__swatch-chip {
+    display: flex;
+    align-items: flex-end;
+    height: 88px;
+    padding: 8px 12px;
+    border-bottom: 2px solid var(--gray);
+    // 24px counts as large text (3:1), which every swatch meets with ink or
+    // white; teal reaches only ~4.1:1 with either, short of the 4.5:1 for
+    // smaller text.
+    font-size: 24px;
+  }
+
+  &__swatch-body {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 10px 12px 12px;
+  }
+
+  &__swatch-name {
+    margin: 0;
+    font-family: inherit;
+    font-size: 22px;
+    font-weight: bold;
+  }
+
+  &__swatch-token {
+    margin-bottom: 6px;
+    color: var(--purple);
+    font-family: inherit;
+    font-size: 16px;
+  }
+
+  &__swatch-role {
+    flex: 1;
+    margin-bottom: 8px;
+    font-size: 16px;
+    line-height: 1.2;
+  }
+
+  &__swatch-contrast {
+    margin: 0;
+    color: var(--green);
+    font-size: 15px;
+  }
+
+  // Type
+
+  &__type {
+    display: grid;
+    gap: 12px;
+  }
+
+  &__type-row {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 12px;
+    border-bottom: 2px dashed var(--light-purple);
+  }
+
+  &__type-meta {
+    color: var(--purple);
+    font-size: 15px;
+  }
+
+  &__type-sample {
+    line-height: 1.1;
+    overflow-wrap: anywhere;
+  }
+
+  // Components
+
+  &__components {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 24px;
+  }
+
+  &__sample {
+    padding: 16px 20px 20px;
+    background: #fff;
+    border: 2px solid var(--gray);
+    border-radius: 8px;
+
+    p {
+      margin-bottom: 12px;
+    }
+  }
+
+  &__sample-title {
+    margin-bottom: 12px;
+    font-family: inherit;
+    font-size: 22px;
+    font-weight: bold;
+  }
+
+  &__actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  &__chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+
+  // Same look as the project card chips.
+  &__chip {
+    display: inline-block;
+    padding: 0.35em 0.65em;
+    border-radius: 6px;
+    background: var(--purple);
+    color: #fff;
+    font-size: 16px;
+    line-height: 1;
+
+    &--yellow {
+      background: var(--yellow);
+      color: var(--gray);
+    }
+  }
+
+  ul.brand__shadows {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px 22px;
+    padding: 0 6px 6px 0;
+  }
+
+  &__shadow {
+    padding: 10px 12px;
+    background: #fff;
+    border: 2px solid var(--gray);
+    border-radius: 8px;
+    font-size: 16px;
+  }
+
+  // Voice
+
+  &__voice {
+    display: grid;
+    gap: 16px;
+  }
+
+  &__quote {
+    display: flex;
+    flex-direction: column;
+    padding-left: 16px;
+    border-left: 4px solid var(--yellow);
+
+    q {
+      font-size: 24px;
+      line-height: 1.15;
+    }
+  }
+
+  &__quote-where {
+    color: var(--purple);
+    font-size: 15px;
+  }
+}
