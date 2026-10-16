@@ -5,7 +5,6 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import './HeaderMenu.scss';
 import MenuLink from "../../atoms/MenuLink/MenuLink";
-import BackgroundToggle from "../../atoms/BackgroundToggle/BackgroundToggle";
 import Turnip from "../../atoms/Turnip/Turnip";
 
 const LINKS = [
@@ -92,13 +91,10 @@ const HeaderMenu = () => {
                 isScrolled ? "header-menu--scrolled" : "",
             ].filter(Boolean).join(" ")}
         >
-            <div className="header-menu__start">
-                {/* The turnip is decorative (aria-hidden), so the link is named here. */}
-                <Link href="/" className="header-menu__logo" aria-label="Home">
-                    <Turnip className="header-menu__logo-art" />
-                </Link>
-                <BackgroundToggle />
-            </div>
+            {/* The turnip is decorative (aria-hidden), so the link is named here. */}
+            <Link href="/" className="header-menu__logo" aria-label="Home">
+                <Turnip className="header-menu__logo-art" />
+            </Link>
             <nav className="header-menu__nav" aria-label="Main">
                 <button
                     ref={buttonRef}

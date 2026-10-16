@@ -29,14 +29,7 @@ $collapse-below: 991.98px;
     box-shadow: none;
   }
 
-  &__start {
-    display: flex;
-    align-items: center;
-    gap: 16px;
-  }
-
-  // The turnip at 2x its pixel size: 32 x 42px, about the height of the
-  // background toggle beside it.
+  // The turnip at 2x its pixel size: 32 x 42px.
   &__logo {
     display: inline-flex;
     flex-shrink: 0;
@@ -161,10 +154,5 @@ $collapse-below: 991.98px;
         }
       }
     }
-  }
-
-  // Very narrow screens: stack the background control above the menu button.
-  @media (max-width: 359.98px) {
-    flex-wrap: wrap;
   }
 }
