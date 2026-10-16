@@ -1,43 +1,53 @@
-// Links in page content (not the header nav, see MenuLink). They always show
-// an underline, so they read as clickable before any hover; on hover/focus a
-// yellow highlighter sweeps in behind the text.
+// Links in page content (not the header nav, see MenuLink).
 .text-link {
-  position: relative;
-  z-index: 0;
-  display: inline-block;
-  padding: 0 2px;
-  color: var(--gray);
-  text-decoration: none;
   font-size: 20px;
-  // Tight line box, so the underline sits just under the letters.
-  line-height: 1.05;
-
-  // Resting underline.
-  &::after {
-    content: '';
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: -1;
-    height: 2px;
-    background-color: var(--teal);
-    transition: height 0.2s, background-color 0.2s;
-  }
-
-  &:hover,
-  &:focus-visible {
-    color: var(--gray);
-    text-decoration: none;
-
-    &::after {
-      height: 60%;
-      background-color: var(--yellow);
-    }
-  }
+  text-decoration: none;
 
   &:focus-visible {
     outline: 2px solid var(--teal);
     outline-offset: 4px;
+  }
+
+  // Inside running text: teal text over a stepped, pixel-style dashed line,
+  // which turns solid purple on hover/focus.
+  &--inline {
+    padding-bottom: 2px;
+    color: var(--dark-teal);
+    background: linear-gradient(90deg, var(--teal) 50%, transparent 0) 0 100% / 8px 3px repeat-x;
+    transition: color 0.2s;
+
+    &:hover,
+    &:focus-visible {
+      color: var(--purple);
+      text-decoration: none;
+      background: linear-gradient(var(--purple), var(--purple)) 0 100% / 100% 3px no-repeat;
+    }
+  }
+
+  // A call to action, usually in a row: a chip with the same hard shadow as
+  // the contact cards, which lifts on hover/focus and presses in on click.
+  &--action {
+    display: inline-block;
+    padding: 4px 14px;
+    background: #fff;
+    border: 2px solid var(--gray);
+    border-radius: 6px;
+    color: var(--gray);
+    line-height: 1.2;
+    box-shadow: 3px 3px 0 var(--teal);
+    transition: transform 0.15s, box-shadow 0.15s;
+
+    &:hover,
+    &:focus-visible {
+      color: var(--gray);
+      text-decoration: none;
+      transform: translate(-2px, -2px);
+      box-shadow: 5px 5px 0 var(--purple);
+    }
+
+    &:active {
+      transform: translate(2px, 2px);
+      box-shadow: 1px 1px 0 var(--purple);
+    }
   }
 }

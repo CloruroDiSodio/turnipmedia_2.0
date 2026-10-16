@@ -177,9 +177,9 @@ const NotFound = () => {
                     nothing here. Maybe it got buried in the turnip patch?
                 </p>
                 <nav className="not-found__links" aria-label="Ways out">
-                    <TextLink href="/">Take me home</TextLink>
-                    <TextLink href="/showcase">Things I made</TextLink>
-                    <TextLink href="/contacts">Report a missing page</TextLink>
+                    <TextLink variant="action" href="/">Take me home</TextLink>
+                    <TextLink variant="action" href="/showcase">Things I made</TextLink>
+                    <TextLink variant="action" href="/contacts">Report a missing page</TextLink>
                 </nav>
             </header>
 

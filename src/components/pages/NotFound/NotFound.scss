@@ -64,10 +64,11 @@ $soil-dark: #3d2a18;
     overflow-wrap: anywhere;
   }
 
+  // Room for the chips' offset shadows when they wrap.
   &__links {
     display: flex;
     flex-wrap: wrap;
-    gap: 8px 24px;
+    gap: 14px 16px;
   }
 
   &__subtitle {

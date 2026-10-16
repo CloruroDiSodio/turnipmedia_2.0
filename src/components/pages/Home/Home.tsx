@@ -38,9 +38,9 @@ const Home = () => {
                     <li>I do stuff.</li>
                 </ul>
                 <nav className="home__links" aria-label="Get to know me">
-                    <TextLink href="/showcase">See my work</TextLink>
-                    <TextLink href="/resume">Read my resume</TextLink>
-                    <TextLink href="/contacts">Say hi</TextLink>
+                    <TextLink variant="action" href="/showcase">See my work</TextLink>
+                    <TextLink variant="action" href="/resume">Read my resume</TextLink>
+                    <TextLink variant="action" href="/contacts">Say hi</TextLink>
                 </nav>
             </div>
             <Portrait />
