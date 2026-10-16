@@ -92,3 +92,33 @@ describe("background control", () => {
     }
   });
 });
+
+test("the header hides while scrolling down and returns on scroll up", () => {
+  jest.useFakeTimers();
+  render(<HeaderMenu />);
+  const header = screen.getByRole("banner");
+  const scrollTo = (y: number) => {
+    window.scrollY = y;
+    fireEvent.scroll(window);
+    act(() => jest.advanceTimersByTime(20));
+  };
+
+  scrollTo(400);
+  expect(header).toHaveClass("header-menu--hidden");
+  expect(header).toHaveClass("header-menu--scrolled");
+
+  // A tiny nudge up is ignored; a real scroll up brings it back.
+  scrollTo(396);
+  expect(header).toHaveClass("header-menu--hidden");
+  scrollTo(300);
+  expect(header).not.toHaveClass("header-menu--hidden");
+
+  // An open menu never slides away.
+  fireEvent.click(menuButton());
+  scrollTo(800);
+  expect(header).not.toHaveClass("header-menu--hidden");
+
+  scrollTo(0);
+  expect(header).not.toHaveClass("header-menu--scrolled");
+  jest.useRealTimers();
+});

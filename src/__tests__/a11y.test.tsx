@@ -1,4 +1,4 @@
-import { fireEvent, render, screen } from "@testing-library/react";
+import { act, fireEvent, render, screen } from "@testing-library/react";
 import { axe } from "jest-axe";
 import MainLayout from "../app/(main)/layout";
 import Home from "../components/pages/Home/Home";
@@ -7,6 +7,7 @@ import Contacts from "../components/pages/Contacts/Contacts";
 import Showcase from "../components/pages/Showcase/Showcase";
 import Appetta from "../components/pages/Appetta/Appetta";
 import GoatPage from "../components/pages/Goat/GoatPage";
+import NotFoundPage from "../app/not-found";
 
 jest.mock("next/navigation", () => ({
   usePathname: () => "/",
@@ -34,6 +35,7 @@ const pages = {
   "/contacts": <MainLayout><Contacts /></MainLayout>,
   "/appetta": <Appetta />,
   "/goat": <GoatPage />,
+  "404": <NotFoundPage />,
 };
 
 describe.each(Object.entries(pages))("%s", (_path, page) => {
@@ -59,9 +61,12 @@ test("social links have accessible names", () => {
   }
 });
 
-test("each showcase card links to its project, named by its title", () => {
+test("each showcase card opens its project in a new tab, named by its title", () => {
   render(<Showcase />);
-  expect(screen.getByRole("link", { name: "Goat Companion" })).toHaveAttribute("href", "/goat");
+  // Even the goat, which lives on this site.
+  const goat = screen.getByRole("link", { name: "Goat Companion (opens in a new tab)" });
+  expect(goat).toHaveAttribute("href", "/goat");
+  expect(goat).toHaveAttribute("target", "_blank");
 
   const external = screen.getByRole("link", { name: /Pixel Art & Pattern Generator/ });
   expect(external).toHaveAccessibleName(/opens in a new tab/);
@@ -78,7 +83,7 @@ test("work cards sit under their own heading and show my role", () => {
 
 test("showcase cards list their technologies", () => {
   render(<Showcase />);
-  const goat = screen.getByRole("link", { name: "Goat Companion" }).closest("article");
+  const goat = screen.getByRole("link", { name: /Goat Companion/ }).closest("article");
   expect(goat).toHaveTextContent("Built with: Next.js");
 });
 
@@ -121,4 +126,57 @@ test("the goat's wandering can be switched off", () => {
   fireEvent.click(toggle);
   expect(toggle).toHaveAttribute("aria-pressed", "false");
   expect(screen.getByRole("main")).toHaveClass("goatPage--still");
+});
+
+test("the 404 turnip patch can be harvested and replanted", () => {
+  // Every pull pops its turnip on the first try.
+  const random = jest.spyOn(Math, "random").mockReturnValue(0);
+  render(<NotFoundPage />);
+  expect(screen.getByRole("link", { name: "Take me home" })).toHaveAttribute("href", "/");
+
+  for (let i = 1; i <= 6; i++) {
+    fireEvent.click(screen.getByRole("button", { name: `Pull turnip ${i}` }));
+  }
+  expect(screen.getByRole("status")).toHaveTextContent(
+    "Under turnip 6: nothing at all. The page was the turnips we pulled along the way."
+  );
+  expect(screen.getByText(/Turnips pulled: 6 \/ 6/)).toHaveTextContent("pages found: 0");
+
+  fireEvent.click(screen.getByRole("button", { name: "Replant the patch" }));
+  expect(screen.getByRole("button", { name: "Pull turnip 1" })).toHaveFocus();
+  random.mockRestore();
+});
+
+test("a stuck turnip stays in the ground until a later pull", () => {
+  // 0.99 is above every pop chance except the guaranteed third pull.
+  const random = jest.spyOn(Math, "random").mockReturnValue(0.99);
+  render(<NotFoundPage />);
+  const turnip = screen.getByRole("button", { name: "Pull turnip 1" });
+  fireEvent.click(turnip);
+  fireEvent.click(turnip);
+  expect(turnip).toHaveAccessibleName("Pull turnip 1");
+  fireEvent.click(turnip);
+  expect(turnip).not.toHaveAccessibleName("Pull turnip 1");
+  random.mockRestore();
+});
+
+test("an untouched turnip fidgets every few seconds", () => {
+  jest.useFakeTimers();
+  // Shortest delay, first turnip, first move.
+  const random = jest.spyOn(Math, "random").mockReturnValue(0);
+  const { container } = render(<NotFoundPage />);
+  const fidgeting = () => container.querySelectorAll("[class*='plot--idle-']");
+
+  act(() => jest.advanceTimersByTime(2499));
+  expect(fidgeting()).toHaveLength(0);
+  act(() => jest.advanceTimersByTime(1));
+  expect(fidgeting()).toHaveLength(1);
+  expect(fidgeting()[0]).toHaveClass("plot--idle-rustle");
+  // A fidget is decoration: nothing is announced.
+  expect(screen.getByRole("status")).toHaveTextContent("Nothing dug up yet.");
+
+  act(() => jest.advanceTimersByTime(1000));
+  expect(fidgeting()).toHaveLength(0);
+  random.mockRestore();
+  jest.useRealTimers();
 });

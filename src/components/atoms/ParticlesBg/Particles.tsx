@@ -24,6 +24,10 @@ const options: ISourceOptions = {
             // the effective count/size always came from the engine
             // defaults + the top-level `size` below. It is omitted here
             // so the config type-checks without changing behaviour.
+            // Fewer than the engine default of 100, to keep the background calm.
+            number: {
+                value: 60
+            },
             color: {
                 value: ["#f8c210", "#004E4D", "#018C99"]
             },
@@ -52,7 +56,7 @@ const options: ISourceOptions = {
                 random: true,
                 anim: {
                     enable: true,
-                    speed: 2,
+                    speed: 1,
                     size_min: 0.15,
                     sync: false
                 }
@@ -66,7 +70,7 @@ const options: ISourceOptions = {
             },
             move: {
                 enable: true,
-                speed: 1.6,
+                speed: 0.6,
                 direction: "none",
                 random: false,
                 straight: false,
@@ -87,15 +91,14 @@ const options: ISourceOptions = {
                 }
             }
         },
-        // Phones get fewer particles than the engine default of 100, which
-        // crowds a narrow screen. tsparticles re-applies this on resize.
+        // Phones get fewer still: a narrow screen crowds quickly. tsparticles re-applies this on resize.
         responsive: [
             {
                 maxWidth: 600,
                 options: {
                     particles: {
                         number: {
-                            value: 40
+                            value: 25
                         }
                     }
                 }

@@ -31,6 +31,7 @@ Serves the production build locally on [http://localhost:3000](http://localhost:
 - `src/app` — Next.js App Router: root `layout.tsx` (site-wide metadata, self-hosted font, global styles) and routes.
   - `(main)/` — route group for `/`, `/resume`, `/showcase` and `/contacts`; its `layout.tsx` renders the skip link, particles background, header menu and the `<main>` landmark (replacing the old `App.js` pathname check).
   - `goat/` — a bare route with no header/particles; its page component renders its own `<main>`.
+  - `not-found.tsx` — the 404 page, exported as `out/404.html`, which Netlify serves for any missing URL. It renders inside the `(main)` layout; the turnip-pulling game lives in `src/components/pages/NotFound/`.
   - `seo.ts` — site URL/name and the `pageMetadata()` helper every route uses for its metadata.
   - `sitemap.ts`, `robots.ts` — generate `sitemap.xml` and `robots.txt` at build time.
 - `src/components/{atoms,molecules,pages}` — atomic-design components; route `page.tsx` files are thin wrappers around them that also export the route's `metadata`.

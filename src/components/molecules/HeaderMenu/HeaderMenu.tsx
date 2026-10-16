@@ -13,10 +13,16 @@ const LINKS = [
     { link: "/contacts", label: "Where to find me (if you must!)" },
 ];
 
+// Scrolls smaller than this are ignored, so a shaky trackpad doesn't make the
+// header flicker in and out.
+const SCROLL_THRESHOLD = 8;
+
 // Desktop: links in a row. Below the lg breakpoint the links collapse behind a
 // "Menu" disclosure button (the list visibility is driven by CSS + isOpen).
 const HeaderMenu = () => {
     const [isOpen, setIsOpen] = useState(false);
+    const [isHidden, setIsHidden] = useState(false);
+    const [isScrolled, setIsScrolled] = useState(false);
     const pathname = usePathname();
     const listId = useId();
     const headerRef = useRef<HTMLElement>(null);
@@ -26,6 +32,31 @@ const HeaderMenu = () => {
     useEffect(() => {
         setIsOpen(false);
     }, [pathname]);
+
+    // The header sticks to the top: it slides away while scrolling down and
+    // comes back as soon as the visitor scrolls up.
+    useEffect(() => {
+        let lastY = window.scrollY;
+        let frame = 0;
+        const update = () => {
+            frame = 0;
+            const y = window.scrollY;
+            setIsScrolled(y > 0);
+            if (Math.abs(y - lastY) < SCROLL_THRESHOLD) return;
+            const height = headerRef.current?.offsetHeight ?? 0;
+            setIsHidden(y > lastY && y > height);
+            lastY = y;
+        };
+        const onScroll = () => {
+            frame ||= window.requestAnimationFrame(update);
+        };
+        update();
+        window.addEventListener("scroll", onScroll, { passive: true });
+        return () => {
+            window.removeEventListener("scroll", onScroll);
+            window.cancelAnimationFrame(frame);
+        };
+    }, []);
 
     useEffect(() => {
         if (!isOpen) return;
@@ -49,7 +80,16 @@ const HeaderMenu = () => {
     }, [isOpen]);
 
     return (
-        <header className="header-menu" ref={headerRef}>
+        <header
+            ref={headerRef}
+            className={[
+                "header-menu",
+                // An open menu stays put; keyboard focus inside also keeps it
+                // on screen (see :focus-within in the styles).
+                isHidden && !isOpen ? "header-menu--hidden" : "",
+                isScrolled ? "header-menu--scrolled" : "",
+            ].filter(Boolean).join(" ")}
+        >
             <BackgroundToggle />
             <nav className="header-menu__nav" aria-label="Main">
                 <button

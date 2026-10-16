@@ -2,13 +2,32 @@
 $collapse-below: 991.98px;
 
 .header-menu {
-  position: relative;
+  // Sticky rather than fixed: it keeps its place in the layout, so the page
+  // content needs no offset.
+  position: sticky;
+  top: 0;
   z-index: 10;
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 16px;
   padding: 16px 20px;
+  background: #fff;
+  border-bottom: 2px solid transparent;
+  transition: transform 0.25s ease-out, border-color 0.2s, box-shadow 0.2s;
+
+  // Once the page scrolls, a line separates the header from the content.
+  &--scrolled {
+    border-bottom-color: var(--teal);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  }
+
+  // Slid out of view while scrolling down. Focus inside brings it back, so
+  // keyboard users never tab onto links they can't see.
+  &--hidden:not(:focus-within) {
+    transform: translateY(-100%);
+    box-shadow: none;
+  }
 
   &__list {
     display: flex;
