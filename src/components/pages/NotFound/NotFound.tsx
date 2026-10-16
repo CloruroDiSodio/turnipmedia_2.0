@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import Turnip from "./Turnip";
+import { usePrefersReducedMotion } from "../Goat/usePrefersReducedMotion";
 import '../../atoms/MenuLink/MenuLink.scss';
 import './NotFound.scss';
 
@@ -59,6 +60,18 @@ interface Plot {
     find: Find | null;
 }
 
+// Every few seconds an untouched turnip fidgets, to hint that it can be pulled.
+const IDLE_MOVES = ["rustle", "peek"] as const;
+const IDLE_DELAY_MIN = 2500;
+const IDLE_DELAY_SPREAD = 2500;
+// A little longer than the idle animations in NotFound.scss.
+const IDLE_DURATION = 1000;
+
+interface Idle {
+    index: number;
+    move: (typeof IDLE_MOVES)[number];
+}
+
 const freshPatch = (): Plot[] => Array.from({ length: PLOTS }, () => ({ tugs: 0, find: null }));
 
 const NotFound = () => {
@@ -66,7 +79,15 @@ const NotFound = () => {
     const [plots, setPlots] = useState(freshPatch);
     const [deck, setDeck] = useState<Find[]>([]);
     const [message, setMessage] = useState("Nothing dug up yet.");
+    const [idle, setIdle] = useState<Idle | null>(null);
     const patchRef = useRef<HTMLUListElement>(null);
+    const reducedMotion = usePrefersReducedMotion();
+
+    // Read by the idle timer, so it can keep running across pulls.
+    const plotsRef = useRef(plots);
+    useEffect(() => {
+        plotsRef.current = plots;
+    }, [plots]);
 
     // The static 404.html is served for every missing URL, so the path is
     // only known in the browser.
@@ -77,6 +98,36 @@ const NotFound = () => {
             setPath(window.location.pathname);
         }
     }, []);
+
+    // Only turnips nobody has touched fidget: a tugged one keeps its wobble
+    // animation, and swapping it for an idle one would replay the wobble after.
+    useEffect(() => {
+        if (reducedMotion) return;
+        let timer: ReturnType<typeof setTimeout>;
+        const schedule = () => {
+            timer = setTimeout(fidget, IDLE_DELAY_MIN + Math.random() * IDLE_DELAY_SPREAD);
+        };
+        const fidget = () => {
+            const untouched = plotsRef.current.flatMap((plot, index) => (plot.tugs ? [] : [index]));
+            if (untouched.length) {
+                setIdle({
+                    index: untouched[Math.floor(Math.random() * untouched.length)],
+                    move: IDLE_MOVES[Math.floor(Math.random() * IDLE_MOVES.length)],
+                });
+                timer = setTimeout(() => {
+                    setIdle(null);
+                    schedule();
+                }, IDLE_DURATION);
+            } else {
+                schedule();
+            }
+        };
+        schedule();
+        return () => {
+            clearTimeout(timer);
+            setIdle(null);
+        };
+    }, [reducedMotion]);
 
     const pulled = plots.filter((plot) => plot.find).length;
     const harvested = pulled === PLOTS;
@@ -143,6 +194,7 @@ const NotFound = () => {
                         if (plot.find) classes.push("plot--pulled");
                         // Alternate two identical animations so each pull restarts the wobble.
                         else if (plot.tugs) classes.push(plot.tugs % 2 ? "plot--tug-a" : "plot--tug-b");
+                        else if (idle?.index === index) classes.push(`plot--idle-${idle.move}`);
                         return (
                             <li key={index} className={classes.join(" ")}>
                                 <button

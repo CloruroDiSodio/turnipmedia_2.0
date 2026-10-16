@@ -237,6 +237,17 @@ $soil-dark: #3d2a18;
     animation: not-found-tug-b 0.4s ease-in-out;
   }
 
+  // Idle fidgets (picked at random in NotFound.tsx): the leaves rustle, or the
+  // turnip peeks a little further out of the soil.
+  &--idle-rustle &__turnip-art {
+    transform-origin: 50% 30%;
+    animation: not-found-rustle 0.8s ease-in-out;
+  }
+
+  &--idle-peek &__turnip-art {
+    animation: not-found-peek-up 0.9s ease-in-out;
+  }
+
   &--pulled &__turnip,
   &--pulled &__button:hover &__turnip {
     transform: translateY(-6px) rotate(-12deg);
@@ -263,6 +274,19 @@ $soil-dark: #3d2a18;
   0%, 100% { transform: translateY(0) rotate(0); }
   25% { transform: translateY(-6px) rotate(-8deg); }
   60% { transform: translateY(-3px) rotate(7deg); }
+}
+
+@keyframes not-found-rustle {
+  0%, 100% { transform: rotate(0); }
+  20% { transform: rotate(-6deg); }
+  40% { transform: rotate(5deg); }
+  60% { transform: rotate(-4deg); }
+  80% { transform: rotate(2deg); }
+}
+
+@keyframes not-found-peek-up {
+  0%, 100% { transform: translateY(0); }
+  35%, 60% { transform: translateY(-10px); }
 }
 
 @keyframes not-found-peek {

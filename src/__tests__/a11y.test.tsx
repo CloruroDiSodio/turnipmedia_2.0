@@ -1,4 +1,4 @@
-import { fireEvent, render, screen } from "@testing-library/react";
+import { act, fireEvent, render, screen } from "@testing-library/react";
 import { axe } from "jest-axe";
 import MainLayout from "../app/(main)/layout";
 import Home from "../components/pages/Home/Home";
@@ -155,4 +155,25 @@ test("a stuck turnip stays in the ground until a later pull", () => {
   fireEvent.click(turnip);
   expect(turnip).not.toHaveAccessibleName("Pull turnip 1");
   random.mockRestore();
+});
+
+test("an untouched turnip fidgets every few seconds", () => {
+  jest.useFakeTimers();
+  // Shortest delay, first turnip, first move.
+  const random = jest.spyOn(Math, "random").mockReturnValue(0);
+  const { container } = render(<NotFoundPage />);
+  const fidgeting = () => container.querySelectorAll("[class*='plot--idle-']");
+
+  act(() => jest.advanceTimersByTime(2499));
+  expect(fidgeting()).toHaveLength(0);
+  act(() => jest.advanceTimersByTime(1));
+  expect(fidgeting()).toHaveLength(1);
+  expect(fidgeting()[0]).toHaveClass("plot--idle-rustle");
+  // A fidget is decoration: nothing is announced.
+  expect(screen.getByRole("status")).toHaveTextContent("Nothing dug up yet.");
+
+  act(() => jest.advanceTimersByTime(1000));
+  expect(fidgeting()).toHaveLength(0);
+  random.mockRestore();
+  jest.useRealTimers();
 });
