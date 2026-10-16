@@ -3,7 +3,7 @@
 import dynamic from "next/dynamic";
 import { useCallback, useEffect, useRef, useState } from "react";
 import type { Container, ISourceOptions } from "tsparticles";
-import { TURNIP_HEIGHT, TURNIP_WIDTH, turnipImageSrc } from "../../pages/NotFound/Turnip";
+import { TURNIP_HEIGHT, TURNIP_WIDTH, turnipImageSrc } from "../Turnip/Turnip";
 import { useParticlesMode } from "./particlesMode";
 
 // react-tsparticles touches browser APIs (window/canvas), so it is loaded

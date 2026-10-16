@@ -29,6 +29,43 @@ $collapse-below: 991.98px;
     box-shadow: none;
   }
 
+  &__start {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+
+  // The turnip at 2x its pixel size: 32 x 42px, about the height of the
+  // background toggle beside it.
+  &__logo {
+    display: inline-flex;
+    flex-shrink: 0;
+    border-radius: 4px;
+
+    &:focus-visible {
+      outline: 2px solid var(--gray);
+      outline-offset: 2px;
+    }
+  }
+
+  &__logo-art {
+    display: block;
+    width: 32px;
+    height: 42px;
+    transform-origin: 50% 80%;
+  }
+
+  // A little wiggle on hover, only for visitors who don't ask for less motion.
+  @media (prefers-reduced-motion: no-preference) {
+    &__logo-art {
+      transition: transform 0.2s ease-out;
+    }
+
+    &__logo:hover &__logo-art {
+      transform: rotate(-8deg);
+    }
+  }
+
   &__list {
     display: flex;
     flex-wrap: wrap;

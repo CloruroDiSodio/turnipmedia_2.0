@@ -122,3 +122,10 @@ test("the header hides while scrolling down and returns on scroll up", () => {
   expect(header).not.toHaveClass("header-menu--scrolled");
   jest.useRealTimers();
 });
+
+test("the turnip logo links home and sits outside the main nav", () => {
+  render(<HeaderMenu />);
+  const logo = screen.getByRole("link", { name: "Home" });
+  expect(logo).toHaveAttribute("href", "/");
+  expect(screen.getByRole("navigation", { name: "Main" })).not.toContainElement(logo);
+});

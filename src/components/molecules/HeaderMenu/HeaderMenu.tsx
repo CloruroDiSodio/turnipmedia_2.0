@@ -1,10 +1,12 @@
 "use client";
 
 import { useEffect, useId, useRef, useState } from "react";
+import Link from "next/link";
 import { usePathname } from "next/navigation";
 import './HeaderMenu.scss';
 import MenuLink from "../../atoms/MenuLink/MenuLink";
 import BackgroundToggle from "../../atoms/BackgroundToggle/BackgroundToggle";
+import Turnip from "../../atoms/Turnip/Turnip";
 
 const LINKS = [
     { link: "/", label: "Me" },
@@ -90,7 +92,13 @@ const HeaderMenu = () => {
                 isScrolled ? "header-menu--scrolled" : "",
             ].filter(Boolean).join(" ")}
         >
-            <BackgroundToggle />
+            <div className="header-menu__start">
+                {/* The turnip is decorative (aria-hidden), so the link is named here. */}
+                <Link href="/" className="header-menu__logo" aria-label="Home">
+                    <Turnip className="header-menu__logo-art" />
+                </Link>
+                <BackgroundToggle />
+            </div>
             <nav className="header-menu__nav" aria-label="Main">
                 <button
                     ref={buttonRef}
