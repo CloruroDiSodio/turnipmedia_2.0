@@ -1,4 +1,4 @@
-import { render, screen } from "@testing-library/react";
+import { fireEvent, render, screen } from "@testing-library/react";
 import { axe } from "jest-axe";
 import MainLayout from "../app/(main)/layout";
 import Home from "../components/pages/Home/Home";
@@ -80,4 +80,21 @@ test("showcase cards list their technologies", () => {
   render(<Showcase />);
   const goat = screen.getByRole("link", { name: "Goat Companion" }).closest("article");
   expect(goat).toHaveTextContent("Built with: Next.js");
+});
+
+test("typing the goat's name doesn't make it do tricks", () => {
+  const { container } = render(<GoatPage />);
+  const input = screen.getByLabelText("Name");
+  // The first live region says what the goat is doing.
+  const status = () => container.querySelector("[aria-live]")?.textContent;
+  fireEvent.keyDown(input, { key: "c" });
+  fireEvent.keyDown(input, { key: "s" });
+  fireEvent.keyDown(input, { key: "ArrowLeft" });
+  expect(status()).toBe("The goat is facing you.");
+
+  fireEvent.change(input, { target: { value: "  Biscuit " } });
+  fireEvent.submit(input.closest("form")!);
+  expect(screen.getByText("Your goat is now called Biscuit.")).toBeInTheDocument();
+  expect(screen.getByRole("button", { name: "Cuddle Biscuit" })).toBeInTheDocument();
+  expect(status()).toBe("Biscuit is facing you.");
 });

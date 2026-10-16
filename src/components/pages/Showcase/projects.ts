@@ -25,7 +25,7 @@ const projects: Project[] = [
     {
         title: "Goat Companion",
         description:
-            "A tiny pixel-art goat to walk around, cuddle and put to sleep, with the keyboard or by tapping the controls.",
+            "A tiny pixel-art virtual pet: a goat that gets hungry, sleepy and lonely. Walk it around its pen, feed it turnips, play and cuddle to keep it happy, with the keyboard or by tapping the controls.",
         href: "/goat",
         preview: "/showcase/goat.gif",
         previewStill: "/showcase/goat.png",
