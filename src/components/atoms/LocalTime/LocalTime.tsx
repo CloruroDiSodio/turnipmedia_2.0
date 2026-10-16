@@ -7,6 +7,7 @@ import "./LocalTime.scss";
 const TIME_ZONE = "Europe/Rome";
 
 const formatter = new Intl.DateTimeFormat("en-GB", {
+    weekday: "short",
     hour: "2-digit",
     minute: "2-digit",
     hourCycle: "h23",
@@ -14,11 +15,21 @@ const formatter = new Intl.DateTimeFormat("en-GB", {
 });
 
 // A light-hearted guess at what I'm up to, so visitors know when to expect a reply.
-const activityAt = (hour: number) => {
-    if (hour >= 7 && hour < 9) return "probably making the first tea of the day";
-    if (hour >= 9 && hour < 18) return "probably writing code";
-    if (hour >= 18 && hour < 23) return "probably reading a book";
-    return "probably asleep, so expect a reply after breakfast";
+const activityAt = (day: string, hour: number) => {
+    const weekend = day === "Sat" || day === "Sun";
+    const asleep = hour >= 23 || hour < 7;
+
+    // Late on Friday the next reply is after the weekend, not after breakfast.
+    if (asleep) {
+        return weekend || (day === "Fri" && hour >= 23)
+            ? "probably asleep, so expect a reply on Monday"
+            : "probably asleep, so expect a reply after breakfast";
+    }
+    if (weekend) return "probably enjoying the weekend, so expect a reply on Monday";
+    if (hour < 9) return "probably making the first tea of the day";
+    if (hour === 13) return "probably having lunch";
+    if (hour < 18) return "probably writing code";
+    return "probably reading a book";
 };
 
 // The visitor's clock is only known in the browser, so nothing is rendered on
@@ -34,14 +45,14 @@ const LocalTime = () => {
 
     if (!now) return null;
 
-    const time = formatter.format(now);
-    const hour = Number(time.slice(0, 2));
+    const parts = Object.fromEntries(formatter.formatToParts(now).map(({ type, value }) => [type, value]));
+    const time = `${parts.hour}:${parts.minute}`;
 
     return (
         <p className="local-time">
             <FiClock aria-hidden="true" focusable="false" />
             <span>
-                It&apos;s <time dateTime={time}>{time}</time> near Milan: I&apos;m {activityAt(hour)}.
+                It&apos;s <time dateTime={time}>{time}</time> near Milan: I&apos;m {activityAt(parts.weekday, Number(parts.hour))}.
             </span>
         </p>
     );
