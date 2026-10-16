@@ -7,6 +7,7 @@ import Contacts from "../components/pages/Contacts/Contacts";
 import Showcase from "../components/pages/Showcase/Showcase";
 import Appetta from "../components/pages/Appetta/Appetta";
 import GoatPage from "../components/pages/Goat/GoatPage";
+import NotFoundPage from "../app/not-found";
 
 jest.mock("next/navigation", () => ({
   usePathname: () => "/",
@@ -34,6 +35,7 @@ const pages = {
   "/contacts": <MainLayout><Contacts /></MainLayout>,
   "/appetta": <Appetta />,
   "/goat": <GoatPage />,
+  "404": <NotFoundPage />,
 };
 
 describe.each(Object.entries(pages))("%s", (_path, page) => {
@@ -121,4 +123,36 @@ test("the goat's wandering can be switched off", () => {
   fireEvent.click(toggle);
   expect(toggle).toHaveAttribute("aria-pressed", "false");
   expect(screen.getByRole("main")).toHaveClass("goatPage--still");
+});
+
+test("the 404 turnip patch can be harvested and replanted", () => {
+  // Every pull pops its turnip on the first try.
+  const random = jest.spyOn(Math, "random").mockReturnValue(0);
+  render(<NotFoundPage />);
+  expect(screen.getByRole("link", { name: "Take me home" })).toHaveAttribute("href", "/");
+
+  for (let i = 1; i <= 6; i++) {
+    fireEvent.click(screen.getByRole("button", { name: `Pull turnip ${i}` }));
+  }
+  expect(screen.getByRole("status")).toHaveTextContent(
+    "Under turnip 6: nothing at all. The page was the turnips we pulled along the way."
+  );
+  expect(screen.getByText(/Turnips pulled: 6 \/ 6/)).toHaveTextContent("pages found: 0");
+
+  fireEvent.click(screen.getByRole("button", { name: "Replant the patch" }));
+  expect(screen.getByRole("button", { name: "Pull turnip 1" })).toHaveFocus();
+  random.mockRestore();
+});
+
+test("a stuck turnip stays in the ground until a later pull", () => {
+  // 0.99 is above every pop chance except the guaranteed third pull.
+  const random = jest.spyOn(Math, "random").mockReturnValue(0.99);
+  render(<NotFoundPage />);
+  const turnip = screen.getByRole("button", { name: "Pull turnip 1" });
+  fireEvent.click(turnip);
+  fireEvent.click(turnip);
+  expect(turnip).toHaveAccessibleName("Pull turnip 1");
+  fireEvent.click(turnip);
+  expect(turnip).not.toHaveAccessibleName("Pull turnip 1");
+  random.mockRestore();
 });
