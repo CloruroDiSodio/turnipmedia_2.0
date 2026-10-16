@@ -1,17 +1,18 @@
 "use client";
 
 import dynamic from "next/dynamic";
-import { useCallback, useEffect, useRef } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import type { Container, ISourceOptions } from "tsparticles";
+import { TURNIP_HEIGHT, TURNIP_WIDTH, turnipImageSrc } from "../../pages/NotFound/Turnip";
 import { useParticlesMode } from "./particlesMode";
 
 // react-tsparticles touches browser APIs (window/canvas), so it is loaded
 // lazily and never rendered during server-side rendering.
 const Particles = dynamic(() => import("react-tsparticles"), {ssr: false});
 
-// Module-level so the reference never changes: react-tsparticles destroys and
-// rebuilds the canvas whenever its props differ.
-const options: ISourceOptions = {
+// Built once per mount (see `withTurnips`) so the reference never changes:
+// react-tsparticles destroys and rebuilds the canvas whenever its props differ.
+const baseOptions: ISourceOptions = {
         // Stop the animation entirely for users who ask the OS for
         // reduced motion (the default only slows it down).
         motion: {
@@ -99,12 +100,83 @@ const options: ISourceOptions = {
                     particles: {
                         number: {
                             value: 25
+                        },
+                        groups: {
+                            turnips: {
+                                number: {
+                                    value: 2
+                                }
+                            }
                         }
                     }
                 }
             }
         ],
         retina_detect: true
+};
+
+// A few tiny pixel turnips drift among the dots, slowly turning. They come
+// out of the total count above (60 → 56 dots + 4 turnips; 25 → 23 + 2 on
+// phones) and override only what differs from the dots. The image needs the
+// page's CSS variables, so it is built in the browser; the server never
+// renders the canvas anyway. Reduced motion stops the rotation along with
+// everything else (tsparticles scales the rotate speed by the same factor).
+const withTurnips = (): ISourceOptions => {
+    if (typeof document === "undefined") return baseOptions;
+    return {
+        ...baseOptions,
+        particles: {
+            ...baseOptions.particles,
+            groups: {
+                turnips: {
+                    number: {
+                        value: 4
+                    },
+                    shape: {
+                        type: "image",
+                        image: {
+                            src: turnipImageSrc(),
+                            width: TURNIP_WIDTH,
+                            height: TURNIP_HEIGHT
+                        }
+                    },
+                    // Steady and fully visible: the dots' fade and shrink
+                    // would make a turnip flicker or vanish.
+                    opacity: {
+                        value: 0.9,
+                        random: false,
+                        animation: {
+                            enable: false
+                        }
+                    },
+                    // Size is the radius: about 18px across.
+                    size: {
+                        value: 9,
+                        random: false,
+                        animation: {
+                            enable: false
+                        }
+                    },
+                    // Random start angle and direction; one full turn every
+                    // ~15-30s. `sync` skips the extra random multiplier that
+                    // would leave some turnips almost still.
+                    rotate: {
+                        value: {min: 0, max: 360},
+                        direction: "random",
+                        animation: {
+                            enable: true,
+                            speed: {min: 1.5, max: 3},
+                            sync: true
+                        }
+                    },
+                    // No link lines to or from a turnip.
+                    links: {
+                        enable: false
+                    }
+                }
+            }
+        }
+    };
 };
 
 // Stop the loop but render one frame, so "still" shows a frozen background
@@ -116,6 +188,7 @@ const freeze = (container: Container) => {
 
 const ParticlesBg = () => {
     const mode = useParticlesMode();
+    const [options] = useState(withTurnips);
     const container = useRef<Container | null>(null);
     const modeRef = useRef(mode);
 
