@@ -29,7 +29,7 @@ const options: ISourceOptions = {
                 value: 60
             },
             color: {
-                value: ["#f8c210", "#004E4D", "#018C99"]
+                value: ["#f8c210", "#2F5753", "#018C99"]
             },
             shape: {
                 type: "circle",
