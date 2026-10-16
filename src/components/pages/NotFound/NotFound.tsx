@@ -1,10 +1,9 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import Link from "next/link";
+import TextLink from "../../atoms/TextLink/TextLink";
 import Turnip from "./Turnip";
 import { usePrefersReducedMotion } from "../Goat/usePrefersReducedMotion";
-import '../../atoms/MenuLink/MenuLink.scss';
 import './NotFound.scss';
 
 interface Find {
@@ -178,9 +177,9 @@ const NotFound = () => {
                     nothing here. Maybe it got buried in the turnip patch?
                 </p>
                 <nav className="not-found__links" aria-label="Ways out">
-                    <Link className="menu-link" href="/">Take me home</Link>
-                    <Link className="menu-link" href="/showcase">Things I made</Link>
-                    <Link className="menu-link" href="/contacts">Report a missing page</Link>
+                    <TextLink href="/">Take me home</TextLink>
+                    <TextLink href="/showcase">Things I made</TextLink>
+                    <TextLink href="/contacts">Report a missing page</TextLink>
                 </nav>
             </header>
 

@@ -1,7 +1,6 @@
-import Link from "next/link";
+import TextLink from "../../atoms/TextLink/TextLink";
 import { SITE_URL } from "../../../app/seo";
 import Portrait from "../../atoms/Portrait/Portrait";
-import '../../atoms/MenuLink/MenuLink.scss';
 import './Home.scss';
 
 // schema.org Person data so search engines can connect this site with the
@@ -39,9 +38,9 @@ const Home = () => {
                     <li>I do stuff.</li>
                 </ul>
                 <nav className="home__links" aria-label="Get to know me">
-                    <Link className="menu-link" href="/showcase">See my work</Link>
-                    <Link className="menu-link" href="/resume">Read my resume</Link>
-                    <Link className="menu-link" href="/contacts">Say hi</Link>
+                    <TextLink href="/showcase">See my work</TextLink>
+                    <TextLink href="/resume">Read my resume</TextLink>
+                    <TextLink href="/contacts">Say hi</TextLink>
                 </nav>
             </div>
             <Portrait />

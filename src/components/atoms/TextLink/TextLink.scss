@@ -1,0 +1,43 @@
+// Links in page content (not the header nav, see MenuLink). They always show
+// an underline, so they read as clickable before any hover; on hover/focus a
+// yellow highlighter sweeps in behind the text.
+.text-link {
+  position: relative;
+  z-index: 0;
+  display: inline-block;
+  padding: 0 2px;
+  color: var(--gray);
+  text-decoration: none;
+  font-size: 20px;
+  // Tight line box, so the underline sits just under the letters.
+  line-height: 1.05;
+
+  // Resting underline.
+  &::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    height: 2px;
+    background-color: var(--teal);
+    transition: height 0.2s, background-color 0.2s;
+  }
+
+  &:hover,
+  &:focus-visible {
+    color: var(--gray);
+    text-decoration: none;
+
+    &::after {
+      height: 60%;
+      background-color: var(--yellow);
+    }
+  }
+
+  &:focus-visible {
+    outline: 2px solid var(--teal);
+    outline-offset: 4px;
+  }
+}
