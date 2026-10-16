@@ -61,9 +61,12 @@ test("social links have accessible names", () => {
   }
 });
 
-test("each showcase card links to its project, named by its title", () => {
+test("each showcase card opens its project in a new tab, named by its title", () => {
   render(<Showcase />);
-  expect(screen.getByRole("link", { name: "Goat Companion" })).toHaveAttribute("href", "/goat");
+  // Even the goat, which lives on this site.
+  const goat = screen.getByRole("link", { name: "Goat Companion (opens in a new tab)" });
+  expect(goat).toHaveAttribute("href", "/goat");
+  expect(goat).toHaveAttribute("target", "_blank");
 
   const external = screen.getByRole("link", { name: /Pixel Art & Pattern Generator/ });
   expect(external).toHaveAccessibleName(/opens in a new tab/);
@@ -80,7 +83,7 @@ test("work cards sit under their own heading and show my role", () => {
 
 test("showcase cards list their technologies", () => {
   render(<Showcase />);
-  const goat = screen.getByRole("link", { name: "Goat Companion" }).closest("article");
+  const goat = screen.getByRole("link", { name: /Goat Companion/ }).closest("article");
   expect(goat).toHaveTextContent("Built with: Next.js");
 });
 

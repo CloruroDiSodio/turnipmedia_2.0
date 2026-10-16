@@ -1,54 +1,52 @@
+// Links always show an underline, so they read as clickable before any hover.
+// On hover/focus a yellow highlighter sweeps in behind the text; the current
+// page keeps a thicker teal underline instead.
 .menu-link {
-  display: inline-block;
-  color: var(--gray);
   position: relative;
+  z-index: 0;
+  display: inline-block;
+  padding: 0 2px;
+  color: var(--gray);
   text-decoration: none;
   font-size: 20px;
-  &:after {
+  // Tight line box, so the underline sits just under the letters.
+  line-height: 1.05;
+
+  // Resting underline.
+  &::after {
     content: '';
     position: absolute;
+    right: 0;
     bottom: 0;
     left: 0;
-    display: block;
+    z-index: -1;
+    height: 2px;
     background-color: var(--teal);
-    width: 0%;
-    height: 3px;
-  }
-
-  // Keyboard focus gets the same underline as hover, plus a focus ring.
-  &:focus-visible {
-    outline: 2px solid var(--teal);
-    outline-offset: 4px;
+    transition: height 0.2s, background-color 0.2s;
   }
 
   &:hover,
   &:focus-visible {
     color: var(--gray);
     text-decoration: none;
-    &:after {
-      content: '';
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      display: block;
-      background-color: var(--teal);
-      width: 100%;
-      height: 3px;
-      transition: width 0.3s;
+
+    &::after {
+      height: 60%;
+      background-color: var(--yellow);
     }
   }
 
+  &:focus-visible {
+    outline: 2px solid var(--teal);
+    outline-offset: 4px;
+  }
+
+  // The current page only gets a thicker line than the other links.
   &--active {
     color: var(--gray) !important;
-    &:after {
-      content: '';
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      display: block;
-      background-color: var(--teal);
-      width: 100%;
-      height: 3px;
+
+    &::after {
+      height: 4px;
     }
   }
 }
