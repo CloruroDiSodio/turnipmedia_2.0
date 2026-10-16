@@ -42,6 +42,15 @@ const projects: Project[] = [
         previewAlt: "The generator turning a sunset landscape into a 32 by 24 pixel grid",
         tech: ["Next.js", "Tailwind CSS", "Python", "FastAPI", "Pillow"],
     },
+    {
+        title: "ChibiUI",
+        description:
+            "An open-source React component library with a soft pastel, kawaii look. Built on Radix primitives, axe-tested and checked against WCAG AA, strictly typed, themeable through design tokens and tree-shakable.",
+        href: "https://chibi-ui.netlify.app/",
+        preview: "/showcase/chibi-ui.jpg",
+        previewAlt: "The ChibiUI homepage with a smiling cat mascot and the headline “Serious components, adorably dressed.”",
+        tech: ["React", "TypeScript", "Radix UI", "Tailwind CSS", "Design tokens"],
+    },
 ];
 
 // Sites I worked on as part of a company team. Cards are shown in this order.
