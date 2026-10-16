@@ -35,9 +35,18 @@ Serves the production build locally on [http://localhost:3000](http://localhost:
   - `sitemap.ts`, `robots.ts` — generate `sitemap.xml` and `robots.txt` at build time.
 - `src/components/{atoms,molecules,pages}` — atomic-design components; route `page.tsx` files are thin wrappers around them that also export the route's `metadata`.
 - `src/components/pages/Showcase/projects.ts` — the projects shown as cards on `/showcase`. To add one, append an entry and put its preview image or GIF in `public/showcase/` (the CSP only allows same-origin images). For an animated preview, also add a still frame as `previewStill`: it is shown instead when the visitor prefers reduced motion.
+- `src/components/pages/Goat/` — the Goat Companion game; its [README](src/components/pages/Goat/README.md) explains how the goat behaves, saves, and stays accessible.
 - `src/__tests__/` — cross-page tests (accessibility).
 - `src/index.scss` — global styles (imported by the root layout), including the skip link and the reduced-motion rules.
 - `scripts/csp-headers.mjs` — postbuild step that generates the CSP.
+- `scripts/goat-sprites.py` — builds the goat's sprite sheets (`public/goat-v2.png` and `public/goat-props.png`) from the original `public/goat.png`, which it leaves untouched. Not part of the build: run it by hand after changing the poses, with Pillow in a local venv (`.venv/` is git-ignored):
+
+  ```sh
+  python3 -m venv .venv && .venv/bin/pip install pillow
+  .venv/bin/python scripts/goat-sprites.py .
+  ```
+
+  If you add or reorder sprite rows, update `POSE_ROWS` in `GoatAnimal.tsx` to match.
 
 ## Accessibility
 
