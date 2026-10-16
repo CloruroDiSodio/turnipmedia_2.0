@@ -30,7 +30,7 @@ Serves the production build locally on [http://localhost:3000](http://localhost:
 
 - `src/app` — Next.js App Router: root `layout.tsx` (site-wide metadata, self-hosted font, global styles) and routes.
   - `(main)/` — route group for `/`, `/resume`, `/showcase` and `/contacts`; its `layout.tsx` renders the skip link, particles background, header menu and the `<main>` landmark (replacing the old `App.js` pathname check).
-  - `appetta/`, `goat/` — bare routes with no header/particles; each page component renders its own `<main>`.
+  - `goat/` — a bare route with no header/particles; its page component renders its own `<main>`.
   - `seo.ts` — site URL/name and the `pageMetadata()` helper every route uses for its metadata.
   - `sitemap.ts`, `robots.ts` — generate `sitemap.xml` and `robots.txt` at build time.
 - `src/components/{atoms,molecules,pages}` — atomic-design components; route `page.tsx` files are thin wrappers around them that also export the route's `metadata`.
@@ -67,7 +67,6 @@ Target: WCAG 2.2 AA. What is in place, and what to keep doing when changing page
 - **Canonical URLs** use a trailing slash (`/resume/`) because `trailingSlash: true` makes the export serve each page at that path.
 - **Sitemap and robots** — `sitemap.xml` and `robots.txt` are generated from `src/app/sitemap.ts` and `src/app/robots.ts`. **When adding a route, add it to `sitemap.ts`.**
 - **Structured data** — the home page embeds schema.org `Person` JSON-LD linking the GitHub, LinkedIn and CodePen profiles.
-- **`/appetta`** is a private gift page: it is `noindex, nofollow` and left out of the sitemap.
 
 ## Security
 

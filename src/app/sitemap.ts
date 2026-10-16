@@ -4,7 +4,7 @@ import { SITE_URL } from "./seo";
 // Required for `output: "export"`: emit sitemap.xml at build time.
 export const dynamic = "force-static";
 
-// /appetta is intentionally left out: it is marked noindex.
+// Pages marked noindex are intentionally left out.
 const routes: { path: string; priority: number }[] = [
   { path: "/", priority: 1 },
   { path: "/resume/", priority: 0.8 },
