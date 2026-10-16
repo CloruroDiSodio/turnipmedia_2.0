@@ -7,7 +7,7 @@ const OG_IMAGE = {
   url: "/preview.png",
   width: 1200,
   height: 630,
-  alt: "Denise Moscon, front-end developer",
+  alt: "Denise Moscon, senior frontend engineer",
 };
 
 // Shared Open Graph fields. Next.js merges metadata shallowly, so a page that

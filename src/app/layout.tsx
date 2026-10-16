@@ -26,11 +26,11 @@ export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   // Pages set a short title; the template appends the site name.
   title: {
-    default: "Denise Moscon | Front-end Developer",
+    default: "Denise Moscon | Senior Frontend Engineer",
     template: `%s | ${SITE_NAME}`,
   },
   description:
-    "Front-end developer based in Verona, React Developer, React native developer",
+    "Senior frontend engineer based near Milan: React, Next.js, TypeScript, headless CMSs and design systems",
   keywords: [
     "front-end",
     "sviluppo front-end",
@@ -40,8 +40,11 @@ export const metadata: Metadata = {
     "reactjs",
     "react",
     "react native",
-    "sviluppatore front-end verona",
-    "verona web developer",
+    "next.js",
+    "typescript",
+    "senior frontend engineer",
+    "sviluppatore front-end milano",
+    "milano web developer",
     "web developer",
   ],
   manifest: "/manifest.json",
@@ -74,8 +77,8 @@ export const metadata: Metadata = {
   creator: SITE_NAME,
   openGraph: {
     ...baseOpenGraph,
-    title: "Denise Moscon | Front-end Developer",
-    description: "Front-end Developer based in Verona",
+    title: "Denise Moscon | Senior Frontend Engineer",
+    description: "Senior Frontend Engineer based near Milan",
     url: "/",
   },
   twitter: {
