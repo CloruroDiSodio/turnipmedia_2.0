@@ -35,6 +35,22 @@ const Brand = () => (
             </p>
         </header>
 
+        <section className="brand__section" aria-labelledby="brand-why">
+            <h2 id="brand-why" className="brand__subtitle">Why a turnip?</h2>
+            <div className="brand__text">
+                <p>
+                    Honestly, I don&apos;t remember. I picked the name years ago and the reason got
+                    lost somewhere along the way. But it has grown on me, and now I know what it
+                    stands for.
+                </p>
+                <p>
+                    Most of a turnip is underground. Most of a good website is too: the structure,
+                    the accessibility, the performance nobody sees. The leaves are just the part
+                    that shows.
+                </p>
+            </div>
+        </section>
+
         <section className="brand__section" aria-labelledby="brand-turnip">
             <h2 id="brand-turnip" className="brand__subtitle">The turnip</h2>
             <div className="brand__mascot">
