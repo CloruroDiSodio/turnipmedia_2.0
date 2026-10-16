@@ -1,4 +1,7 @@
+import Link from "next/link";
 import { SITE_URL } from "../../../app/seo";
+import Portrait from "../../atoms/Portrait/Portrait";
+import '../../atoms/MenuLink/MenuLink.scss';
 import './Home.scss';
 
 // schema.org Person data so search engines can connect this site with the
@@ -25,11 +28,23 @@ const Home = () => {
                 // close the <script> element early.
                 dangerouslySetInnerHTML={{__html: JSON.stringify(personJsonLd).replace(/</g, "\\u003c")}}
             />
-            <h1 className="home__hi">Hi! :)</h1>
-            <p className="h4">I'm Denise, nice to meet you!</p>
-            <span>I write code.</span><br />
-            <span>I read books.</span><br />
-            <span>I do stuff.</span>
+            <div className="home__intro">
+                <h1 className="home__hi">Hi! :)</h1>
+                <p className="h4">I'm Denise, nice to meet you!</p>
+                <p className="home__role">Senior frontend engineer, based near Milan.</p>
+                <ul className="home__facts">
+                    <li>I write code.</li>
+                    <li>I read books.</li>
+                    <li>I drink tea.</li>
+                    <li>I do stuff.</li>
+                </ul>
+                <nav className="home__links" aria-label="Get to know me">
+                    <Link className="menu-link" href="/showcase">See my work</Link>
+                    <Link className="menu-link" href="/resume">Read my resume</Link>
+                    <Link className="menu-link" href="/contacts">Say hi</Link>
+                </nav>
+            </div>
+            <Portrait />
         </div>
     )
 }

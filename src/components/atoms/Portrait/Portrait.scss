@@ -1,0 +1,77 @@
+// Same card look as the showcase project cards.
+.portrait {
+  width: 100%;
+  max-width: 320px;
+  margin: 0;
+  overflow: hidden;
+  background: #fff;
+  border: 2px solid var(--gray);
+  border-radius: 8px;
+  box-shadow: 6px 6px 0 var(--yellow);
+  transition: box-shadow 0.3s;
+
+  &--tea {
+    box-shadow: 6px 6px 0 var(--teal);
+  }
+
+  &__frame {
+    display: grid;
+    border-bottom: 2px solid var(--gray);
+  }
+
+  // Both poses share one grid cell; only one is visible at a time.
+  &__img {
+    grid-area: 1 / 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: opacity 0.4s;
+
+    &--tea {
+      opacity: 0;
+    }
+  }
+
+  &--tea &__img--hi {
+    opacity: 0;
+  }
+
+  &--tea &__img--tea {
+    opacity: 1;
+  }
+
+  &__caption {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 8px 12px;
+    font-size: 22px;
+  }
+
+  &__button {
+    min-height: 44px;
+    padding: 0 12px;
+    border: 2px solid var(--teal);
+    border-radius: 4px;
+    background: #fff;
+    color: var(--gray);
+    font: inherit;
+    font-size: 20px;
+    cursor: pointer;
+
+    &:hover {
+      background: #e6f3f5;
+    }
+
+    &:focus-visible {
+      outline: 2px solid var(--gray);
+      outline-offset: 2px;
+    }
+
+    &[aria-pressed="true"] {
+      background: var(--teal);
+      color: #fff;
+    }
+  }
+}
