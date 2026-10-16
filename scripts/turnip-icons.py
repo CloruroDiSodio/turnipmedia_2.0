@@ -8,30 +8,13 @@
 # The art is scaled by whole pixels so it stays crisp, and centred. Only the
 # 16px favicon is too small for that (the turnip is 21px tall) and is
 # downsampled instead.
-import re
 import sys
 from PIL import Image
+from turnip_art import load_turnip
 
 ROOT = sys.argv[1]
-tsx = open(f'{ROOT}/src/components/atoms/Turnip/Turnip.tsx').read()
-scss = open(f'{ROOT}/src/themes/palette.scss').read()
-
-PIXELS = re.findall(r'^\s*"([.A-Z]+)",$', re.search(r'const PIXELS = \[(.*?)\];', tsx, re.S).group(1), re.M)
-VARS = dict(re.findall(r'(--[\w-]+):\s*(#[0-9A-Fa-f]{6})', scss))
-
-def hex_rgba(value):
-    value = VARS[re.match(r'var\((--[\w-]+)\)', value).group(1)] if value.startswith('var(') else value
-    value = value.lstrip('#')
-    if len(value) == 3: value = ''.join(c * 2 for c in value)
-    return tuple(int(value[i:i + 2], 16) for i in (0, 2, 4)) + (255,)
-
-COLORS = {key: hex_rgba(value) for key, value in re.findall(r'^\s*(\w): "([^"]+)",$', re.search(r'const COLORS[^{]*\{(.*?)\};', tsx, re.S).group(1), re.M)}
-W, H = len(PIXELS[0]), len(PIXELS)
-
-art = Image.new('RGBA', (W, H))
-for y, row in enumerate(PIXELS):
-    for x, key in enumerate(row):
-        if key != '.': art.putpixel((x, y), COLORS[key])
+art = load_turnip(ROOT)
+W, H = art.size
 
 WHITE = (255, 255, 255, 255)
 CLEAR = (0, 0, 0, 0)
