@@ -18,10 +18,34 @@ export interface Project {
     // For work at a company: my role there, shown under the title, since
     // these sites were built by a team rather than by me alone.
     role?: string;
+    // Opens in the current tab instead of a new one: for pages that are part
+    // of this site's own story rather than a separate project.
+    sameTab?: boolean;
 }
 
 // Cards are shown in this order.
 const projects: Project[] = [
+    {
+        title: "Turnip Brand Identity",
+        description:
+            "The brand guide for this site: a pixel turnip mascot that doubles as logo and favicon, a soft palette with its contrast checked against WCAG, one pixel typeface, and the components, motion and voice everything shares.",
+        href: "/showcase/brand/",
+        preview: "/showcase/brand.gif",
+        previewStill: "/showcase/brand.png",
+        previewAlt: "The pixel turnip mascot, gently swaying",
+        pixelArt: true,
+        sameTab: true,
+        tech: ["Branding", "Pixel art", "Design tokens", "Sass", "Python"],
+    },
+    {
+        title: "Pixel Art & Pattern Generator",
+        description:
+            "Turns any photo into a pixel art grid on a retro palette (NES, PICO-8, Game Boy) and exports a printable cross stitch pattern as PNG, CSV or Markdown.",
+        href: "https://turnipmedia-pixel-pattern-generator.netlify.app/",
+        preview: "/showcase/pixel-pattern-generator.jpg",
+        previewAlt: "The generator turning a sunset landscape into a 32 by 24 pixel grid",
+        tech: ["Next.js", "Tailwind CSS", "Python", "FastAPI", "Pillow"],
+    },
     {
         title: "Goat Companion",
         description:
@@ -32,15 +56,6 @@ const projects: Project[] = [
         previewAlt: "A pixel-art goat walking across the screen",
         pixelArt: true,
         tech: ["Next.js", "React", "TypeScript", "Sass"],
-    },
-    {
-        title: "Pixel Art & Pattern Generator",
-        description:
-            "Turns any photo into a pixel art grid on a retro palette (NES, PICO-8, Game Boy) and exports a printable cross stitch pattern as PNG, CSV or Markdown.",
-        href: "https://turnipmedia-pixel-pattern-generator.netlify.app/",
-        preview: "/showcase/pixel-pattern-generator.jpg",
-        previewAlt: "The generator turning a sunset landscape into a 32 by 24 pixel grid",
-        tech: ["Next.js", "Tailwind CSS", "Python", "FastAPI", "Pillow"],
     },
     {
         title: "ChibiUI",

@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import TextLink from "../../atoms/TextLink/TextLink";
-import Turnip from "./Turnip";
+import Turnip from "../../atoms/Turnip/Turnip";
 import { usePrefersReducedMotion } from "../Goat/usePrefersReducedMotion";
 import './NotFound.scss';
 

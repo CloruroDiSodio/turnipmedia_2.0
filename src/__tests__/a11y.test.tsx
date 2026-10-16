@@ -5,6 +5,7 @@ import Home from "../components/pages/Home/Home";
 import Resume from "../components/pages/Resume/Resume";
 import Contacts from "../components/pages/Contacts/Contacts";
 import Showcase from "../components/pages/Showcase/Showcase";
+import Brand from "../components/pages/Brand/Brand";
 import Appetta from "../components/pages/Appetta/Appetta";
 import GoatPage from "../components/pages/Goat/GoatPage";
 import NotFoundPage from "../app/not-found";
@@ -32,6 +33,7 @@ const pages = {
   "/": <MainLayout><Home /></MainLayout>,
   "/resume": <MainLayout><Resume /></MainLayout>,
   "/showcase": <MainLayout><Showcase /></MainLayout>,
+  "/showcase/brand": <MainLayout><Brand /></MainLayout>,
   "/contacts": <MainLayout><Contacts /></MainLayout>,
   "/appetta": <Appetta />,
   "/goat": <GoatPage />,
@@ -179,4 +181,13 @@ test("an untouched turnip fidgets every few seconds", () => {
   expect(fidgeting()).toHaveLength(0);
   random.mockRestore();
   jest.useRealTimers();
+});
+
+test("the brand guide card opens in the same tab, other projects in a new one", () => {
+  render(<Showcase />);
+  const brand = screen.getByRole("link", { name: "Turnip Brand Identity" });
+  expect(brand).toHaveAttribute("href", "/showcase/brand/");
+  expect(brand).not.toHaveAttribute("target");
+  expect(screen.getByRole("link", { name: /Goat Companion/ })).toHaveAttribute("target", "_blank");
+  expect(screen.getByRole("link", { name: /Goat Companion/ })).toHaveAccessibleName("Goat Companion (opens in a new tab)");
 });

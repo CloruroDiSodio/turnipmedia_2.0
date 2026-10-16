@@ -45,6 +45,24 @@ const RUNS = PIXELS.flatMap((row, y) =>
 export const TURNIP_WIDTH = PIXELS[0].length;
 export const TURNIP_HEIGHT = PIXELS.length;
 
+// The same turnip as a standalone SVG data URI, for the particle background,
+// which draws it onto a canvas. CSS variables don't resolve inside an image,
+// so they are read from the page here: the palette stays the single source.
+// Client-only (needs `document`). Drawn at `scale` so it stays crisp when the
+// canvas scales it down.
+export const turnipImageSrc = (scale = 4) => {
+    const root = getComputedStyle(document.documentElement);
+    const resolve = (fill: string) =>
+        fill.replace(/var\((--[\w-]+)\)/, (_, name) => root.getPropertyValue(name).trim());
+    const rects = RUNS.map(({ x, y, width, fill }) =>
+        `<rect x="${x}" y="${y}" width="${width}" height="1" fill="${resolve(fill)}"/>`
+    ).join("");
+    const svg =
+        `<svg xmlns="http://www.w3.org/2000/svg" width="${TURNIP_WIDTH * scale}" height="${TURNIP_HEIGHT * scale}" ` +
+        `viewBox="0 0 ${TURNIP_WIDTH} ${TURNIP_HEIGHT}" shape-rendering="crispEdges">${rects}</svg>`;
+    return `data:image/svg+xml;charset=utf-8,${encodeURIComponent(svg)}`;
+};
+
 const Turnip = ({ className }: { className?: string }) => (
     <svg
         className={className}

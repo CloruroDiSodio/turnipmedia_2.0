@@ -30,6 +30,22 @@ body {
   }
 }
 
+// The background controls float in the bottom-right corner, clear of the
+// iPhone home indicator. Below the header (z-index 10), so an open mobile
+// menu covers them rather than the other way round.
+.background-dock {
+  position: fixed;
+  right: max(16px, env(safe-area-inset-right));
+  bottom: max(16px, env(safe-area-inset-bottom));
+  z-index: 5;
+}
+
+// Room at the end of every page, so the floating controls never cover its
+// last line or link.
+#main-content {
+  padding-bottom: 64px;
+}
+
 // The skip-link target is focused programmatically (tabIndex -1); it is not
 // interactive, so it should not show a focus ring.
 #main-content:focus {

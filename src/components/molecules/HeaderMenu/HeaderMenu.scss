@@ -29,6 +29,36 @@ $collapse-below: 991.98px;
     box-shadow: none;
   }
 
+  // The turnip at 2x its pixel size: 32 x 42px.
+  &__logo {
+    display: inline-flex;
+    flex-shrink: 0;
+    border-radius: 4px;
+
+    &:focus-visible {
+      outline: 2px solid var(--gray);
+      outline-offset: 2px;
+    }
+  }
+
+  &__logo-art {
+    display: block;
+    width: 32px;
+    height: 42px;
+    transform-origin: 50% 80%;
+  }
+
+  // A little wiggle on hover, only for visitors who don't ask for less motion.
+  @media (prefers-reduced-motion: no-preference) {
+    &__logo-art {
+      transition: transform 0.2s ease-out;
+    }
+
+    &__logo:hover &__logo-art {
+      transform: rotate(-8deg);
+    }
+  }
+
   &__list {
     display: flex;
     flex-wrap: wrap;
@@ -45,7 +75,7 @@ $collapse-below: 991.98px;
     gap: 8px;
     min-height: 44px;
     padding: 0 12px;
-    border: 2px solid var(--teal);
+    border: 0;
     border-radius: 4px;
     background: #fff;
     color: var(--gray);
@@ -124,10 +154,5 @@ $collapse-below: 991.98px;
         }
       }
     }
-  }
-
-  // Very narrow screens: stack the background control above the menu button.
-  @media (max-width: 359.98px) {
-    flex-wrap: wrap;
   }
 }
