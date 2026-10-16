@@ -1,4 +1,114 @@
+// Matches Bootstrap's lg breakpoint: below it the links collapse into a menu.
+$collapse-below: 991.98px;
+
 .header-menu {
-  text-align: right;
-  padding: 20px;
+  position: relative;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 16px 20px;
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 8px 30px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  &__toggle {
+    display: none;
+    align-items: center;
+    gap: 8px;
+    min-height: 44px;
+    padding: 0 12px;
+    border: 2px solid var(--teal);
+    border-radius: 4px;
+    background: #fff;
+    color: var(--gray);
+    font: inherit;
+    font-size: 20px;
+    cursor: pointer;
+
+    &:focus-visible {
+      outline: 2px solid var(--gray);
+      outline-offset: 2px;
+    }
+  }
+
+  // Three-bar icon drawn with borders; turns into an "X" when open.
+  &__icon {
+    position: relative;
+    width: 18px;
+    height: 2px;
+    background: currentColor;
+
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background: currentColor;
+      transition: transform 0.2s;
+    }
+    &::before { top: -6px; }
+    &::after { top: 6px; }
+  }
+
+  &__toggle[aria-expanded="true"] &__icon {
+    background: transparent;
+    &::before { transform: translateY(6px) rotate(45deg); }
+    &::after { transform: translateY(-6px) rotate(-45deg); }
+  }
+
+  @media (max-width: $collapse-below) {
+    padding: 12px 16px;
+
+    &__toggle {
+      display: inline-flex;
+    }
+
+    // Dropdown panel under the header, full width, large tap targets.
+    &__list {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0;
+      padding: 8px 16px 16px;
+      background: #fff;
+      border-bottom: 2px solid var(--teal);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
+
+      &--open {
+        display: flex;
+      }
+
+      .menu-link {
+        display: flex;
+        align-items: center;
+        min-height: 48px;
+        font-size: 24px;
+
+        // Keep the underline close to the text, not the tap-target edge.
+        &::after {
+          bottom: 10px;
+        }
+      }
+    }
+  }
+
+  // Very narrow screens: stack the background control above the menu button.
+  @media (max-width: 359.98px) {
+    flex-wrap: wrap;
+  }
 }
