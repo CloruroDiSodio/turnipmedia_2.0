@@ -1,5 +1,4 @@
 .menu-link {
-  margin-right: 30px;
   display: inline-block;
   color: var(--gray);
   position: relative;
@@ -9,7 +8,7 @@
     content: '';
     position: absolute;
     bottom: 0;
-    right: 0;
+    left: 0;
     display: block;
     background-color: var(--teal);
     width: 0%;
@@ -30,7 +29,7 @@
       content: '';
       position: absolute;
       bottom: 0;
-      right: 0;
+      left: 0;
       display: block;
       background-color: var(--teal);
       width: 100%;
@@ -45,7 +44,7 @@
       content: '';
       position: absolute;
       bottom: 0;
-      right: 0;
+      left: 0;
       display: block;
       background-color: var(--teal);
       width: 100%;

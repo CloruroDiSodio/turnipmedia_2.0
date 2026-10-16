@@ -15,6 +15,9 @@ export interface Project {
     pixelArt?: boolean;
     // Technologies used, shown as chips on the card.
     tech: string[];
+    // For work at a company: my role there, shown under the title, since
+    // these sites were built by a team rather than by me alone.
+    role?: string;
 }
 
 // Cards are shown in this order.
@@ -38,6 +41,30 @@ const projects: Project[] = [
         preview: "/showcase/pixel-pattern-generator.jpg",
         previewAlt: "The generator turning a sunset landscape into a 32 by 24 pixel grid",
         tech: ["Next.js", "Tailwind CSS", "Python", "FastAPI", "Pillow"],
+    },
+];
+
+// Sites I worked on as part of a company team. Cards are shown in this order.
+export const workProjects: Project[] = [
+    {
+        title: "truelayer.com",
+        role: "Web Developer at TrueLayer",
+        description:
+            "Led the website redesign and its migration to Next.js and Storyblok; I own the internal component library the pages are built from.",
+        href: "https://truelayer.com/",
+        preview: "/showcase/truelayer.jpg",
+        previewAlt: "The truelayer.com homepage",
+        tech: ["Next.js", "React", "Storyblok", "Design system"],
+    },
+    {
+        title: "arduino.cc",
+        role: "Software Engineer at Arduino",
+        description:
+            "Worked on the institutional web apps and the subscription management flows, built on a shared component library.",
+        href: "https://www.arduino.cc/",
+        preview: "/showcase/arduino.jpg",
+        previewAlt: "The arduino.cc homepage",
+        tech: ["Next.js", "DatoCMS", "Component library"],
     },
 ];
 

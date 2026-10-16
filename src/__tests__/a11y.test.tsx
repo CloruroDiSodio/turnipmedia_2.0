@@ -68,6 +68,14 @@ test("each showcase card links to its project, named by its title", () => {
   expect(external).toHaveAttribute("rel", "noopener noreferrer");
 });
 
+test("work cards sit under their own heading and show my role", () => {
+  render(<Showcase />);
+  expect(screen.getByRole("heading", { level: 2, name: "Things I worked on" })).toBeInTheDocument();
+  const truelayer = screen.getByRole("link", { name: /truelayer\.com/ });
+  expect(truelayer).toHaveAttribute("href", "https://truelayer.com/");
+  expect(truelayer.closest("article")).toHaveTextContent("Web Developer at TrueLayer");
+});
+
 test("showcase cards list their technologies", () => {
   render(<Showcase />);
   const goat = screen.getByRole("link", { name: "Goat Companion" }).closest("article");

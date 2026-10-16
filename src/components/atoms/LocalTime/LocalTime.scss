@@ -1,0 +1,12 @@
+.local-time {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0;
+  font-size: 18px;
+  color: var(--green);
+
+  svg {
+    flex-shrink: 0;
+  }
+}

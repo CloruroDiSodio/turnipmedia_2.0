@@ -8,8 +8,14 @@ const isExternal = (href: string) => /^https?:\/\//.test(href);
 // The title link is stretched over the whole card (see ProjectCard.scss), so
 // the card is clickable anywhere while the link's accessible name stays just
 // the title instead of the card's entire content.
-const ProjectCard = ({ title, description, href, preview, previewStill, previewAlt, pixelArt, tech }: Project) => {
+interface ProjectCardProps extends Project {
+    // Cards nested under a section heading use h3 to keep the outline valid.
+    headingLevel?: 2 | 3;
+}
+
+const ProjectCard = ({ title, description, href, preview, previewStill, previewAlt, pixelArt, tech, role, headingLevel = 2 }: ProjectCardProps) => {
     const external = isExternal(href);
+    const Heading = headingLevel === 3 ? "h3" : "h2";
 
     return (
         <article className="project-card">
@@ -22,7 +28,7 @@ const ProjectCard = ({ title, description, href, preview, previewStill, previewA
                 <img src={preview} alt={previewAlt} loading="lazy" />
             </picture>
             <div className="project-card__body">
-                <h2 className="project-card__title">
+                <Heading className="project-card__title">
                     {external ? (
                         <a className="project-card__link" href={href} target="_blank" rel="noopener noreferrer">
                             {title}
@@ -33,7 +39,8 @@ const ProjectCard = ({ title, description, href, preview, previewStill, previewA
                             {title}
                         </Link>
                     )}
-                </h2>
+                </Heading>
+                {role && <p className="project-card__role">{role}</p>}
                 <p className="project-card__tech">
                     <span className="visually-hidden">Built with: </span>
                     {/* bg="" skips Badge's default bg-primary (an !important

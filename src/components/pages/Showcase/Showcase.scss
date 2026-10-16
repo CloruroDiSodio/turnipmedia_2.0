@@ -1,7 +1,13 @@
 .showcase {
-  margin: 30px 10% 30px 20%;
+  // Same horizontal margins as the resume.
+  margin: 30px 10%;
 
-  // Same small-screen layout as the resume: no fixed 20% gutter on phones.
+  @media (min-width: 1200px) {
+    margin-right: 8%;
+    margin-left: 8%;
+  }
+
+  // Same small-screen layout as the resume: no percentage gutter on phones.
   @media (max-width: 575.98px) {
     margin: 30px 0;
     padding: 0 20px;
@@ -12,6 +18,15 @@
     font-family: inherit;
     font-size: 28px;
     font-weight: bold;
+  }
+
+  &__section {
+    margin-top: 48px;
+  }
+
+  &__intro {
+    margin: -12px 0 24px;
+    font-size: 18px;
   }
 
   &__grid {

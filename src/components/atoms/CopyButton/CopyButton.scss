@@ -1,0 +1,41 @@
+.copy-button {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 12px;
+
+  &__button {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 4px 12px;
+    border: 2px solid var(--gray);
+    border-radius: 6px;
+    background: var(--yellow);
+    color: var(--gray);
+    font-size: 18px;
+    line-height: 1.2;
+    cursor: pointer;
+    transition: transform 0.15s, box-shadow 0.15s;
+
+    &:hover {
+      transform: translate(-2px, -2px);
+      box-shadow: 2px 2px 0 var(--gray);
+    }
+
+    &:active {
+      transform: none;
+      box-shadow: none;
+    }
+
+    &:focus-visible {
+      outline: 2px solid var(--teal);
+      outline-offset: 3px;
+    }
+  }
+
+  &__status {
+    font-size: 18px;
+    color: var(--green);
+  }
+}

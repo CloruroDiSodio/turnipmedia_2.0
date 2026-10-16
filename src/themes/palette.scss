@@ -3,6 +3,9 @@
   --purple: #764B92;
   --blue: #6189B7;
   --teal: #018C99;
+  // --teal is 4.0:1 against white, too low for normal-size text: use this for
+  // teal text, or for white text on a teal background (5.4:1).
+  --dark-teal: #007580;
   --green: #004E4D;
   --yellow: #F8C210;
   --gray: #1F1F1F;
