@@ -5,6 +5,19 @@
   min-height: 80vh;
   padding: 2rem;
 
+  // Focused only so the keyboard shortcuts work (see GoatPage.tsx); not a control.
+  &:focus {
+    outline: none;
+  }
+
+  // Same colour as the text, so the ring stands out on the white card and the grassy pen.
+  .goat-button:focus-visible,
+  .key:focus-visible,
+  .name-save:focus-visible {
+    outline: 2px solid #2c3e50;
+    outline-offset: 2px;
+  }
+
   .game-layout {
     display: flex;
     gap: 4rem;
@@ -18,37 +31,206 @@
 
   .goat-section {
     text-align: center;
-    
+    flex: 0 1 360px;
+    width: 360px;
+    max-width: 100%;
+
     h1 {
       color: #333;
       letter-spacing: 2px;
       margin-bottom: 2rem;
     }
+  }
 
-    .goat-container {
-      position: relative;
-      background: #f0f4f0; // Light grassy grey
-      width: 120px;
-      height: 120px;
+  // The goat's field. Positions inside are in pixels from its top-left corner.
+  .pen {
+    position: relative;
+    width: 100%;
+    height: 240px;
+    background: #f0f4f0; // Light grassy grey
+    border: 2px solid #dbe7db;
+    border-radius: 16px;
+    // Keeps the goat's per-row z-index inside the pen.
+    isolation: isolate;
+  }
+
+  .goat {
+    position: absolute;
+    width: 96px;
+    height: 96px;
+  }
+
+  .goat-button {
+    display: block;
+    background: none;
+    border: 0;
+    padding: 0;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: filter 0.2s ease;
+
+    // A glow, not a scale: scaling resamples the pixel art and blurs it.
+    &:hover {
+      filter: drop-shadow(0 0 4px rgba(255, 222, 89, 0.9));
+    }
+  }
+
+  // Lunge forward on the charge frames.
+  .goat--headbutt .goat-button {
+    animation: lunge 0.6s ease-out;
+  }
+  .goat--headbutt.goat--facing-left .goat-button {
+    animation-name: lunge-left;
+  }
+
+  // Pixel-art props from /goat-props.png: turnip, Z, heart, "!".
+  .prop {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    background-image: url('/goat-props.png');
+    background-size: 400% 100%;
+    background-repeat: no-repeat;
+    image-rendering: pixelated;
+  }
+  .prop--turnip { background-position: 0 0; }
+  .prop--z { background-position: 33.333% 0; }
+  .prop--heart { background-position: 66.667% 0; }
+  .prop--bang { background-position: 100% 0; }
+
+  .turnip {
+    position: absolute;
+    width: 48px;
+    height: 48px;
+  }
+
+  .heart-pop {
+    position: absolute;
+    left: 32px;
+    top: -12px;
+    animation: popAndFade 0.8s ease-out forwards;
+    pointer-events: none;
+  }
+
+  .bang {
+    position: absolute;
+    left: 32px;
+    top: -22px;
+    pointer-events: none;
+  }
+
+  // Three Zs that drift up and fade, one after another.
+  .zzz {
+    position: absolute;
+    left: 58px;
+    top: 0;
+    pointer-events: none;
+
+    .prop {
+      position: absolute;
+      width: 16px;
+      height: 16px;
+      opacity: 0;
+      animation: drift 2.4s linear infinite;
+
+      &:nth-child(2) { animation-delay: 0.8s; }
+      &:nth-child(3) { animation-delay: 1.6s; }
+    }
+  }
+
+  .speech {
+    position: absolute;
+    left: 62px;
+    top: -10px;
+    padding: 2px 8px;
+    background: #fff;
+    border: 2px solid #50321b;
+    border-radius: 10px 10px 10px 2px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: #50321b;
+    white-space: nowrap;
+    pointer-events: none;
+  }
+
+  // Hungry: a turnip daydream above the goat.
+  .thought {
+    position: absolute;
+    left: 66px;
+    top: -34px;
+    padding: 2px;
+    background: #fff;
+    border: 2px solid #50321b;
+    border-radius: 50%;
+    line-height: 0;
+    pointer-events: none;
+
+    // The two little dots leading up to the bubble.
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      background: #fff;
+      border: 2px solid #50321b;
+      border-radius: 50%;
+    }
+    &::before { width: 10px; height: 10px; left: -8px; bottom: -8px; }
+    &::after { width: 6px; height: 6px; left: -14px; bottom: -16px; }
+  }
+
+  .name-tag {
+    padding: 1px 8px;
+    background: #ffde59;
+    border-radius: 999px;
+    color: #50321b;
+    font-weight: bold;
+    // Long names wrap rather than push the layout wider.
+    overflow-wrap: anywhere;
+  }
+
+  .goat-stats {
+    margin-top: 1rem;
+    color: #5d6d7e;
+    font-size: 0.9rem;
+
+    p {
+      margin: 0 0 0.25rem;
       display: flex;
       align-items: center;
       justify-content: center;
-      border-radius: 50%;
-      border: 0;
-      padding: 0;
-      cursor: pointer;
-      transition: all 0.2s ease;
+      gap: 8px;
+    }
 
-      &:hover {
-        background: #e4eee4;
-        transform: scale(1.05);
+    // Three meters side by side: label over a row of icons.
+    .meters {
+      display: flex;
+      justify-content: center;
+      gap: 1.25rem;
+      margin-bottom: 0.25rem;
+    }
+
+    .meter {
+      flex-direction: column;
+      gap: 2px;
+      margin: 0;
+    }
+
+    .meter-label {
+      font-size: 0.75rem;
+    }
+
+    .meter-icons {
+      display: inline-flex;
+
+      // The tiles' own 16px size keeps the pixel art sharp.
+      .prop {
+        width: 16px;
+        height: 16px;
       }
 
-      .heart-pop {
-        position: absolute;
-        top: -10px;
-        z-index: 5;
-        animation: popAndFade 0.8s ease-out forwards;
+      .is-empty {
+        filter: grayscale(1);
+        opacity: 0.35;
       }
     }
   }
@@ -72,7 +254,7 @@
         gap: 12px;
         margin-bottom: 1rem;
         color: #5d6d7e;
-        
+
         .keys { display: flex; gap: 4px; }
       }
     }
@@ -110,12 +292,72 @@
     border-radius: 6px;
   }
 
+  // Held down to keep walking: no long-press menu, scrolling or selection.
+  .key--hold {
+    touch-action: none;
+    -webkit-touch-callout: none;
+    user-select: none;
+  }
+
   .keys {
     display: flex;
     gap: 8px;
     margin-right: 10px;
     align-items: center;
   }
+
+    .name-form {
+      margin-top: 1.5rem;
+
+      h2 {
+        margin-bottom: 0.75rem;
+      }
+
+      label {
+        display: block;
+        font-size: 0.85rem;
+        color: #5d6d7e;
+        margin-bottom: 4px;
+      }
+
+      .name-row {
+        display: flex;
+        gap: 8px;
+      }
+
+      input {
+        flex: 1;
+        min-width: 0;
+        padding: 6px 10px;
+        border: 1px solid #b0b8c1;
+        border-radius: 6px;
+        font-size: 1rem; // 16px keeps iOS from zooming in on focus
+        color: #2c3e50;
+        background: #fff;
+      }
+
+      .name-save {
+        padding: 6px 14px;
+        border: 1px solid #d1d5db;
+        border-radius: 6px;
+        box-shadow: 0 3px 0 #d1d5db;
+        background: #fff;
+        color: #000;
+        font-weight: bold;
+
+        &:active {
+          transform: translateY(2px);
+          box-shadow: 0 1px 0 #d1d5db;
+        }
+      }
+
+      .name-message {
+        min-height: 1.2em;
+        margin: 6px 0 0;
+        font-size: 0.8rem;
+        color: #5d6d7e;
+      }
+    }
 
     .note {
       font-size: 0.75rem;
@@ -128,15 +370,96 @@
 
 /* Adjust layout for small screens */
 @media (max-width: 600px) {
-  .game-layout {
-    flex-direction: column;
-    gap: 2rem;
-    padding: 1.5rem;
+  .goatPage {
+    padding: 1rem;
   }
-  
-  .instructions-card {
+
+  // Scoped like the rules above, or those (more specific) would win.
+  .goatPage .game-layout {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  // Lets the stage stick within the whole layout, not just this section.
+  .goatPage .goat-section {
+    display: contents;
+  }
+
+  // The goat stays in view while scrolling down to the controls.
+  .goatPage .goat-stage {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    padding: 0.5rem 0;
+    background: #fdfdfd;
+    box-shadow: 0 8px 8px -8px rgba(0, 0, 0, 0.15);
+  }
+
+  .goatPage .goat-section h1 {
+    margin-bottom: 0;
+    text-align: center;
+  }
+
+  .goatPage .pen {
+    height: 180px;
+  }
+
+  .goatPage .goat-stats {
+    margin-top: 0.5rem;
+  }
+
+  // Two columns of keys, so they fit under the pen.
+  .goatPage .instructions-card {
+    ul {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.75rem 1rem;
+
+      li {
+        margin: 0;
+        gap: 8px;
+        font-size: 0.85rem;
+      }
+
+      li:first-child {
+        grid-column: 1 / -1;
+      }
+    }
+
+    .keys {
+      margin-right: 0;
+    }
+  }
+
+  .goatPage .instructions-card {
     max-width: 100%;
     width: 100%;
+  }
+}
+
+// Zs standing still, for reduced motion and when wandering is switched off.
+// (The global reduced-motion rule shortens animations to one near-instant
+// run, which would leave the Zs invisible.)
+@mixin still-zzz {
+  .zzz .prop {
+    animation: none;
+    opacity: 1;
+
+    &:nth-child(1) { left: 0; top: 8px; }
+    &:nth-child(2) { left: 12px; top: -2px; }
+    &:nth-child(3) { display: none; }
+  }
+}
+
+.goatPage--still {
+  @include still-zzz;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .goatPage {
+    @include still-zzz;
   }
 }
 
@@ -144,4 +467,22 @@
   0% { opacity: 0; transform: translateY(10px) scale(0.5); }
   30% { opacity: 1; transform: translateY(-15px) scale(1.3); }
   100% { opacity: 0; transform: translateY(-40px) scale(1); }
+}
+
+@keyframes drift {
+  0% { opacity: 0; transform: translate(0, 0) scale(0.6); }
+  20% { opacity: 1; }
+  100% { opacity: 0; transform: translate(14px, -28px) scale(1.2); }
+}
+
+@keyframes lunge {
+  0%, 30% { transform: translateX(0); }
+  55% { transform: translateX(8px); }
+  100% { transform: translateX(0); }
+}
+
+@keyframes lunge-left {
+  0%, 30% { transform: translateX(0); }
+  55% { transform: translateX(-8px); }
+  100% { transform: translateX(0); }
 }

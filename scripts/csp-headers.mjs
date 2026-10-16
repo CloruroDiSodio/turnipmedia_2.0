@@ -50,6 +50,11 @@ const policy = [
   // Client-side navigation fetches the prerendered RSC payloads.
   "connect-src 'self'",
   "manifest-src 'self'",
+  // Deploy previews and branch deploys get the Netlify Drawer, which frames
+  // app.netlify.com. Production (CONTEXT=production) keeps frames blocked.
+  ...(process.env.CONTEXT && process.env.CONTEXT !== "production"
+    ? ["frame-src https://app.netlify.com"]
+    : []),
   "object-src 'none'",
   "base-uri 'self'",
   "form-action 'none'",

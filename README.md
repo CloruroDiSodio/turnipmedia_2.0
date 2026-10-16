@@ -30,14 +30,23 @@ Serves the production build locally on [http://localhost:3000](http://localhost:
 
 - `src/app` — Next.js App Router: root `layout.tsx` (site-wide metadata, self-hosted font, global styles) and routes.
   - `(main)/` — route group for `/`, `/resume`, `/showcase` and `/contacts`; its `layout.tsx` renders the skip link, particles background, header menu and the `<main>` landmark (replacing the old `App.js` pathname check).
-  - `appetta/`, `goat/` — bare routes with no header/particles; each page component renders its own `<main>`.
+  - `goat/` — a bare route with no header/particles; its page component renders its own `<main>`.
   - `seo.ts` — site URL/name and the `pageMetadata()` helper every route uses for its metadata.
   - `sitemap.ts`, `robots.ts` — generate `sitemap.xml` and `robots.txt` at build time.
 - `src/components/{atoms,molecules,pages}` — atomic-design components; route `page.tsx` files are thin wrappers around them that also export the route's `metadata`.
 - `src/components/pages/Showcase/projects.ts` — the projects shown as cards on `/showcase`. To add one, append an entry and put its preview image or GIF in `public/showcase/` (the CSP only allows same-origin images). For an animated preview, also add a still frame as `previewStill`: it is shown instead when the visitor prefers reduced motion.
+- `src/components/pages/Goat/` — the Goat Companion game; its [README](src/components/pages/Goat/README.md) explains how the goat behaves, saves, and stays accessible.
 - `src/__tests__/` — cross-page tests (accessibility).
 - `src/index.scss` — global styles (imported by the root layout), including the skip link and the reduced-motion rules.
 - `scripts/csp-headers.mjs` — postbuild step that generates the CSP.
+- `scripts/goat-sprites.py` — builds the goat's sprite sheets (`public/goat-v2.png` and `public/goat-props.png`) from the original `public/goat.png`, which it leaves untouched. Not part of the build: run it by hand after changing the poses, with Pillow in a local venv (`.venv/` is git-ignored):
+
+  ```sh
+  python3 -m venv .venv && .venv/bin/pip install pillow
+  .venv/bin/python scripts/goat-sprites.py .
+  ```
+
+  If you add or reorder sprite rows, update `POSE_ROWS` in `GoatAnimal.tsx` to match.
 
 ## Accessibility
 
@@ -58,13 +67,12 @@ Target: WCAG 2.2 AA. What is in place, and what to keep doing when changing page
 - **Canonical URLs** use a trailing slash (`/resume/`) because `trailingSlash: true` makes the export serve each page at that path.
 - **Sitemap and robots** — `sitemap.xml` and `robots.txt` are generated from `src/app/sitemap.ts` and `src/app/robots.ts`. **When adding a route, add it to `sitemap.ts`.**
 - **Structured data** — the home page embeds schema.org `Person` JSON-LD linking the GitHub, LinkedIn and CodePen profiles.
-- **`/appetta`** is a private gift page: it is `noindex, nofollow` and left out of the sitemap.
 
 ## Security
 
 The site is a static export with no server code, forms, auth or user input, so most of the OWASP Top 10 has nothing to apply to. The relevant parts are covered as follows:
 
-- **A05 Security Misconfiguration** — every response gets security headers. The static ones are set in `netlify.toml`: `Strict-Transport-Security`, `X-Content-Type-Options: nosniff`, `X-Frame-Options: DENY`, `Referrer-Policy`, `Permissions-Policy` and `Cross-Origin-Opener-Policy`. The **Content-Security-Policy** is generated per build by `scripts/csp-headers.mjs` into `out/_headers`. Next.js puts a few inline scripts in each page whose contents change on every build, so the script finds them, hashes them, and allows exactly those hashes instead of `'unsafe-inline'`. Everything else is `'self'` only, with `object-src 'none'`, `frame-ancestors 'none'` and `form-action 'none'`.
+- **A05 Security Misconfiguration** — every response gets security headers. The static ones are set in `netlify.toml`: `Strict-Transport-Security`, `X-Content-Type-Options: nosniff`, `X-Frame-Options: DENY`, `Referrer-Policy`, `Permissions-Policy` and `Cross-Origin-Opener-Policy`. The **Content-Security-Policy** is generated per build by `scripts/csp-headers.mjs` into `out/_headers`. Next.js puts a few inline scripts in each page whose contents change on every build, so the script finds them, hashes them, and allows exactly those hashes instead of `'unsafe-inline'`. Everything else is `'self'` only, with `object-src 'none'`, `frame-ancestors 'none'` and `form-action 'none'`. Deploy previews and branch deploys also get `frame-src https://app.netlify.com` so the Netlify Drawer can load; production builds (`CONTEXT=production`) leave it out.
   - **Adding an external resource** (a script, image, font, iframe or analytics) will be blocked until its origin is added to the matching directive in `scripts/csp-headers.mjs`.
   - Styles allow `'unsafe-inline'` because React renders `style=""` attributes into the static HTML.
   - HSTS leaves out `includeSubDomains`/`preload` because it does not know whether every subdomain of `turnipmedia.net` serves HTTPS. Add them once that is confirmed.

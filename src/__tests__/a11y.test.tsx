@@ -1,4 +1,4 @@
-import { render, screen } from "@testing-library/react";
+import { fireEvent, render, screen } from "@testing-library/react";
 import { axe } from "jest-axe";
 import MainLayout from "../app/(main)/layout";
 import Home from "../components/pages/Home/Home";
@@ -80,4 +80,45 @@ test("showcase cards list their technologies", () => {
   render(<Showcase />);
   const goat = screen.getByRole("link", { name: "Goat Companion" }).closest("article");
   expect(goat).toHaveTextContent("Built with: Next.js");
+});
+
+test("typing the goat's name doesn't make it do tricks", () => {
+  const { container } = render(<GoatPage />);
+  const input = screen.getByLabelText("Name");
+  // The first live region says what the goat does in response to the visitor.
+  const status = () => container.querySelector("[aria-live]")?.textContent;
+  fireEvent.keyDown(input, { key: "c" });
+  fireEvent.keyDown(input, { key: "s" });
+  fireEvent.keyDown(input, { key: "ArrowLeft" });
+  expect(status()).toBe("");
+
+  fireEvent.change(input, { target: { value: "  Biscuit " } });
+  fireEvent.submit(input.closest("form")!);
+  expect(screen.getByText("Your goat is now called Biscuit.")).toBeInTheDocument();
+  fireEvent.click(screen.getByRole("button", { name: "Cuddle Biscuit" }));
+  expect(status()).toBe("Biscuit enjoys a cuddle!");
+});
+
+test("goat shortcuts only work while focus is on the goat page", () => {
+  // Start from an unnamed goat, not the one an earlier test saved.
+  window.localStorage.clear();
+  const { container } = render(<GoatPage />);
+  const status = () => container.querySelector("[aria-live]")?.textContent;
+
+  fireEvent.keyDown(document.body, { key: "c" });
+  expect(status()).toBe("");
+  // Arrows elsewhere still scroll: the keydown isn't cancelled.
+  expect(fireEvent.keyDown(document.body, { key: "ArrowDown" })).toBe(true);
+
+  fireEvent.keyDown(screen.getByRole("main"), { key: "c" });
+  expect(status()).toBe("The goat enjoys a cuddle!");
+});
+
+test("the goat's wandering can be switched off", () => {
+  render(<GoatPage />);
+  const toggle = screen.getByRole("button", { name: "Wandering" });
+  expect(toggle).toHaveAttribute("aria-pressed", "true");
+  fireEvent.click(toggle);
+  expect(toggle).toHaveAttribute("aria-pressed", "false");
+  expect(screen.getByRole("main")).toHaveClass("goatPage--still");
 });
