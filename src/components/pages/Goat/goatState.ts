@@ -31,6 +31,9 @@ export interface GoatState {
     y: number;
     facing: Facing;
     action: GoatAction;
+    // The current action began by itself (a wander, a hungry bleat), not
+    // because of the visitor; screen readers aren't told about these.
+    onItsOwn: boolean;
     // When the current timed action (or a tapped step) ends.
     until: number;
     heldDir: Facing | null;
@@ -146,6 +149,7 @@ export const initialGoat = (w = 340, h = 240): GoatState => ({
     y: h * 0.7,
     facing: "down",
     action: "idle",
+    onItsOwn: false,
     until: 0,
     heldDir: null,
     target: null,
@@ -213,11 +217,12 @@ const moveToward = (s: GoatState, target: Point, dist: number): { s: GoatState; 
     return { s: { ...s, x: target.x, y: target.y }, arrived: true };
 };
 
-const idle = (s: GoatState): GoatState => ({ ...s, action: "idle", until: 0, heldDir: null, target: null });
+const idle = (s: GoatState): GoatState => ({ ...s, action: "idle", onItsOwn: false, until: 0, heldDir: null, target: null });
 
 const startled = (s: GoatState, now: number): GoatState => ({
     ...s,
     action: "startled",
+    onItsOwn: false,
     until: now + DURATION.startled,
     heldDir: null,
     target: null,
@@ -254,6 +259,8 @@ const tick = (state: GoatState, e: Extract<GoatEvent, { type: "tick" }>): GoatSt
         case "wander":
         case "seek": {
             if (!s.target) return idle(s);
+            // Wandering was switched off mid-stroll: stop where it is.
+            if (s.action === "wander" && !e.canWander) return idle(s);
             const moved = moveToward(s, s.target, speed(s) * dt);
             if (!moved.arrived) return moved.s;
             if (s.action === "wander" || !s.turnip) return idle(moved.s);
@@ -282,6 +289,7 @@ const tick = (state: GoatState, e: Extract<GoatEvent, { type: "tick" }>): GoatSt
                 return {
                     ...s,
                     action: "bleat",
+                    onItsOwn: true,
                     until: now + DURATION.bleat,
                     nextHungryBleat: now + 15000 + e.rand[2] * 10000,
                 };
@@ -295,6 +303,7 @@ const tick = (state: GoatState, e: Extract<GoatEvent, { type: "tick" }>): GoatSt
                 return {
                     ...s,
                     action: "wander",
+                    onItsOwn: true,
                     target: {
                         x: HALF_W + rx * (s.pen.w - 2 * HALF_W),
                         y: TOP + ry * (s.pen.h - 4 - TOP),
@@ -314,11 +323,14 @@ const tick = (state: GoatState, e: Extract<GoatEvent, { type: "tick" }>): GoatSt
 // OFFLINE_FLOOR from that alone: visitors come back to a peckish goat, not a sad one.
 const afterAbsence = (v: number, lost: number) => (v <= OFFLINE_FLOOR ? v : Math.max(OFFLINE_FLOOR, v - lost));
 
+// A save is only as trustworthy as the browser storage it came from.
+const num = (v: unknown, fallback: number) => (typeof v === "number" && Number.isFinite(v) ? v : fallback);
+
 const trick = (s: GoatState, e: Extract<GoatEvent, { type: "trick" }>): GoatState => {
     const now = e.now;
     if (isAsleep(s)) return startled(s, now);
 
-    const base: GoatState = { ...s, heldDir: null, target: null, lastInput: now };
+    const base: GoatState = { ...s, onItsOwn: false, heldDir: null, target: null, lastInput: now };
     const effort = EFFORT[e.trick];
     if (effort && isTired(s)) {
         return { ...base, action: "yawn", until: now + DURATION.yawn };
@@ -362,19 +374,20 @@ export const goatReducer = (s: GoatState, e: GoatEvent): GoatState => {
                     y: clampY(sized, s.turnip.y),
                 },
                 target: null,
-                action: s.action === "wander" || s.action === "seek" ? "idle" : s.action,
+                ...(s.action === "wander" || s.action === "seek" ? { action: "idle", onItsOwn: false } : {}),
             };
         }
         case "load": {
             const { saved, elapsedMs } = e;
-            const secs = Math.max(0, elapsedMs) / 1000;
-            const lonely = Math.max(0, elapsedMs - CARE_GRACE_MS) / 1000;
+            const away = num(elapsedMs, 0);
+            const secs = Math.max(0, away) / 1000;
+            const lonely = Math.max(0, away - CARE_GRACE_MS) / 1000;
             return {
                 ...s,
-                cuddles: saved.cuddles,
-                happiness: afterAbsence(clamp(saved.happiness), lonely / SAD_S),
-                fullness: afterAbsence(clamp(saved.fullness ?? s.fullness), secs / HUNGER_S),
-                energy: afterAbsence(clamp(saved.energy ?? s.energy), secs / TIRE_S),
+                cuddles: Math.max(0, Math.floor(num(saved.cuddles, s.cuddles))),
+                happiness: afterAbsence(clamp(num(saved.happiness, s.happiness)), lonely / SAD_S),
+                fullness: afterAbsence(clamp(num(saved.fullness, s.fullness)), secs / HUNGER_S),
+                energy: afterAbsence(clamp(num(saved.energy, s.energy)), secs / TIRE_S),
                 name: typeof saved.name === "string" ? cleanName(saved.name) : s.name,
             };
         }
@@ -385,6 +398,7 @@ export const goatReducer = (s: GoatState, e: GoatEvent): GoatState => {
             return {
                 ...s,
                 action: "walk",
+                onItsOwn: false,
                 facing: e.dir,
                 heldDir: e.dir,
                 until: e.now + MIN_STEP_MS,
@@ -399,6 +413,7 @@ export const goatReducer = (s: GoatState, e: GoatEvent): GoatState => {
             return {
                 ...s,
                 action: "walk",
+                onItsOwn: false,
                 facing: e.dir,
                 heldDir: null,
                 until: e.now + TAP_STEP_MS,
@@ -486,6 +501,11 @@ export const statusOf = (s: GoatState): string => {
             return `${who} wakes up with a start!`;
     }
 };
+
+// What the status live region says: only what the visitor caused. Standing
+// still says nothing, so a second cuddle or jump is announced afresh.
+export const announcementOf = (s: GoatState): string =>
+    s.onItsOwn || s.action === "idle" ? "" : statusOf(s);
 
 // Announced separately, only when the goat's needs change.
 export const needsOf = (s: GoatState): string => {

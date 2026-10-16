@@ -10,10 +10,13 @@ import {
     MdAdsClick,
     MdVolumeUp,
     MdVolumeOff,
+    MdPlayArrow,
+    MdPause,
 } from "react-icons/md";
 import './GoatPage.scss';
 import { GoatAnimal } from "./GoatAnimal";
 import {
+    announcementOf,
     goatReducer,
     initialGoat,
     isAsleep,
@@ -21,7 +24,6 @@ import {
     level,
     needsOf,
     poseOf,
-    statusOf,
     MAX,
     MAX_NAME,
     SCALE,
@@ -55,11 +57,11 @@ const TRICK_KEYS: Record<string, Trick> = {
     b: "bleat",
 };
 
-const WALK_CONTROLS: { dir: Facing; label: string; icon: ReactNode }[] = [
-    { dir: "left", label: "Walk left", icon: <MdKeyboardArrowLeft aria-hidden="true" /> },
-    { dir: "up", label: "Walk up", icon: <MdKeyboardArrowUp aria-hidden="true" /> },
-    { dir: "down", label: "Walk down", icon: <MdKeyboardArrowDown aria-hidden="true" /> },
-    { dir: "right", label: "Walk right", icon: <MdKeyboardArrowRight aria-hidden="true" /> },
+const WALK_CONTROLS: { dir: Facing; label: string; shortcut: string; icon: ReactNode }[] = [
+    { dir: "left", label: "Walk left", shortcut: "ArrowLeft", icon: <MdKeyboardArrowLeft aria-hidden="true" /> },
+    { dir: "up", label: "Walk up", shortcut: "ArrowUp", icon: <MdKeyboardArrowUp aria-hidden="true" /> },
+    { dir: "down", label: "Walk down", shortcut: "ArrowDown", icon: <MdKeyboardArrowDown aria-hidden="true" /> },
+    { dir: "right", label: "Walk right", shortcut: "ArrowRight", icon: <MdKeyboardArrowRight aria-hidden="true" /> },
 ];
 
 const METERS: { key: "happiness" | "fullness" | "energy"; label: string; icon: string; unit: string }[] = [
@@ -88,14 +90,19 @@ const GoatPage = () => {
     const [goat, dispatch] = useReducer(goatReducer, undefined, () => initialGoat());
     const [soundOn, setSoundOn] = useState(false);
     const [loaded, setLoaded] = useState(false);
+    // Whether the goat strolls about by itself. Until the visitor chooses,
+    // it follows the reduced-motion setting.
+    const [roamChoice, setRoamChoice] = useState<boolean | null>(null);
     const reducedMotion = usePrefersReducedMotion();
-    const reducedMotionRef = useRef(reducedMotion);
-    reducedMotionRef.current = reducedMotion;
+    const roams = roamChoice ?? !reducedMotion;
+    const roamsRef = useRef(roams);
+    roamsRef.current = roams;
     const heldRef = useRef(goat.heldDir);
     heldRef.current = goat.heldDir;
     const goatRef = useRef(goat);
     goatRef.current = goat;
     const penRef = useRef<HTMLDivElement>(null);
+    const pageRef = useRef<HTMLElement>(null);
 
     const trick = (t: Trick) => dispatch({ type: "trick", trick: t, now: performance.now() });
     const feed = () => dispatch({ type: "feed", rand: [Math.random(), Math.random()], now: performance.now() });
@@ -113,8 +120,9 @@ const GoatPage = () => {
                 now,
                 // A background tab throttles timers; don't teleport on return.
                 dt: Math.min((now - last) / 1000, 0.1),
-                // Wandering is motion nobody asked for, so it's off under reduced motion.
-                canWander: !reducedMotionRef.current,
+                // Wandering is motion nobody asked for: off under reduced motion,
+                // or when the visitor pauses it.
+                canWander: roamsRef.current,
                 rand: [Math.random(), Math.random(), Math.random()],
             });
             last = now;
@@ -139,6 +147,10 @@ const GoatPage = () => {
     useEffect(() => {
         const onKeyDown = (e: KeyboardEvent) => {
             if (e.ctrlKey || e.metaKey || e.altKey) return;
+            // Shortcuts only while focus is on this page (a click anywhere on it
+            // or a Tab into it), so stray keystrokes and voice commands elsewhere
+            // don't set off tricks, and arrows still scroll when it isn't.
+            if (!(e.target instanceof Node && pageRef.current?.contains(e.target))) return;
             // Typing the goat's name: letters and arrows belong to the text field.
             if (e.target instanceof HTMLElement && (e.target.closest("input, textarea, select") || e.target.isContentEditable)) {
                 return;
@@ -241,14 +253,16 @@ const GoatPage = () => {
         },
     });
 
-    const key = (label: string, onPress: () => void, cap: ReactNode) => (
-        <button type="button" className="key" aria-label={label} onClick={onPress}>
+    const key = (label: string, shortcut: string, onPress: () => void, cap: ReactNode) => (
+        <button type="button" className="key" aria-label={label} aria-keyshortcuts={shortcut} onClick={onPress}>
             <kbd>{cap}</kbd>
         </button>
     );
 
     return (
-        <main className="goatPage">
+        // Focusable (but not in the tab order) so that a click anywhere on the
+        // page puts focus inside it and turns the keyboard shortcuts on.
+        <main className={`goatPage${roams ? "" : " goatPage--still"}`} ref={pageRef} tabIndex={-1}>
             <div className="game-layout">
                 {/* Goat Display Section */}
                 <div className="goat-section">
@@ -304,15 +318,16 @@ const GoatPage = () => {
                                     type="button"
                                     className="goat-button"
                                     aria-label={`Cuddle ${goat.name || "the goat"}${asleep ? " (asleep)" : ""}`}
+                                    aria-keyshortcuts="C"
                                     onClick={() => trick("cuddle")}
                                 >
                                     <GoatAnimal key={playKey} pose={pose} moving={moving} size={SPRITE} />
                                 </button>
                             </div>
                         </div>
-                        {/* Announces what the goat is doing to screen readers. */}
+                        {/* Tells screen readers what the goat does in response to the visitor. */}
                         <p className="visually-hidden" aria-live="polite">
-                            {statusOf(goat)}
+                            {announcementOf(goat)}
                         </p>
                         {/* Speaks up only when the goat gets hungry or sleepy. */}
                         <p className="visually-hidden" aria-live="polite">
@@ -355,12 +370,13 @@ const GoatPage = () => {
                     <ul>
                         <li>
                             <div className="keys">
-                                {WALK_CONTROLS.map(({ dir, label, icon }) => (
+                                {WALK_CONTROLS.map(({ dir, label, shortcut, icon }) => (
                                     <button
                                         key={dir}
                                         type="button"
                                         className="key key--hold"
                                         aria-label={label}
+                                        aria-keyshortcuts={shortcut}
                                         {...walkHandlers(dir)}
                                     >
                                         <kbd>{icon}</kbd>
@@ -371,29 +387,29 @@ const GoatPage = () => {
                         </li>
                         <li>
                             <div className="keys">
-                                {key("Cuddle (C)", () => trick("cuddle"), "C")} /{" "}
-                                {key("Cuddle", () => trick("cuddle"), <MdAdsClick aria-hidden="true" />)}
+                                {key("Cuddle (C)", "C", () => trick("cuddle"), "C")} /{" "}
+                                {key("Cuddle", "C", () => trick("cuddle"), <MdAdsClick aria-hidden="true" />)}
                             </div>
                             <span>Cuddle</span>
                         </li>
                         <li>
-                            <div className="keys">{key("Feed a turnip (F)", feed, "F")}</div>
+                            <div className="keys">{key("Feed a turnip (F)", "F", feed, "F")}</div>
                             <span>Feed a turnip</span>
                         </li>
                         <li>
-                            <div className="keys">{key("Jump (Space)", () => trick("jump"), "Space")}</div>
+                            <div className="keys">{key("Jump (Space)", "Space", () => trick("jump"), "Space")}</div>
                             <span>Jump</span>
                         </li>
                         <li>
-                            <div className="keys">{key("Headbutt (H)", () => trick("headbutt"), "H")}</div>
+                            <div className="keys">{key("Headbutt (H)", "H", () => trick("headbutt"), "H")}</div>
                             <span>Headbutt</span>
                         </li>
                         <li>
-                            <div className="keys">{key("Bleat (B)", () => trick("bleat"), "B")}</div>
+                            <div className="keys">{key("Bleat (B)", "B", () => trick("bleat"), "B")}</div>
                             <span>Bleat</span>
                         </li>
                         <li>
-                            <div className="keys">{key("Take a nap (S)", () => trick("nap"), "S")}</div>
+                            <div className="keys">{key("Take a nap (S)", "S", () => trick("nap"), "S")}</div>
                             <span>Take a nap</span>
                         </li>
                         <li>
@@ -412,10 +428,27 @@ const GoatPage = () => {
                             </div>
                             <span>Sound {soundOn ? "on" : "off"}</span>
                         </li>
+                        <li>
+                            <div className="keys">
+                                <button
+                                    type="button"
+                                    className="key"
+                                    aria-label="Wandering"
+                                    aria-pressed={roams}
+                                    onClick={() => setRoamChoice(!roams)}
+                                >
+                                    <kbd>
+                                        {roams ? <MdPause aria-hidden="true" /> : <MdPlayArrow aria-hidden="true" />}
+                                    </kbd>
+                                </button>
+                            </div>
+                            <span>Wandering {roams ? "on" : "off"}</span>
+                        </li>
                     </ul>
                     <NameForm name={goat.name} onRename={(name) => dispatch({ type: "rename", name })} />
                     <p className="note">
                         <b>Tap the icons</b> or use your keyboard!<br />
+                        Shortcuts work once you&apos;ve clicked or tabbed into this page.<br />
                         Cuddles and jumps make {goat.name || "the goat"} happy, turnips fill it up and naps restore its energy.
                         A tired goat won&apos;t do tricks. Left alone, it wanders off, then dozes.
                     </p>

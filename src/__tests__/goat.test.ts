@@ -1,4 +1,5 @@
 import {
+    announcementOf,
     cleanName,
     goatReducer,
     initialGoat,
@@ -16,7 +17,7 @@ import {
     TIRED_SLEEP_AFTER_MS,
     WANDER_AFTER_MS,
 } from "../components/pages/Goat/goatState";
-import type { GoatEvent, GoatState } from "../components/pages/Goat/goatState";
+import type { GoatEvent, GoatState, SavedGoat } from "../components/pages/Goat/goatState";
 
 const started = (overrides: Partial<GoatState> = {}) =>
     goatReducer({ ...initialGoat(320, 200), ...overrides }, { type: "start", now: 0 });
@@ -257,5 +258,47 @@ describe("naming", () => {
     test("the name is restored from a save", () => {
         const s = send(started(), { type: "load", saved: { cuddles: 0, happiness: 3, name: "Gus" }, elapsedMs: 0 });
         expect(s.name).toBe("Gus");
+    });
+});
+
+describe("screen reader announcements", () => {
+    test("standing still and wandering off say nothing", () => {
+        const s = started();
+        expect(announcementOf(s)).toBe("");
+        const wandering = run(s, 0, WANDER_AFTER_MS + 100);
+        expect(wandering.action).toBe("wander");
+        expect(announcementOf(wandering)).toBe("");
+    });
+
+    test("a hungry bleat isn't announced, a requested one is", () => {
+        const hungry = started({ fullness: 1 });
+        const calling = tick(hungry, 50);
+        expect(calling.action).toBe("bleat");
+        expect(announcementOf(calling)).toBe("");
+        expect(announcementOf(trick(calling, "bleat", 100))).toBe("The goat bleats for food: Meeeh!");
+    });
+
+    test("tricks are announced", () => {
+        expect(announcementOf(trick(started(), "cuddle", 0))).toBe("The goat enjoys a cuddle!");
+    });
+});
+
+describe("wandering switched off", () => {
+    test("stops a stroll already under way", () => {
+        const wandering = run(started(), 0, WANDER_AFTER_MS + 100);
+        expect(wandering.action).toBe("wander");
+        expect(tick(wandering, WANDER_AFTER_MS + 150, false).action).toBe("idle");
+    });
+});
+
+describe("loading a damaged save", () => {
+    test("bad values fall back to the defaults", () => {
+        const fresh = started();
+        const saved = { cuddles: -3.5, happiness: 4, fullness: "lots", energy: null } as unknown as SavedGoat;
+        const s = send(fresh, { type: "load", saved, elapsedMs: 0 });
+        expect(s.cuddles).toBe(0);
+        expect(s.fullness).toBe(fresh.fullness);
+        expect(s.energy).toBe(fresh.energy);
+        expect(Number.isNaN(s.fullness + s.energy + s.happiness)).toBe(false);
     });
 });
