@@ -87,6 +87,20 @@ const options: ISourceOptions = {
                 }
             }
         },
+        // Phones get fewer particles than the engine default of 100, which
+        // crowds a narrow screen. tsparticles re-applies this on resize.
+        responsive: [
+            {
+                maxWidth: 600,
+                options: {
+                    particles: {
+                        number: {
+                            value: 40
+                        }
+                    }
+                }
+            }
+        ],
         retina_detect: true
 };
 
