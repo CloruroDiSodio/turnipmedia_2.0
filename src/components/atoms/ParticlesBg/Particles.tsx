@@ -27,7 +27,7 @@ const baseOptions: ISourceOptions = {
             // so the config type-checks without changing behaviour.
             // Fewer than the engine default of 100, to keep the background calm.
             number: {
-                value: 60
+                value: 35
             },
             color: {
                 value: ["#f8c210", "#2F5753", "#018C99"]
@@ -99,7 +99,7 @@ const baseOptions: ISourceOptions = {
                 options: {
                     particles: {
                         number: {
-                            value: 25
+                            value: 14
                         },
                         groups: {
                             turnips: {
@@ -116,7 +116,7 @@ const baseOptions: ISourceOptions = {
 };
 
 // A few tiny pixel turnips drift among the dots, slowly turning. They come
-// out of the total count above (60 → 56 dots + 4 turnips; 25 → 23 + 2 on
+// out of the total count above (35 → 31 dots + 4 turnips; 14 → 12 + 2 on
 // phones) and override only what differs from the dots. The image needs the
 // page's CSS variables, so it is built in the browser; the server never
 // renders the canvas anyway. Reduced motion stops the rotation along with
