@@ -4,7 +4,7 @@ import { pageMetadata } from "../../seo";
 export const metadata = pageMetadata({
   title: "Resume",
   description:
-    "Career, studies and skills of Denise Moscon, front-end developer working with React, React Native, Next.js and Gatsby.",
+    "Career, studies and skills of Denise Moscon, senior frontend engineer working with React, Next.js, TypeScript and headless CMSs.",
   path: "/resume/",
 });
 

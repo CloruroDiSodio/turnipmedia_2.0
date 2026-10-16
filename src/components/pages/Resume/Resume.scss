@@ -1,44 +1,277 @@
+// Same card language as the showcase (white card, dark 2px border, flat
+// offset shadow), laid out so the whole resume fits one desktop screen.
 .resume {
-  height: calc(100vh - 130px);
-  overflow-y: scroll;
-  margin-left: 20%;
-  margin-top: 30px;
-  margin-bottom: 30px;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 24px;
+  margin: 30px 10%;
+  font-size: 18px;
+  line-height: 1.15;
 
-  // Below Bootstrap's "xs" size the fixed 20% left gutter eats a fifth of a
-  // phone screen and leaves no gutter on the right, so the block spans the
-  // viewport with equal horizontal padding instead (visually centred).
+  // Same small-screen layout as the showcase: no fixed 20% gutter on phones.
   @media (max-width: 575.98px) {
-    margin-left: 0;
+    margin: 30px 0;
     padding: 0 20px;
   }
 
-  // Section headings keep the look of the old inline <b> labels.
-  &__title {
-    display: inline;
+  @media (min-width: 768px) {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas:
+      "profile career"
+      "studies career"
+      "skills  skills";
+    align-items: start;
+  }
+
+  // Desktop: three columns, nothing below the fold.
+  @media (min-width: 1200px) {
+    grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.45fr) minmax(0, 0.9fr);
+    grid-template-rows: auto 1fr;
+    grid-template-areas:
+      "profile career skills"
+      "studies career skills";
+    margin-right: 8%;
+    margin-left: 8%;
+  }
+
+  &__role {
+    margin: 0;
+    font-size: 22px;
+  }
+
+  &__summary {
+    margin: 8px 0 0;
+  }
+
+  &__stats {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+    margin: 12px 0 0;
+
+    > div {
+      padding: 6px 4px;
+      text-align: center;
+      border: 2px dashed var(--light-purple);
+      border-radius: 6px;
+    }
+
+    dt {
+      font-weight: normal;
+      font-size: 15px;
+      white-space: nowrap;
+    }
+
+    dd {
+      color: var(--purple);
+      margin: 0;
+      font-size: 34px;
+      line-height: 1;
+    }
+  }
+
+  // Career timeline: a dashed rail with a pixel-square marker per job.
+  // Doubled class beats .resume-card__body's padding.
+  &__timeline#{&}__timeline {
+    position: relative;
+    margin: 0;
+    // Rail and markers are both centred on --rail-x (from the list's edge).
+    --rail-x: 27px;
+    --marker-size: 12px;
+    padding-left: 40px;
+    list-style: none;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 18px;
+      bottom: 26px;
+      left: calc(var(--rail-x) - 1px);
+      border-left: 2px dashed var(--teal);
+    }
+  }
+
+  &__job {
+    position: relative;
+
+    & + & {
+      margin-top: 12px;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 4px;
+      // The <li> starts at the list's 40px padding; border-box sizing.
+      left: calc(var(--rail-x) - 40px - var(--marker-size) / 2);
+      width: var(--marker-size);
+      height: var(--marker-size);
+      background: #fff;
+      border: 2px solid var(--gray);
+    }
+
+    &--current::before {
+      background: var(--yellow);
+      box-shadow: 0 0 0 3px rgba(248, 194, 16, 0.35);
+    }
+  }
+
+  &__period {
+    margin: 0;
+    color: var(--teal);
+    font-style: italic;
+  }
+
+  &__company {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    column-gap: 10px;
     margin: 0;
     font-family: inherit;
-    font-size: 18px;
+    font-size: 22px;
     font-weight: bold;
-    line-height: inherit;
+    line-height: 1.05;
   }
 
-  svg {
-    color: var(--purple);
-    width: 20px;
-    height: 20px;
-    position: relative;
-    top: -2px;
+  &__location {
+    margin: 0;
+    font-size: 16px;
+    font-weight: normal;
+    color: #555;
+    white-space: nowrap;
+
+    svg {
+      width: 14px;
+      height: 14px;
+      color: var(--teal);
+      position: relative;
+      top: -1px;
+    }
   }
 
-  // Matches the default vertical margins a <p> would get, since the
-  // sections are now <div>s (valid HTML for SSR/hydration).
-  &__section {
-    margin-top: 1em;
-    margin-bottom: 1em;
+  &__focus {
+    margin: 2px 0 4px;
   }
 
-  &__indent {
-    padding-left: 25px;
+  &__tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    margin: 0;
+  }
+
+  &__badge {
+    top: 0;
+    font-size: 15px;
+    font-weight: normal;
+    background-color: var(--purple);
+  }
+
+  &__skills {
+    display: grid;
+    gap: 10px;
+    margin: 0;
+
+    // Two groups per row when the card spans the full width (tablet).
+    @media (min-width: 768px) and (max-width: 1199.98px) {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+
+  &__subheading {
+    margin: 10px 0 3px;
+    font-family: inherit;
+    font-size: inherit;
+  }
+
+  &__skill-group dt,
+  &__subheading {
+    margin-bottom: 3px;
+    font-weight: normal;
+    color: var(--green);
+
+    svg {
+      width: 18px;
+      height: 18px;
+      color: var(--teal);
+      position: relative;
+      top: -2px;
+    }
+  }
+}
+
+.resume-card {
+  overflow: hidden;
+  background: #fff;
+  border: 2px solid var(--gray);
+  border-radius: 8px;
+  box-shadow: 6px 6px 0 var(--card-shadow, var(--teal));
+
+  &__header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 0;
+    padding: 6px 14px;
+    background: var(--card-accent, var(--teal));
+    border-bottom: 2px solid var(--gray);
+    color: #fff;
+    font-family: inherit;
+    font-size: 26px;
+    font-weight: bold;
+    line-height: 1.1;
+
+    svg {
+      width: 24px;
+      height: 24px;
+      flex-shrink: 0;
+    }
+  }
+
+  &__body {
+    padding: 12px 16px 14px;
+  }
+
+  &--profile {
+    // Only once the grid has named areas; on phones the cards just stack.
+    @media (min-width: 768px) {
+      grid-area: profile;
+    }
+
+    --card-accent: var(--purple);
+    --card-shadow: var(--yellow);
+  }
+
+  &--career {
+    @media (min-width: 768px) {
+      grid-area: career;
+    }
+
+    --card-accent: var(--green);
+    --card-shadow: var(--teal);
+  }
+
+  &--studies {
+    @media (min-width: 768px) {
+      grid-area: studies;
+    }
+
+    --card-accent: var(--yellow);
+    --card-shadow: var(--purple);
+
+    .resume-card__header {
+      color: var(--gray);
+    }
+  }
+
+  &--skills {
+    @media (min-width: 768px) {
+      grid-area: skills;
+    }
+
+    --card-accent: var(--purple);
+    --card-shadow: var(--green);
   }
 }

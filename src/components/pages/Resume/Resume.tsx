@@ -1,90 +1,155 @@
-import {BiPlanet, BiGame, BiRocket, BiAtom} from 'react-icons/bi';
+import type { ReactNode } from 'react';
+import Badge from 'react-bootstrap/Badge';
+import {
+    BiPlanet, BiGame, BiRocket, BiAtom, BiMap, BiCodeAlt, BiLayer,
+    BiBot, BiPalette, BiWorld,
+} from 'react-icons/bi';
 import './Resume.scss';
 
-const Resume = () => {
-    const calculateAge = (birthDateString: string): number => {
-        const today = new Date();
-        const birthDate = new Date(birthDateString);
+type Job = {
+    period: string;
+    role: string;
+    company: string;
+    location: string;
+    highlight: string;
+    tech: string[];
+};
 
-        let age = today.getFullYear() - birthDate.getFullYear();
-        const monthDifference = today.getMonth() - birthDate.getMonth();
+const career: Job[] = [
+    { period: '2025 - now', role: 'Web Developer', company: 'Truelayer', location: 'Milano, Italy', highlight: 'Led the website redesign and migration to Next.js and Storyblok; owns the internal component library', tech: ['React.js', 'Next.js', 'Gatsby', 'Storyblok', 'Design system'] },
+    { period: '2023 - 2025', role: 'Software Engineer', company: 'Arduino', location: 'Torino, Italy', highlight: 'Institutional web apps and subscription management', tech: ['Next.js', 'DatoCMS', 'Component library'] },
+    { period: '2021 - 2023', role: 'Frontend Developer & Mentor', company: 'Vidiemme Consulting', location: 'Milano, Italy', highlight: 'Team lead on a luxury e-commerce; mentored juniors with code reviews and pair programming', tech: ['React.js', 'Next.js', 'Storyblok', 'React Native'] },
+    { period: '2019 - 2021', role: 'Frontend Developer', company: 'Skill Srl', location: 'Verona, Italy', highlight: 'Management portals, REST API contracts', tech: ['React.js', 'REST API'] },
+    { period: '2019', role: 'Frontend Developer', company: 'Happy Brain', location: 'Verona, Italy', highlight: 'Responsive websites and mobile apps', tech: ['React.js', 'TypeScript', 'React Native'] },
+];
 
-        // If the current month is before the birth month, 
-        // or if it's the same month but the current day is before the birth day,
-        // the birthday hasn't happened yet this year.
-        if (monthDifference < 0 || (monthDifference === 0 && today.getDate() < birthDate.getDate())) {
-            age--;
-        }
+const skills: { label: string; icon: ReactNode; items: string[] }[] = [
+    { label: 'Frontend engineering', icon: <BiCodeAlt aria-hidden="true" />, items: ['React.js', 'Next.js', 'TypeScript', 'Gatsby', 'HTML5', 'CSS3/SASS'] },
+    { label: 'Architecture & CMS', icon: <BiLayer aria-hidden="true" />, items: ['Storyblok', 'DatoCMS', 'Design systems', 'Micro-frontends', 'Swagger/OpenAPI'] },
+    { label: 'Developer experience & AI', icon: <BiBot aria-hidden="true" />, items: ['Claude Code', 'Figma MCP', 'Git/Gitflow', 'CI/CD', 'Toolchain optimization'] },
+    { label: 'Design & collaboration', icon: <BiPalette aria-hidden="true" />, items: ['Figma', 'Sketch', 'Photoshop', 'Agile/Scrum', 'Mentorship', 'Code reviews'] },
+];
 
-        return age;
+// Full years elapsed since a date (also used for the age).
+const yearsSince = (dateString: string): number => {
+    const today = new Date();
+    const date = new Date(dateString);
+
+    let years = today.getFullYear() - date.getFullYear();
+    const monthDifference = today.getMonth() - date.getMonth();
+
+    // If the current month is before the anniversary month, or if it's the
+    // same month but the day hasn't come yet, the year isn't complete.
+    if (monthDifference < 0 || (monthDifference === 0 && today.getDate() < date.getDate())) {
+        years--;
     }
 
-    // NOTE: the previous version wrapped these blocks in <p> tags containing
-    // <div>s. That is invalid HTML: the browser parser would close the <p>
-    // early during SSR and break hydration, so <div className="resume__section">
-    // (with the same 1em vertical margins a <p> gets) replaces it.
-    return (
-        // The resume scrolls inside its own box, so it must be focusable for
-        // keyboard users to scroll it (and is labelled as a region).
-        <div className="resume" tabIndex={0} role="region" aria-labelledby="resume-title">
-            <h1 id="resume-title" className="visually-hidden">Resume</h1>
-            <div className="resume__section">
-                <h2 className="resume__title"><BiPlanet aria-hidden="true" /> Denise Moscon</h2><br />
-                <div className="resume__indent">
-                    <span>{calculateAge("1994-06-24")} yo</span><br />
-                    <span>Front-end developer</span><br />
-                </div>
-            </div>
+    return years;
+}
 
-            <div className="resume__section">
-                <h2 className="resume__title"><BiGame aria-hidden="true" /> Career</h2><br />
-                <div className="resume__indent">
-                    <i>03/2025 - now</i><br />
-                    <span>Truelayer (Milano, Italy)</span><br />
-                    <span>Front-end development (React.js, Gatsby.js, company website)</span><br />
-                    <br />
-                    <i>03/2023 - 03/2025</i><br />
-                    <span>Arduino (Torino, Italy)</span><br />
-                    <span>Front-end development (React.js, Next.js, landing pages)</span><br />
-                    <br />
-                    <i>03/2021 - 03/2023</i><br />
-                    <span>Vidiemme consulting (Milano, Italy)</span><br />
-                    <span>Front-end development (React.js, React Native, landing pages)</span><br />
-                    <span>Front-end mentoring</span><br />
-                    <br />
-                    <i>12/2019 - 03/2021</i><br />
-                    <span>Skill srl (Verona, Italy)</span><br />
-                    <span>Front-end development (React.js)</span><br />
-                    <br />
-                    <i>06/2019 - 12/2019</i><br />
-                    <span>Happy Brain (Verona, Italy)</span><br />
-                    <span>Front-end development (React.js, React Native, Wordpress)</span><br />
-                    <br />
+// bg="" skips Badge's default bg-primary (an !important background), so the
+// site palette applies instead (same trick as ProjectCard).
+const Tag = ({ children }: { children: ReactNode }) => (
+    <Badge bg="" className="resume__badge">{children}</Badge>
+);
+
+const Resume = () => {
+    return (
+        <div className="resume">
+            <h1 id="resume-title" className="visually-hidden">Resume</h1>
+
+            <section className="resume-card resume-card--profile" aria-labelledby="resume-profile">
+                <h2 className="resume-card__header" id="resume-profile">
+                    <BiPlanet aria-hidden="true" /> Denise Moscon
+                </h2>
+                <div className="resume-card__body">
+                    <p className="resume__role">Senior Frontend Engineer</p>
+                    <p className="resume__location">
+                        <BiMap aria-hidden="true" /> Desio (MB), Italy
+                    </p>
+                    <p className="resume__summary">
+                        Fast web apps, scalable design systems and Jamstack
+                        architectures. I lead migrations, bridge Design and
+                        Engineering, and mentor frontend teams.
+                    </p>
+                    <dl className="resume__stats">
+                        <div>
+                            <dt>Age</dt>
+                            <dd>{yearsSince('1994-06-24')}</dd>
+                        </div>
+                        <div>
+                            <dt>Years coding</dt>
+                            <dd>{yearsSince('2019-06-01')}+</dd>
+                        </div>
+                    </dl>
                 </div>
-            </div>
-            <div className="resume__section">
-                <h2 className="resume__title"><BiAtom aria-hidden="true" /> Studies</h2><br />
-                <div className="resume__indent" >
-                    <i>2016-2019</i><br />
-                    <span>Scuola Internazionale di Comics (Padova, Italy)</span><br />
-                    <span>Graphic and web design, web development</span><br />
+            </section>
+
+            <section className="resume-card resume-card--career" aria-labelledby="resume-career">
+                <h2 className="resume-card__header" id="resume-career">
+                    <BiGame aria-hidden="true" /> Career
+                </h2>
+                <ol className="resume-card__body resume__timeline">
+                    {career.map((job, index) => (
+                        <li
+                            key={job.company}
+                            className={index === 0 ? 'resume__job resume__job--current' : 'resume__job'}
+                        >
+                            <p className="resume__period">{job.period} &middot; {job.role}</p>
+                            <h3 className="resume__company">
+                                {job.company}
+                                <span className="resume__location">
+                                    <BiMap aria-hidden="true" /> {job.location}
+                                </span>
+                            </h3>
+                            <p className="resume__focus">{job.highlight}</p>
+                            <p className="resume__tags">
+                                <span className="visually-hidden">Built with: </span>
+                                {job.tech.map((name) => <Tag key={name}>{name}</Tag>)}
+                            </p>
+                        </li>
+                    ))}
+                </ol>
+            </section>
+
+            <section className="resume-card resume-card--studies" aria-labelledby="resume-studies">
+                <h2 className="resume-card__header" id="resume-studies">
+                    <BiAtom aria-hidden="true" /> Studies
+                </h2>
+                <div className="resume-card__body">
+                    <p className="resume__period">2016 - 2019 &middot; Three-year diploma</p>
+                    <h3 className="resume__company">
+                        Scuola Internazionale di Comics
+                        <span className="resume__location">
+                            <BiMap aria-hidden="true" /> Padova, Italy
+                        </span>
+                    </h3>
+                    <p className="resume__focus">Graphics and web design</p>
+                    <h3 className="resume__subheading">
+                        <BiWorld aria-hidden="true" /> Languages
+                    </h3>
+                    <p className="resume__tags">
+                        <Tag>Italian &middot; native</Tag>
+                        <Tag>English &middot; professional</Tag>
+                    </p>
                 </div>
-            </div>
-            <div className="resume__section">
-                <h2 className="resume__title"><BiRocket aria-hidden="true" /> Skills</h2><br />
-                <div className="resume__indent">
-                    <span>React.js, React Native, CRA</span><br />
-                    <span>Next.js, Gatsby.js</span><br />
-                    <span>Testing libraries (Playwright, Vitest)</span><br />
-                    <span>Redux and such</span><br />
-                    <span>HTML5 (Canvas, SVG), CSS3, SASS, SCSS, Javascript (ES6+)</span><br />
-                    <span>Rest API</span><br />
-                    <span>Bootstrap, GSAP, Jquery and more libraries</span><br />
-                    <span>Git, npm, yarn, composer, parcel, webpack</span><br />
-                    <span>CI/CD</span><br />
-                    <span>Suite Adobe, Sketch, Affinity Design</span>
-                </div>
-            </div>
+            </section>
+
+            <section className="resume-card resume-card--skills" aria-labelledby="resume-skills">
+                <h2 className="resume-card__header" id="resume-skills">
+                    <BiRocket aria-hidden="true" /> Skills
+                </h2>
+                <dl className="resume-card__body resume__skills">
+                    {skills.map((group) => (
+                        <div key={group.label} className="resume__skill-group">
+                            <dt>{group.icon} {group.label}</dt>
+                            <dd className="resume__tags">
+                                {group.items.map((name) => <Tag key={name}>{name}</Tag>)}
+                            </dd>
+                        </div>
+                    ))}
+                </dl>
+            </section>
         </div>
     )
 }
