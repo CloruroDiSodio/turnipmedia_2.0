@@ -38,6 +38,17 @@ const projects: Project[] = [
         tech: ["Branding", "Pixel art", "Design tokens", "Sass", "Python"],
     },
     {
+        title: "Locanda",
+        description:
+            "A free spell and character companion for fifth edition players: search every spell in the SRD, keep a spellbook for each character and take it to the table as an accessible PDF or printable spell cards. In English and Italian, offline, with no account and no tracking.",
+        href: "https://locanda.quest/",
+        preview: "/showcase/locanda.gif",
+        previewStill: "/showcase/locanda.png",
+        previewAlt: "The innkeeper, Locanda's pixel-art mascot, waving, dozing over a mug, scratching his head and holding a snuffed candle",
+        pixelArt: true,
+        tech: ["Next.js", "React", "TypeScript", "Tailwind CSS", "next-intl", "IndexedDB"],
+    },
+    {
         title: "Pixel Art & Pattern Generator",
         description:
             "Turns any photo into a pixel art grid on a retro palette (NES, PICO-8, Game Boy) and exports a printable cross stitch pattern as PNG, CSV or Markdown.",
