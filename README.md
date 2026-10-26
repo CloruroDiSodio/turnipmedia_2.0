@@ -67,7 +67,7 @@ Target: WCAG 2.2 AA. What is in place, and what to keep doing when changing page
 - **Metadata** — the root layout sets the defaults: `metadataBase`, a `%s | Denise Moscon` title template, Open Graph and Twitter card, icons and manifest. Each route exports `metadata` built with `pageMetadata({ title, description, path })` from `src/app/seo.ts`, which sets its title, description, canonical URL and social cards. Next.js merges metadata shallowly, so a page's `openGraph` replaces the root one; that is why the helper re-applies `baseOpenGraph`.
 - **Canonical URLs** use a trailing slash (`/resume/`) because `trailingSlash: true` makes the export serve each page at that path.
 - **Sitemap and robots** — `sitemap.xml` and `robots.txt` are generated from `src/app/sitemap.ts` and `src/app/robots.ts`. **When adding a route, add it to `sitemap.ts`.**
-- **Structured data** — the home page embeds schema.org `Person` JSON-LD linking the GitHub, LinkedIn and CodePen profiles.
+- **Structured data** — the home page embeds schema.org `Person` JSON-LD linking the GitHub, LinkedIn, CodePen and Ko-fi profiles.
 
 ## Security
 

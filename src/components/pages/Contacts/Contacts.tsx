@@ -1,4 +1,4 @@
-import {FiGithub, FiLinkedin, FiCodepen, FiMail, FiArrowUpRight} from 'react-icons/fi';
+import {FiGithub, FiLinkedin, FiCodepen, FiCoffee, FiMail, FiArrowUpRight} from 'react-icons/fi';
 import CopyButton from '../../atoms/CopyButton/CopyButton';
 import LocalTime from '../../atoms/LocalTime/LocalTime';
 import './Contacts.scss';
@@ -9,6 +9,7 @@ const socials = [
     {label: "GitHub", handle: "@CloruroDiSodio", blurb: "Code and side projects", href: "https://github.com/CloruroDiSodio", Icon: FiGithub},
     {label: "LinkedIn", handle: "in/denisemoscon", blurb: "Where I've worked", href: "https://www.linkedin.com/in/denisemoscon/", Icon: FiLinkedin},
     {label: "CodePen", handle: "@pineappleSyrup", blurb: "Small frontend experiments", href: "https://codepen.io/pineappleSyrup/", Icon: FiCodepen},
+    {label: "Ko-fi", handle: "turnipmedia", blurb: "Buy me a coffee", href: "https://ko-fi.com/turnipmedia", Icon: FiCoffee},
 ];
 
 const Contacts = () => {

@@ -15,6 +15,7 @@ const personJsonLd = {
         "https://github.com/CloruroDiSodio",
         "https://www.linkedin.com/in/denisemoscon/",
         "https://codepen.io/pineappleSyrup/",
+        "https://ko-fi.com/turnipmedia",
     ],
 };
 
